@@ -24,6 +24,8 @@ from .fidelity import NUM_WORDS, spoken_numbers
 from .textutil import norm_word
 from . import cast as CAST
 from . import semantic_guardrails as SG
+from .errors import VSError, classify
+from .quality_repair import FATAL
 
 PLAN_SCHEMA_VERSION = 1
 TEMPLATES = ["character_scene", "closeup", "counter", "kinetic", "document", "compare", "countdown", "ambient"]
@@ -648,9 +650,15 @@ def llm_choices(units, words, bible, cfg, lib=None, log=print, cancel=None):
         tagged.append(u2)
     raw = llm.generate(llm_prompt(tagged, bible, cfg, lib), system="Responde solo con JSON válido.", max_tokens=8000,
                        temperature=0.4, cancel=cancel)
-    data = llm.parse_json(raw, "object")
+    try:
+        data = llm.parse_json(raw, "object")
+    except (ValueError, TypeError) as e:
+        raise TL.PlanError(f"Qwen devolvió un JSON inválido ({len(raw or '')} caracteres): {e}") from e
     ch = data.get("scenes") if isinstance(data, dict) else None
-    validate_choices(ch, units, words, bible, lib)
+    try:
+        validate_choices(ch, units, words, bible, lib)
+    except (ValueError, TypeError, KeyError, AttributeError) as e:
+        raise TL.PlanError(f"El storyboard de Qwen no cumple el contrato de escenas: {e}") from e
     return ch
 
 
@@ -779,6 +787,8 @@ def plan_from_transcript(transcript, audio, cfg, log=print, cancel=None, previou
                 _merge_names_into(bible, extra, words)
                 log("[plan] personajes nuevos diseñados por el LLM: " + ", ".join(f"{e['name']} ({e['asset_id']})" for e in extra))
         except Exception as e:
+            if classify(e) in FATAL or (cancel and cancel()):
+                raise
             log(f"[plan] sin diseño de personajes por LLM ({str(e)[:160]}); se usa el catálogo")
     if want_llm and any(u.get("word_ids") for u in units):
         try:
@@ -786,8 +796,13 @@ def plan_from_transcript(transcript, audio, cfg, log=print, cancel=None, previou
             planner = "llm"
             log(f"[plan] storyboard del LLM validado: {len(choices)} escenas")
         except Exception as e:
+            code = classify(e)
+            detail = f"{type(e).__name__}: {str(e)[:1800]}"
+            log(f"[plan] Qwen falló [{code}]: {detail}")
+            if code in FATAL or isinstance(e, VSError) or (cancel and cancel()):
+                raise
             if cfg.get('animation_guidance'):
-                raise TL.PlanError('No se pudo aplicar la guía Markdown con Qwen. Revisa el modelo o el plan y reintenta; no se sustituye por un storyboard sin guía.') from e
+                raise TL.PlanError(f"{detail}. No se publica un storyboard sin la guía seleccionada.") from e
             log(f"[plan] LLM no disponible o JSON inválido ({str(e)[:220]}); uso el planificador por reglas")
     if choices is None:
         choices = rule_choices(units, words, bible, cfg, lib)
