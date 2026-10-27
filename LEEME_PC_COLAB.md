@@ -78,3 +78,10 @@ La libreta actualizada incluye un panel **Guías .md** en la interfaz original. 
 Las guías se guardan en `animation_guides` dentro de la carpeta de proyectos del motor. Mantén `GUARDAR_EN_DRIVE` activado para conservarlas entre sesiones. Cada proyecto recibe una copia de la guía seleccionada. Con la función activada, debes seleccionar una guía antes de crear el video; puedes desactivarla explícitamente si quieres crear sin guía. La biblioteca local de la PC y la de Colab son independientes: puedes descargar e importar un mismo `.md` en ambas.
 
 Para actualizar Colab, abre la libreta nueva y ejecuta la celda de instalación cuando no haya trabajos en marcha; recarga el Studio después. Esto no mantiene encendido Colab automáticamente.
+
+
+## Error Cloudflare HTTP 530
+
+Cloudflare no puede resolver el destino del túnel. Este estado no confirma que la llave sea incorrecta. Mantén Colab conectado y ejecuta la celda **Enlace y diagnóstico** con **Rehacer túnel (enlace nuevo)**. Copia la nueva URL base y llave a la PC, guarda y comprueba el motor. Si el runtime terminó, primero vuelve a ejecutar la instalación. La cola local permanece guardada; la existencia de los proyectos remotos depende de que se conserve su almacenamiento.
+
+La celda de diagnóstico imprime ahora URL y llave por separado. El cliente distingue el error 530 de las respuestas de autenticación y conserva los trabajos pendientes al recibirlo.

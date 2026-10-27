@@ -23,6 +23,10 @@ else:
 
     link = SV.link()
     if link:
+        from urllib.parse import urlsplit
+        destination = urlsplit(link)
+        print("URL para ViralStudio PC:", f"{destination.scheme}://{destination.netloc}")
+        print("Llave para ViralStudio PC:", SV.access_key(False))
         display(HTML(f'<a href="{link}" target="_blank" style="font:16px system-ui;background:#f0b648;color:#111;padding:10px 16px;'
                      f'border-radius:9px;font-weight:700;text-decoration:none">ABRIR VIRAL STUDIO ↗</a> &nbsp; 🔑 <code>{SV.access_key(False)}</code>'))
     else:

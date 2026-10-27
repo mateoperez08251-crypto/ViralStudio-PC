@@ -26,6 +26,22 @@ from vs.guidance import validate as validate_guide
 HOP = {'host','connection','content-length','transfer-encoding','content-encoding','cookie','authorization','origin','referer'}
 PID = re.compile(r'[A-Za-z0-9_-]{1,100}')
 
+async def remote_json(response):
+    if response.status == 530:
+        # Cloudflare devuelve HTML; no es una respuesta de la API ni prueba de llave incorrecta.
+        raise ValueError('Cloudflare HTTP 530: no puede conectar con el destino del túnel. '
+            'Mantén Colab conectado; ejecuta «Enlace y diagnóstico» → «Rehacer túnel (enlace nuevo)» '
+            'y guarda la nueva URL base y la llave en la PC. La cola local se conserva.')
+    try:
+        data = await response.json()
+    except (ValueError, aiohttp.ContentTypeError):
+        if response.status in (401,403):
+            raise ValueError(f'Acceso rechazado (HTTP {response.status}). Comprueba la llave de la sesión actual de Colab.')
+        raise ValueError(f'El servidor respondió HTTP {response.status} sin JSON. Comprueba la URL base y el estado de Colab.')
+    if not isinstance(data,dict):
+        raise ValueError('El servidor devolvió una respuesta incompatible con la API de ViralStudio.')
+    return data
+
 
 def data_home():
     return Path(os.environ.get('VS_PC_DATA') or (Path(os.environ.get('LOCALAPPDATA') or Path.home()) / 'ViralStudio-PC'))
@@ -126,8 +142,7 @@ class Broker:
     async def json(self, method,path,**kwargs):
         url,headers=self.remote(path)
         async with self.session.request(method,url,headers=headers,allow_redirects=False,**kwargs) as resp:
-            try:data=await resp.json()
-            except (ValueError,aiohttp.ContentTypeError):raise ValueError(f'Colab respondió HTTP {resp.status} sin JSON. Revisa la URL y la llave.')
+            data=await remote_json(resp)
             if resp.status>=400:raise ValueError(str(data.get('error') or data.get('detail') or f'HTTP {resp.status}'))
             return data
     def settings(self, payload, profile='', auto=True):
@@ -159,8 +174,7 @@ class Broker:
                 self.checked_connection=fingerprint
             headers['Idempotency-Key']=jid
             async with self.session.post(url,json=json.loads(job['payload']),headers=headers,allow_redirects=False) as resp:
-                try:data=await resp.json()
-                except (ValueError,aiohttp.ContentTypeError):raise ValueError('La respuesta de Colab no es válida; comprueba su URL y la llave.')
+                data=await remote_json(resp)
                 if resp.status>=400:
                     message=str(data.get('error') or f'HTTP {resp.status}')
                     # Un fallo de validación no se vuelve a enviar automáticamente.
@@ -181,7 +195,7 @@ class Broker:
                 with path.open('rb') as f:
                     form=aiohttp.FormData();form.add_field('file',f,filename=job['audio_name'] or 'audio.bin',content_type='application/octet-stream')
                     async with self.session.post(url,data=form,headers=headers,allow_redirects=False) as response:
-                        data=await response.json()
+                        data=await remote_json(response)
                         if response.status>=400:
                             message=str(data.get('error') or 'No se pudo enviar el audio.')
                             if 400<=response.status<500 and response.status not in (401,408,429):
@@ -207,6 +221,7 @@ class Broker:
             url,headers=self.remote(path)
             tmp=target.with_suffix(target.suffix+'.part')
             async with self.session.get(url,headers=headers,allow_redirects=False) as response:
+                if response.status==530:await remote_json(response)
                 if response.status!=200:raise ValueError(f'No se pudo descargar {key}: HTTP {response.status}')
                 size=0
                 with tmp.open('wb') as f:
@@ -380,11 +395,14 @@ def make_app(folder=None, worker=True):
                 # Si el usuario pidió una regeneración explícita se reenvía su JSON.
                 url,headers=broker.remote(request.path_qs)
                 async with app['session'].post(url,json=body,headers=headers,allow_redirects=False) as response:
-                    return web.json_response(await response.json(),status=response.status)
+                    return web.json_response(await remote_json(response),status=response.status)
         url,auth=broker.remote(request.path_qs)
         headers={k:v for k,v in request.headers.items() if k.lower() not in HOP and not k.lower().startswith('x-viralstudio')};headers.update(auth)
         try:
             async with app['session'].request(request.method,url,headers=headers,data=request.content.iter_chunked(1<<16) if request.can_read_body else None,allow_redirects=False,auto_decompress=False) as resp:
+                if resp.status==530:
+                    try:await remote_json(resp)
+                    except ValueError as e:return web.json_response({'error':str(e)},status=530)
                 h={k:v for k,v in resp.headers.items() if k.lower() not in (HOP-{'content-encoding'})|{'set-cookie'}}
                 out=web.StreamResponse(status=resp.status,headers=h);await out.prepare(request)
                 async for chunk in resp.content.iter_chunked(1<<16):await out.write(chunk)

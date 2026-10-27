@@ -88,6 +88,25 @@ class PCIntegration(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(r.status,200)
     async def asyncTearDown(self):
         await self.pc.close();await self.remote.close();self.tmp.cleanup()
+    async def test_530_explica_recuperacion_y_conserva_cola(self):
+        from aiohttp.test_utils import TestServer
+        async def gone(request):return web.Response(status=530,text='<html>Error 1033</html>',content_type='text/html')
+        app=web.Application();app.router.add_route('*','/{tail:.*}',gone)
+        remote=TestServer(app);await remote.start_server()
+        try:
+            self.app['store'].connection({'url':str(remote.make_url('')).rstrip('/'),'token':'nueva-llave'})
+            response=await self.pc.post('/pc/api/check',json={})
+            self.assertIn('Rehacer túnel',(await response.json())['error'])
+            job=self.app['store'].enqueue({'settings':{'input_mode':'script','script':'Texto de prueba'}})
+            await self.app['broker'].tick()
+            saved=self.app['store'].get(job['id'])
+            self.assertEqual(saved['state'],'esperando_conexion')
+            self.assertIn('HTTP 530',saved['error'])
+            response=await self.pc.get('/viralstudio/api/system')
+            self.assertEqual(response.status,530)
+            self.assertIn('Rehacer túnel',(await response.json())['error'])
+        finally:await remote.close()
+
     async def test_catalogo_original_disponible_sin_colab(self):
         self.app['store'].config_path.unlink(missing_ok=True)
         response=await self.pc.get('/viralstudio/api/options')
