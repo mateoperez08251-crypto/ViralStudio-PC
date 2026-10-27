@@ -1,0 +1,65 @@
+[
+ {
+  "id": "s001",
+  "start": 0.0,
+  "dur": 5.233333,
+  "shot": "danger",
+  "narration": "En una de las épocas más *oscuras* de la historia, una mujer decidió desafiar a la muerte."
+ },
+ {
+  "id": "s002",
+  "start": 5.233333,
+  "dur": 2.2,
+  "shot": "portrait",
+  "narration": "Su nombre era *Irena Sendler*."
+ },
+ {
+  "id": "s003",
+  "start": 7.433333,
+  "dur": 4.833333,
+  "shot": "year",
+  "narration": "En *1940*, los nazis encerraron a miles de familias judías."
+ },
+ {
+  "id": "s004",
+  "start": 12.266667,
+  "dur": 3.3,
+  "shot": "map",
+  "narration": "Detrás de los muros del gueto de *Varsovia*, en Polonia."
+ },
+ {
+  "id": "s005",
+  "start": 15.566667,
+  "dur": 4.5,
+  "shot": "scene",
+  "narration": "Irena entraba cada día como enfermera… y salía con niños escondidos."
+ },
+ {
+  "id": "s006",
+  "start": 20.066667,
+  "dur": 3.0,
+  "shot": "montage",
+  "narration": "En maletas, en ataúdes, en sacos de patatas."
+ },
+ {
+  "id": "s007",
+  "start": 23.066667,
+  "dur": 2.533333,
+  "shot": "number",
+  "narration": "Salvó a *dos mil quinientos* niños."
+ },
+ {
+  "id": "s008",
+  "start": 25.6,
+  "dur": 3.0,
+  "shot": "confront",
+  "narration": "La atraparon, la torturaron… pero *nunca* habló."
+ },
+ {
+  "id": "s009",
+  "start": 28.6,
+  "dur": 3.133333,
+  "shot": "kinetic",
+  "narration": "¿Tú habrías arriesgado tu vida por un desconocido?"
+ }
+]

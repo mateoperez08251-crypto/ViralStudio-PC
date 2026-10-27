@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/cine-qwen/scene.schema.json",
+  "type": "object",
+  "required": [
+    "scene_id",
+    "story_span",
+    "audio_start_s",
+    "audio_end_s",
+    "exact_narration",
+    "visual_justification",
+    "render_backend",
+    "expected_duration_s",
+    "revision"
+  ],
+  "properties": {
+    "scene_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "story_span": {
+      "type": "string"
+    },
+    "audio_start_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "audio_end_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "exact_narration": {
+      "type": "string"
+    },
+    "historical_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visual_justification": {
+      "type": "string",
+      "minLength": 1
+    },
+    "style_profile": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "era": {
+      "type": "string"
+    },
+    "character_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prop_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "asset_refs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "action_beats": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "camera": {
+      "type": "object"
+    },
+    "lighting": {
+      "type": "object"
+    },
+    "animation": {
+      "type": "object"
+    },
+    "contact_events": {
+      "type": "array"
+    },
+    "vfx": {
+      "type": "array"
+    },
+    "sfx_cues": {
+      "type": "array"
+    },
+    "music_cues": {
+      "type": "array"
+    },
+    "text_policy": {
+      "enum": [
+        "none",
+        "requested",
+        "labels_only"
+      ]
+    },
+    "expected_duration_s": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "render_backend": {
+      "enum": [
+        "blender",
+        "web",
+        "map",
+        "comfyui"
+      ]
+    },
+    "qa_gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

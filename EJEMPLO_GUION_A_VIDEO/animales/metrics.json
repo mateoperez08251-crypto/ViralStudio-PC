@@ -1,0 +1,323 @@
+{
+ "script": "En la sabana africana, un elefante camina despacio. De pronto, un león ruge y el elefante corre. Mientras tanto, en el mar, un pulpo nada tranquilo: tiene 3 corazones. En la granja, la vaca Lola mira al granjero. Y en la plaza, una paloma vuela asustada porque un perro corre hacia ella.",
+ "duration_s": 18.627333,
+ "tts_engine": "kokoro",
+ "seconds": {
+  "story": 0.0,
+  "voice": 20.7,
+  "narration": 0.5,
+  "plan": 0.0,
+  "music": 0.0,
+  "build": 1.5,
+  "render": 115.7,
+  "qa": 14.2
+ },
+ "total_s": 154.0,
+ "qa_status": "PASS",
+ "qa": [
+  {
+   "check": "pistas",
+   "status": "PASS",
+   "detail": "video=sí audio=sí"
+  },
+  {
+   "check": "resolución",
+   "status": "PASS",
+   "detail": "1080×1920 (esperado 1080×1920)"
+  },
+  {
+   "check": "fps",
+   "status": "PASS",
+   "detail": "30.00 fps (esperado 30)"
+  },
+  {
+   "check": "códec",
+   "status": "PASS",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "check": "duración",
+   "status": "PASS",
+   "detail": "18.63s vs línea de tiempo 18.63s"
+  },
+  {
+   "check": "sincronía A/V",
+   "status": "PASS",
+   "detail": "video 18.63s · audio 18.63s"
+  },
+  {
+   "check": "cuadros negros",
+   "status": "PASS",
+   "detail": "ninguno"
+  },
+  {
+   "check": "imagen congelada",
+   "status": "PASS",
+   "detail": "ninguna"
+  },
+  {
+   "check": "sonoridad",
+   "status": "INFO",
+   "detail": "-17.2 LUFS · pico -1.5 dBTP (objetivo −14 LUFS, ≤ −1 dBTP) · el modo audio conserva el nivel original salvo que actives la normalización"
+  },
+  {
+   "check": "subtítulos",
+   "status": "PASS",
+   "detail": "10 grupos sincronizados"
+  },
+  {
+   "check": "frames de video",
+   "status": "PASS",
+   "detail": "559 frames (esperados 559 = ceil(18.627s × 30))"
+  },
+  {
+   "check": "duración del audio",
+   "status": "PASS",
+   "detail": "audio del MP4 18.633s vs narración 18.627s (Δ +5.7 ms; tolerancia 1 frame + relleno AAC)"
+  },
+  {
+   "check": "video cubre todo el audio",
+   "status": "PASS",
+   "detail": "video 18.633s ≥ audio 18.627s − 1 frame"
+  },
+  {
+   "check": "continuidad de la narración (voz del guion)",
+   "status": "PASS",
+   "detail": "0.5s: lag 0.0 ms, r=1.0 · 7.81s: lag 0.0 ms, r=1.0 · 15.33s: lag 0.0 ms, r=1.0 · deriva 0.00 ms (sin cortes, sin cambio de velocidad)",
+   "windows": [
+    {
+     "at_s": 0.5,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 7.81,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 15.33,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    }
+   ]
+  },
+  {
+   "check": "partición de escenas",
+   "status": "PASS",
+   "detail": "5 escenas contiguas 0→559 frames, sin huecos ni solapes"
+  },
+  {
+   "check": "narración = guion",
+   "status": "PASS",
+   "detail": "voz kokoro del guion · 52 palabras con tiempo, idénticas al guion"
+  },
+  {
+   "check": "transcripción",
+   "status": "PASS",
+   "detail": "52 palabras · 0 marcadas para revisar · fuente script_tts"
+  },
+  {
+   "check": "assets",
+   "status": "PASS",
+   "detail": "12 assets registrados con licencia"
+  },
+  {
+   "check": "zonas seguras (textos dentro del cuadro)",
+   "status": "PASS",
+   "detail": "16 instantes revisados: subtítulos e infografías dentro del cuadro",
+   "problems": []
+  },
+  {
+   "check": "escenas visibles (no negras)",
+   "status": "PASS",
+   "detail": "todas con imagen"
+  },
+  {
+   "check": "animación visible",
+   "status": "PASS",
+   "detail": "personajes/cámara en movimiento en todas las escenas con personajes",
+   "frames": [
+    "qa_frames/sc001_ini.png",
+    "qa_frames/sc001_mid.png",
+    "qa_frames/sc001_fin.png",
+    "qa_frames/sc002_ini.png",
+    "qa_frames/sc002_mid.png",
+    "qa_frames/sc002_fin.png",
+    "qa_frames/sc003_ini.png",
+    "qa_frames/sc003_mid.png",
+    "qa_frames/sc003_fin.png",
+    "qa_frames/sc004_ini.png",
+    "qa_frames/sc004_mid.png",
+    "qa_frames/sc004_fin.png",
+    "qa_frames/sc005_ini.png",
+    "qa_frames/sc005_mid.png",
+    "qa_frames/sc005_fin.png"
+   ]
+  }
+ ],
+ "bible": [
+  {
+   "id": "elephant_01",
+   "asset_id": "sp_elephant_v1",
+   "variant": "default",
+   "name": "elefante",
+   "first_word": "elefante",
+   "description": "Elefante",
+   "locked": false
+  },
+  {
+   "id": "lion_01",
+   "asset_id": "sp_lion_v1",
+   "variant": "default",
+   "name": "león",
+   "first_word": "león",
+   "description": "León",
+   "locked": false
+  },
+  {
+   "id": "octopus_01",
+   "asset_id": "sp_octopus_v1",
+   "variant": "default",
+   "name": "pulpo",
+   "first_word": "pulpo",
+   "description": "Pulpo",
+   "locked": false
+  },
+  {
+   "id": "cow_01",
+   "asset_id": "sp_cow_v1",
+   "variant": "default",
+   "name": "Lola",
+   "first_word": "vaca",
+   "description": "Vaca",
+   "locked": false,
+   "aliases": [
+    "lola"
+   ]
+  },
+  {
+   "id": "farmer_01",
+   "asset_id": "person_rig_v1",
+   "variant": "man",
+   "name": "granjero",
+   "first_word": "granjero.",
+   "description": "Persona articulada",
+   "locked": false,
+   "colors": {
+    "skin": "#f5d2b5",
+    "hairColor": "#1f1a17"
+   },
+   "role": "farmer",
+   "look": {
+    "hat": "straw",
+    "shirt": "#c8322a",
+    "pants": "#3a5a8a"
+   }
+  },
+  {
+   "id": "pigeon_01",
+   "asset_id": "pigeon_rig_v1",
+   "variant": "default",
+   "name": "paloma",
+   "first_word": "paloma",
+   "description": "Paloma ilustrada",
+   "locked": false
+  },
+  {
+   "id": "dog_01",
+   "asset_id": "sp_dog_v1",
+   "variant": "default",
+   "name": "perro",
+   "first_word": "perro",
+   "description": "Perro",
+   "locked": false
+  }
+ ],
+ "scenes": [
+  {
+   "id": "sc001",
+   "start_s": 0.0,
+   "end_s": 3.666667,
+   "background": "savanna_01",
+   "characters": [
+    {
+     "id": "elephant_01",
+     "action": "walk"
+    }
+   ],
+   "overlays": [],
+   "text": "En la sabana africana, un elefante camina despacio."
+  },
+  {
+   "id": "sc002",
+   "start_s": 3.666667,
+   "end_s": 6.666667,
+   "background": "savanna_01",
+   "characters": [
+    {
+     "id": "lion_01",
+     "action": "idle"
+    },
+    {
+     "id": "elephant_01",
+     "action": "run"
+    }
+   ],
+   "overlays": [],
+   "text": "De pronto, un león ruge y el elefante corre."
+  },
+  {
+   "id": "sc003",
+   "start_s": 6.666667,
+   "end_s": 11.1,
+   "background": "ocean_under_01",
+   "characters": [
+    {
+     "id": "octopus_01",
+     "action": "idle"
+    }
+   ],
+   "overlays": [
+    "counter_badge"
+   ],
+   "text": "Mientras tanto, en el mar, un pulpo nada tranquilo: tiene 3 corazones."
+  },
+  {
+   "id": "sc004",
+   "start_s": 11.1,
+   "end_s": 13.933333,
+   "background": "farm_01",
+   "characters": [
+    {
+     "id": "cow_01",
+     "action": "idle"
+    },
+    {
+     "id": "farmer_01",
+     "action": "idle"
+    }
+   ],
+   "overlays": [],
+   "text": "En la granja, la vaca Lola mira al granjero."
+  },
+  {
+   "id": "sc005",
+   "start_s": 13.933333,
+   "end_s": 18.627333,
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "fly"
+    },
+    {
+     "id": "dog_01",
+     "action": "run"
+    }
+   ],
+   "overlays": [],
+   "text": "Y en la plaza, una paloma vuela asustada porque un perro corre hacia ella."
+  }
+ ]
+}

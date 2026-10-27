@@ -1,0 +1,192 @@
+{
+ "schema_version": 1,
+ "assets": [
+  {
+   "asset_id": "bench_v1",
+   "kind": "props",
+   "name": "Banco de plaza",
+   "version": 1,
+   "hash": "21fa5b689d9a27b9",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc002"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "camera_v1",
+   "kind": "props",
+   "name": "Cámara",
+   "version": 1,
+   "hash": "974d77e62c96cf21",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "counter_badge",
+   "kind": "infographics",
+   "name": "Contador con unidad",
+   "version": 1,
+   "hash": "1b1fcd046acc81ae",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "guide_line",
+   "kind": "infographics",
+   "name": "Línea guía vertical (posición fija)",
+   "version": 1,
+   "hash": "3e805268b68f9426",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc003",
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "person_rig_v1",
+   "kind": "characters",
+   "name": "Persona articulada",
+   "version": 1,
+   "hash": "7f9ee90d43946567",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "torso",
+    "neck",
+    "head",
+    "hair",
+    "eye_L",
+    "eye_R",
+    "lid_L",
+    "lid_R",
+    "brow_L",
+    "brow_R",
+    "mouth",
+    "upper_arm_L",
+    "fore_arm_L",
+    "hand_L",
+    "upper_arm_R",
+    "fore_arm_R",
+    "hand_R",
+    "thigh_L",
+    "shin_L",
+    "shoe_L",
+    "thigh_R",
+    "shin_R",
+    "shoe_R"
+   ],
+   "scenes": [
+    "sc002",
+    "sc004",
+    "sc005",
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "pigeon_rig_v1",
+   "kind": "characters",
+   "name": "Paloma ilustrada",
+   "version": 1,
+   "hash": "b1c54ffb570ecbd5",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "body",
+    "wing",
+    "tail",
+    "neck",
+    "head",
+    "eye",
+    "eyelid",
+    "beak",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+   ],
+   "scenes": [
+    "sc001",
+    "sc002",
+    "sc003",
+    "sc004",
+    "sc005",
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "plaza_layered_v1",
+   "kind": "backgrounds",
+   "name": "Plaza al atardecer (capas)",
+   "version": 1,
+   "hash": "5af310db13fb4887",
+   "engine_file": "61_vector_world.js",
+   "parts": null,
+   "scenes": [
+    "sc001",
+    "sc002",
+    "sc003",
+    "sc004",
+    "sc005",
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  }
+ ],
+ "missing": []
+}

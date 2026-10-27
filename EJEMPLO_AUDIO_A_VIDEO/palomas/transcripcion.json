@@ -1,0 +1,551 @@
+{
+ "schema_version": 1,
+ "source": "asr",
+ "language": "es",
+ "language_probability": 0.993,
+ "engine": "faster-whisper",
+ "model": "small",
+ "device": "cpu",
+ "alignment": {
+  "method": "faster-whisper",
+  "note": "WhisperX no está instalado: se usan los tiempos de faster-whisper"
+ },
+ "diarization": {
+  "method": "single",
+  "speakers": [
+   "narrador"
+  ],
+  "note": "narrador único"
+ },
+ "duration_s": 22.996,
+ "text": "¿Por qué las palomas mueven la cabeza al caminar? Mira esta paloma en la plaza. Un niño la observa desde un banco sorprendido. Su cuerpo avanza, pero la cabeza se queda quieta en el aire. Luego da un salto rápido hacia adelante. Lo hace unas 15 veces por segundo. Así ve el mundo nítido como una cámara estable.",
+ "words": [
+  {
+   "id": "w0001",
+   "text": "¿Por",
+   "start_s": 0.0,
+   "end_s": 0.48,
+   "confidence": 0.675,
+   "needs_review": false
+  },
+  {
+   "id": "w0002",
+   "text": "qué",
+   "start_s": 0.48,
+   "end_s": 0.62,
+   "confidence": 0.965,
+   "needs_review": false
+  },
+  {
+   "id": "w0003",
+   "text": "las",
+   "start_s": 0.62,
+   "end_s": 0.8,
+   "confidence": 0.99,
+   "needs_review": false
+  },
+  {
+   "id": "w0004",
+   "text": "palomas",
+   "start_s": 0.8,
+   "end_s": 1.22,
+   "confidence": 0.99,
+   "needs_review": false
+  },
+  {
+   "id": "w0005",
+   "text": "mueven",
+   "start_s": 1.22,
+   "end_s": 1.76,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0006",
+   "text": "la",
+   "start_s": 1.76,
+   "end_s": 1.92,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0007",
+   "text": "cabeza",
+   "start_s": 1.92,
+   "end_s": 2.32,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0008",
+   "text": "al",
+   "start_s": 2.32,
+   "end_s": 2.52,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0009",
+   "text": "caminar?",
+   "start_s": 2.52,
+   "end_s": 2.98,
+   "confidence": 0.99,
+   "needs_review": false
+  },
+  {
+   "id": "w0010",
+   "text": "Mira",
+   "start_s": 3.54,
+   "end_s": 3.74,
+   "confidence": 0.73,
+   "needs_review": false
+  },
+  {
+   "id": "w0011",
+   "text": "esta",
+   "start_s": 3.74,
+   "end_s": 4.12,
+   "confidence": 0.536,
+   "needs_review": false
+  },
+  {
+   "id": "w0012",
+   "text": "paloma",
+   "start_s": 4.12,
+   "end_s": 4.62,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0013",
+   "text": "en",
+   "start_s": 4.62,
+   "end_s": 4.8,
+   "confidence": 0.993,
+   "needs_review": false
+  },
+  {
+   "id": "w0014",
+   "text": "la",
+   "start_s": 4.8,
+   "end_s": 4.92,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0015",
+   "text": "plaza.",
+   "start_s": 4.92,
+   "end_s": 5.34,
+   "confidence": 0.975,
+   "needs_review": false
+  },
+  {
+   "id": "w0016",
+   "text": "Un",
+   "start_s": 5.8,
+   "end_s": 5.98,
+   "confidence": 0.989,
+   "needs_review": false
+  },
+  {
+   "id": "w0017",
+   "text": "niño",
+   "start_s": 5.98,
+   "end_s": 6.2,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0018",
+   "text": "la",
+   "start_s": 6.2,
+   "end_s": 6.38,
+   "confidence": 0.987,
+   "needs_review": false
+  },
+  {
+   "id": "w0019",
+   "text": "observa",
+   "start_s": 6.38,
+   "end_s": 6.94,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0020",
+   "text": "desde",
+   "start_s": 6.94,
+   "end_s": 7.08,
+   "confidence": 0.992,
+   "needs_review": false
+  },
+  {
+   "id": "w0021",
+   "text": "un",
+   "start_s": 7.08,
+   "end_s": 7.32,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0022",
+   "text": "banco",
+   "start_s": 7.32,
+   "end_s": 7.72,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0023",
+   "text": "sorprendido.",
+   "start_s": 7.72,
+   "end_s": 8.54,
+   "confidence": 0.992,
+   "needs_review": false
+  },
+  {
+   "id": "w0024",
+   "text": "Su",
+   "start_s": 9.04,
+   "end_s": 9.16,
+   "confidence": 0.975,
+   "needs_review": false
+  },
+  {
+   "id": "w0025",
+   "text": "cuerpo",
+   "start_s": 9.16,
+   "end_s": 9.44,
+   "confidence": 1.0,
+   "needs_review": false
+  },
+  {
+   "id": "w0026",
+   "text": "avanza,",
+   "start_s": 9.44,
+   "end_s": 9.96,
+   "confidence": 0.982,
+   "needs_review": false
+  },
+  {
+   "id": "w0027",
+   "text": "pero",
+   "start_s": 10.28,
+   "end_s": 10.34,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0028",
+   "text": "la",
+   "start_s": 10.34,
+   "end_s": 10.48,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0029",
+   "text": "cabeza",
+   "start_s": 10.48,
+   "end_s": 10.84,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0030",
+   "text": "se",
+   "start_s": 10.84,
+   "end_s": 11.08,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0031",
+   "text": "queda",
+   "start_s": 11.08,
+   "end_s": 11.32,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0032",
+   "text": "quieta",
+   "start_s": 11.32,
+   "end_s": 11.76,
+   "confidence": 0.992,
+   "needs_review": false
+  },
+  {
+   "id": "w0033",
+   "text": "en",
+   "start_s": 11.76,
+   "end_s": 11.88,
+   "confidence": 0.994,
+   "needs_review": false
+  },
+  {
+   "id": "w0034",
+   "text": "el",
+   "start_s": 11.88,
+   "end_s": 12.02,
+   "confidence": 1.0,
+   "needs_review": false
+  },
+  {
+   "id": "w0035",
+   "text": "aire.",
+   "start_s": 12.02,
+   "end_s": 12.28,
+   "confidence": 1.0,
+   "needs_review": false
+  },
+  {
+   "id": "w0036",
+   "text": "Luego",
+   "start_s": 14.01,
+   "end_s": 14.27,
+   "confidence": 0.993,
+   "needs_review": false
+  },
+  {
+   "id": "w0037",
+   "text": "da",
+   "start_s": 14.27,
+   "end_s": 14.57,
+   "confidence": 0.831,
+   "needs_review": false
+  },
+  {
+   "id": "w0038",
+   "text": "un",
+   "start_s": 14.57,
+   "end_s": 14.71,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0039",
+   "text": "salto",
+   "start_s": 14.71,
+   "end_s": 15.13,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0040",
+   "text": "rápido",
+   "start_s": 15.13,
+   "end_s": 15.49,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0041",
+   "text": "hacia",
+   "start_s": 15.49,
+   "end_s": 15.79,
+   "confidence": 0.991,
+   "needs_review": false
+  },
+  {
+   "id": "w0042",
+   "text": "adelante.",
+   "start_s": 15.79,
+   "end_s": 16.27,
+   "confidence": 0.739,
+   "needs_review": false
+  },
+  {
+   "id": "w0043",
+   "text": "Lo",
+   "start_s": 16.87,
+   "end_s": 16.97,
+   "confidence": 0.987,
+   "needs_review": false
+  },
+  {
+   "id": "w0044",
+   "text": "hace",
+   "start_s": 16.97,
+   "end_s": 17.21,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0045",
+   "text": "unas",
+   "start_s": 17.21,
+   "end_s": 17.47,
+   "confidence": 0.982,
+   "needs_review": false
+  },
+  {
+   "id": "w0046",
+   "text": "15",
+   "start_s": 17.47,
+   "end_s": 17.81,
+   "confidence": 0.914,
+   "needs_review": false
+  },
+  {
+   "id": "w0047",
+   "text": "veces",
+   "start_s": 17.81,
+   "end_s": 18.19,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0048",
+   "text": "por",
+   "start_s": 18.19,
+   "end_s": 18.57,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0049",
+   "text": "segundo.",
+   "start_s": 18.57,
+   "end_s": 19.03,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0050",
+   "text": "Así",
+   "start_s": 19.57,
+   "end_s": 19.79,
+   "confidence": 0.988,
+   "needs_review": false
+  },
+  {
+   "id": "w0051",
+   "text": "ve",
+   "start_s": 19.79,
+   "end_s": 20.01,
+   "confidence": 0.949,
+   "needs_review": false
+  },
+  {
+   "id": "w0052",
+   "text": "el",
+   "start_s": 20.01,
+   "end_s": 20.15,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0053",
+   "text": "mundo",
+   "start_s": 20.15,
+   "end_s": 20.33,
+   "confidence": 0.987,
+   "needs_review": false
+  },
+  {
+   "id": "w0054",
+   "text": "nítido",
+   "start_s": 20.33,
+   "end_s": 20.89,
+   "confidence": 0.964,
+   "needs_review": false
+  },
+  {
+   "id": "w0055",
+   "text": "como",
+   "start_s": 20.89,
+   "end_s": 21.23,
+   "confidence": 0.923,
+   "needs_review": false
+  },
+  {
+   "id": "w0056",
+   "text": "una",
+   "start_s": 21.23,
+   "end_s": 21.43,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0057",
+   "text": "cámara",
+   "start_s": 21.43,
+   "end_s": 21.77,
+   "confidence": 0.991,
+   "needs_review": false
+  },
+  {
+   "id": "w0058",
+   "text": "estable.",
+   "start_s": 21.77,
+   "end_s": 22.19,
+   "confidence": 0.974,
+   "needs_review": false
+  }
+ ],
+ "segments": [
+  {
+   "start_s": 0.0,
+   "end_s": 2.98,
+   "text": "¿Por qué las palomas mueven la cabeza al caminar?",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 9
+  },
+  {
+   "start_s": 3.54,
+   "end_s": 5.34,
+   "text": "Mira esta paloma en la plaza.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 6
+  },
+  {
+   "start_s": 5.8,
+   "end_s": 8.54,
+   "text": "Un niño la observa desde un banco sorprendido.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 8
+  },
+  {
+   "start_s": 9.04,
+   "end_s": 12.28,
+   "text": "Su cuerpo avanza, pero la cabeza se queda quieta en el aire.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 12
+  },
+  {
+   "start_s": 14.01,
+   "end_s": 16.27,
+   "text": "Luego da un salto rápido hacia adelante.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 7
+  },
+  {
+   "start_s": 16.87,
+   "end_s": 19.03,
+   "text": "Lo hace unas 15 veces por segundo.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 7
+  },
+  {
+   "start_s": 19.57,
+   "end_s": 22.19,
+   "text": "Así ve el mundo nítido como una cámara estable.",
+   "avg_logprob": -0.157,
+   "no_speech_prob": 0.032,
+   "n_words": 9
+  }
+ ],
+ "review_count": 0,
+ "needs_review": false,
+ "no_speech": false,
+ "audio_sha256": "296fe24d6e4900771e0ac21c34eb21ba0da8f11edfcdea1870e9c16be10cb759",
+ "seconds": 9.7
+}

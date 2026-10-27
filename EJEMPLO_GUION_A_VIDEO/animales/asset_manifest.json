@@ -1,0 +1,379 @@
+{
+ "schema_version": 1,
+ "assets": [
+  {
+   "asset_id": "counter_badge",
+   "kind": "infographics",
+   "name": "Contador con unidad",
+   "version": 1,
+   "hash": "1b1fcd046acc81ae",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc003"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "farm_v1",
+   "kind": "backgrounds",
+   "name": "Granja",
+   "version": 1,
+   "hash": "78dfec694127d77c",
+   "engine_file": "64_vector_worlds2.js",
+   "parts": null,
+   "scenes": [
+    "sc004"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "ocean_under_v1",
+   "kind": "backgrounds",
+   "name": "Fondo marino",
+   "version": 1,
+   "hash": "c28c6372c22eb0a1",
+   "engine_file": "64_vector_worlds2.js",
+   "parts": null,
+   "scenes": [
+    "sc003"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "person_rig_v1",
+   "kind": "characters",
+   "name": "Persona articulada",
+   "version": 1,
+   "hash": "e75237515c4aed95",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "torso",
+    "neck",
+    "head",
+    "hair",
+    "eye_L",
+    "eye_R",
+    "lid_L",
+    "lid_R",
+    "brow_L",
+    "brow_R",
+    "mouth",
+    "upper_arm_L",
+    "fore_arm_L",
+    "hand_L",
+    "upper_arm_R",
+    "fore_arm_R",
+    "hand_R",
+    "thigh_L",
+    "shin_L",
+    "shoe_L",
+    "thigh_R",
+    "shin_R",
+    "shoe_R"
+   ],
+   "scenes": [
+    "sc004"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "pigeon_rig_v1",
+   "kind": "characters",
+   "name": "Paloma ilustrada",
+   "version": 1,
+   "hash": "d0ed8f96a62d07ad",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "body",
+    "wing",
+    "tail",
+    "neck",
+    "head",
+    "eye",
+    "eyelid",
+    "beak",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+   ],
+   "scenes": [
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "plaza_layered_v1",
+   "kind": "backgrounds",
+   "name": "Plaza al atardecer (capas)",
+   "version": 1,
+   "hash": "5af310db13fb4887",
+   "engine_file": "61_vector_world.js",
+   "parts": null,
+   "scenes": [
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "savanna_v1",
+   "kind": "backgrounds",
+   "name": "Sabana africana",
+   "version": 1,
+   "hash": "298537f648d36d4e",
+   "engine_file": "64_vector_worlds2.js",
+   "parts": null,
+   "scenes": [
+    "sc001",
+    "sc002"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sp_cow_v1",
+   "kind": "characters",
+   "name": "Vaca",
+   "version": 1,
+   "hash": "c292ca256312e8f0",
+   "engine_file": "63_vector_creatures.js",
+   "parts": [
+    "body",
+    "neck",
+    "head",
+    "jaw",
+    "eye",
+    "ear_F",
+    "ear_B",
+    "tail_1",
+    "tail_2",
+    "tail_3",
+    "leg_FL",
+    "leg_FL_k",
+    "leg_FR",
+    "leg_FR_k",
+    "leg_BL",
+    "leg_BL_k",
+    "leg_BR",
+    "leg_BR_k"
+   ],
+   "scenes": [
+    "sc004"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sp_dog_v1",
+   "kind": "characters",
+   "name": "Perro",
+   "version": 1,
+   "hash": "fc130c4852b25568",
+   "engine_file": "63_vector_creatures.js",
+   "parts": [
+    "body",
+    "neck",
+    "head",
+    "jaw",
+    "eye",
+    "ear_F",
+    "ear_B",
+    "tail_1",
+    "tail_2",
+    "tail_3",
+    "leg_FL",
+    "leg_FL_k",
+    "leg_FR",
+    "leg_FR_k",
+    "leg_BL",
+    "leg_BL_k",
+    "leg_BR",
+    "leg_BR_k"
+   ],
+   "scenes": [
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sp_elephant_v1",
+   "kind": "characters",
+   "name": "Elefante",
+   "version": 1,
+   "hash": "21d2cff06bfd5689",
+   "engine_file": "63_vector_creatures.js",
+   "parts": [
+    "body",
+    "neck",
+    "head",
+    "jaw",
+    "eye",
+    "ear_F",
+    "ear_B",
+    "tail_1",
+    "tail_2",
+    "tail_3",
+    "leg_FL",
+    "leg_FL_k",
+    "leg_FR",
+    "leg_FR_k",
+    "leg_BL",
+    "leg_BL_k",
+    "leg_BR",
+    "leg_BR_k"
+   ],
+   "scenes": [
+    "sc001",
+    "sc002"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sp_lion_v1",
+   "kind": "characters",
+   "name": "León",
+   "version": 1,
+   "hash": "607f8c827f4807e2",
+   "engine_file": "63_vector_creatures.js",
+   "parts": [
+    "body",
+    "neck",
+    "head",
+    "jaw",
+    "eye",
+    "ear_F",
+    "ear_B",
+    "tail_1",
+    "tail_2",
+    "tail_3",
+    "leg_FL",
+    "leg_FL_k",
+    "leg_FR",
+    "leg_FR_k",
+    "leg_BL",
+    "leg_BL_k",
+    "leg_BR",
+    "leg_BR_k"
+   ],
+   "scenes": [
+    "sc002"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sp_octopus_v1",
+   "kind": "characters",
+   "name": "Pulpo",
+   "version": 1,
+   "hash": "8b9bd214c27db641",
+   "engine_file": "63_vector_creatures.js",
+   "parts": [
+    "mantle",
+    "eye_L",
+    "eye_R",
+    "arm_0_0",
+    "arm_0_1",
+    "arm_0_2",
+    "arm_1_0",
+    "arm_1_1",
+    "arm_1_2",
+    "arm_2_0",
+    "arm_2_1",
+    "arm_2_2",
+    "arm_3_0",
+    "arm_3_1",
+    "arm_3_2",
+    "arm_4_0",
+    "arm_4_1",
+    "arm_4_2",
+    "arm_5_0",
+    "arm_5_1",
+    "arm_5_2",
+    "arm_6_0",
+    "arm_6_1",
+    "arm_6_2",
+    "arm_7_0",
+    "arm_7_1",
+    "arm_7_2"
+   ],
+   "scenes": [
+    "sc003"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  }
+ ],
+ "missing": []
+}

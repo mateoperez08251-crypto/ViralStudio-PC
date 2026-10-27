@@ -1,0 +1,3561 @@
+{
+ "schema_version": 1,
+ "note": "Catálogo de especies → rig paramétrico del motor vectorial (engine/63_vector_creatures.js). size = fracción de min(ancho, alto) que ocupa el animal (de alto; de ancho si es alargado). env = escenario por defecto.",
+ "species": [
+  {
+   "id": "dog",
+   "rig": "quadruped",
+   "name": "Perro",
+   "keywords_es": [
+    "perro",
+    "perros",
+    "perra",
+    "perras",
+    "perrito",
+    "perritos",
+    "perrita",
+    "cachorro",
+    "cachorros",
+    "cachorrito"
+   ],
+   "keywords_en": [
+    "dog",
+    "dogs",
+    "puppy",
+    "puppies"
+   ],
+   "env": "park",
+   "size": 0.36,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 120,
+    "legL": 130,
+    "legW": 30,
+    "neckL": 60,
+    "neckA": 0.75,
+    "neckW": 64,
+    "headR": 52,
+    "snout": 46,
+    "ears": "floppy",
+    "tail": "up",
+    "tailL": 100,
+    "tailW": 14,
+    "body": "#c88a4a",
+    "earC": "#8a5a2e",
+    "muzzle": "#e9c49a"
+   }
+  },
+  {
+   "id": "wolf",
+   "rig": "quadruped",
+   "name": "Lobo",
+   "keywords_es": [
+    "lobo",
+    "lobos",
+    "loba"
+   ],
+   "keywords_en": [
+    "wolf",
+    "wolves"
+   ],
+   "env": "forest",
+   "size": 0.4,
+   "params": {
+    "bodyL": 330,
+    "bodyH": 125,
+    "legL": 150,
+    "legW": 30,
+    "neckL": 60,
+    "neckA": 0.6,
+    "neckW": 70,
+    "headR": 52,
+    "snout": 58,
+    "ears": "pointy",
+    "tail": "bushy",
+    "tailL": 130,
+    "tailW": 16,
+    "body": "#8b8f99",
+    "belly": "#d9dbe0",
+    "muzzle": "#cfd2d8"
+   }
+  },
+  {
+   "id": "fox",
+   "rig": "quadruped",
+   "name": "Zorro",
+   "keywords_es": [
+    "zorro",
+    "zorros",
+    "zorra",
+    "zorrito"
+   ],
+   "keywords_en": [
+    "fox",
+    "foxes"
+   ],
+   "env": "forest",
+   "size": 0.32,
+   "params": {
+    "bodyL": 280,
+    "bodyH": 100,
+    "legL": 110,
+    "legW": 24,
+    "neckL": 50,
+    "neckA": 0.6,
+    "neckW": 56,
+    "headR": 46,
+    "snout": 56,
+    "ears": "pointy",
+    "earS": 1.2,
+    "tail": "bushy",
+    "tailL": 150,
+    "tailW": 18,
+    "body": "#e07a2c",
+    "belly": "#f6efe6",
+    "tailTip": "#ffffff",
+    "legC": "#3a2a22",
+    "muzzle": "#fbf3ea"
+   }
+  },
+  {
+   "id": "cat_big",
+   "rig": "quadruped",
+   "name": "Gatito",
+   "keywords_es": [
+    "minino",
+    "michi",
+    "michis",
+    "gatita",
+    "gatitas"
+   ],
+   "keywords_en": [
+    "kitty"
+   ],
+   "env": "home",
+   "size": 0.3,
+   "params": {
+    "bodyL": 260,
+    "bodyH": 100,
+    "legL": 105,
+    "legW": 24,
+    "neckL": 40,
+    "neckA": 0.7,
+    "neckW": 56,
+    "headR": 50,
+    "snout": 18,
+    "ears": "pointy",
+    "tail": "up",
+    "tailL": 130,
+    "tailW": 12,
+    "body": "#9a9aa6",
+    "pattern": "stripes",
+    "whiskers": true,
+    "eyeS": 1.2,
+    "eyeC": "#3e8f3a"
+   }
+  },
+  {
+   "id": "lion",
+   "rig": "quadruped",
+   "name": "León",
+   "keywords_es": [
+    "leon",
+    "leones",
+    "leona",
+    "leonas",
+    "leoncito"
+   ],
+   "keywords_en": [
+    "lion",
+    "lions",
+    "lioness"
+   ],
+   "env": "savanna",
+   "size": 0.42,
+   "params": {
+    "bodyL": 340,
+    "bodyH": 135,
+    "legL": 140,
+    "legW": 36,
+    "neckL": 40,
+    "neckA": 0.6,
+    "neckW": 80,
+    "headR": 58,
+    "snout": 40,
+    "ears": "round",
+    "tail": "tuft",
+    "tailL": 150,
+    "tailW": 10,
+    "body": "#d9a35a",
+    "mane": "lion",
+    "maneC": "#8f4f1c",
+    "dark": "#5a3214",
+    "whiskers": true
+   }
+  },
+  {
+   "id": "tiger",
+   "rig": "quadruped",
+   "name": "Tigre",
+   "keywords_es": [
+    "tigre",
+    "tigres",
+    "tigresa"
+   ],
+   "keywords_en": [
+    "tiger",
+    "tigers"
+   ],
+   "env": "jungle",
+   "size": 0.42,
+   "params": {
+    "bodyL": 350,
+    "bodyH": 125,
+    "legL": 135,
+    "legW": 36,
+    "neckL": 40,
+    "neckA": 0.55,
+    "neckW": 78,
+    "headR": 56,
+    "snout": 36,
+    "ears": "round",
+    "tail": "thin",
+    "tailL": 160,
+    "tailW": 14,
+    "body": "#ec8a2a",
+    "belly": "#fbf0de",
+    "dark": "#1f1612",
+    "pattern": "stripes",
+    "whiskers": true
+   }
+  },
+  {
+   "id": "leopard",
+   "rig": "quadruped",
+   "name": "Leopardo",
+   "keywords_es": [
+    "leopardo",
+    "leopardos",
+    "jaguar",
+    "jaguares",
+    "pantera",
+    "panteras",
+    "guepardo",
+    "guepardos",
+    "chita"
+   ],
+   "keywords_en": [
+    "leopard",
+    "jaguar",
+    "cheetah",
+    "panther"
+   ],
+   "env": "savanna",
+   "size": 0.4,
+   "params": {
+    "bodyL": 340,
+    "bodyH": 110,
+    "legL": 145,
+    "legW": 30,
+    "neckL": 45,
+    "neckA": 0.55,
+    "neckW": 66,
+    "headR": 48,
+    "snout": 34,
+    "ears": "round",
+    "tail": "thin",
+    "tailL": 170,
+    "tailW": 12,
+    "body": "#e2b05a",
+    "belly": "#f8ecd4",
+    "dark": "#2a1c10",
+    "pattern": "rosettes",
+    "whiskers": true
+   }
+  },
+  {
+   "id": "bear",
+   "rig": "quadruped",
+   "name": "Oso",
+   "keywords_es": [
+    "oso",
+    "osos",
+    "osa",
+    "osito",
+    "ositos"
+   ],
+   "keywords_en": [
+    "bear",
+    "bears"
+   ],
+   "env": "forest",
+   "size": 0.44,
+   "params": {
+    "bodyL": 330,
+    "bodyH": 170,
+    "legL": 110,
+    "legW": 50,
+    "neckL": 30,
+    "neckA": 0.4,
+    "neckW": 100,
+    "headR": 64,
+    "snout": 40,
+    "ears": "round",
+    "tail": "short",
+    "tailW": 16,
+    "body": "#6a4428",
+    "muzzle": "#b98a5a"
+   }
+  },
+  {
+   "id": "polar_bear",
+   "rig": "quadruped",
+   "name": "Oso polar",
+   "keywords_es": [
+    "oso polar",
+    "osos polares"
+   ],
+   "keywords_en": [
+    "polar bear",
+    "polar bears"
+   ],
+   "env": "snow",
+   "size": 0.44,
+   "params": {
+    "bodyL": 340,
+    "bodyH": 165,
+    "legL": 115,
+    "legW": 50,
+    "neckL": 50,
+    "neckA": 0.35,
+    "neckW": 95,
+    "headR": 56,
+    "snout": 46,
+    "ears": "small",
+    "tail": "short",
+    "tailW": 14,
+    "body": "#f2f0ea",
+    "nose": "#1c1c1c",
+    "muzzle": "#ffffff"
+   }
+  },
+  {
+   "id": "panda",
+   "rig": "quadruped",
+   "name": "Panda",
+   "keywords_es": [
+    "panda",
+    "pandas"
+   ],
+   "keywords_en": [
+    "panda",
+    "pandas"
+   ],
+   "env": "forest",
+   "size": 0.4,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 160,
+    "legL": 100,
+    "legW": 48,
+    "neckL": 25,
+    "neckA": 0.4,
+    "neckW": 100,
+    "headR": 66,
+    "snout": 26,
+    "ears": "round",
+    "tail": "short",
+    "tailW": 14,
+    "body": "#f4f2ee",
+    "dark": "#1b1b1d",
+    "legC": "#1b1b1d",
+    "pattern": "panda",
+    "eyePatch": true,
+    "muzzle": "#ffffff"
+   }
+  },
+  {
+   "id": "koala",
+   "rig": "quadruped",
+   "name": "Koala",
+   "keywords_es": [
+    "koala",
+    "koalas"
+   ],
+   "keywords_en": [
+    "koala",
+    "koalas"
+   ],
+   "env": "forest",
+   "size": 0.3,
+   "params": {
+    "bodyL": 200,
+    "bodyH": 140,
+    "legL": 70,
+    "legW": 38,
+    "neckL": 10,
+    "neckA": 0.6,
+    "neckW": 90,
+    "headR": 64,
+    "snout": 8,
+    "ears": "round",
+    "earS": 1.4,
+    "tail": "none",
+    "body": "#9ea1a8",
+    "nose": "#2a2a2a"
+   }
+  },
+  {
+   "id": "horse",
+   "rig": "quadruped",
+   "name": "Caballo",
+   "keywords_es": [
+    "caballo",
+    "caballos",
+    "yegua",
+    "yeguas",
+    "potro",
+    "potros",
+    "poni",
+    "ponis"
+   ],
+   "keywords_en": [
+    "horse",
+    "horses",
+    "pony",
+    "foal"
+   ],
+   "env": "farm",
+   "size": 0.5,
+   "params": {
+    "bodyL": 340,
+    "bodyH": 135,
+    "legL": 210,
+    "legW": 30,
+    "neckL": 130,
+    "neckA": 0.95,
+    "neckW": 74,
+    "headR": 44,
+    "snout": 78,
+    "snoutH": 0.85,
+    "ears": "pointy",
+    "earS": 0.8,
+    "tail": "long",
+    "tailL": 150,
+    "tailW": 22,
+    "body": "#8a5530",
+    "mane": "horse",
+    "maneC": "#2b1a10",
+    "hooves": true
+   }
+  },
+  {
+   "id": "zebra",
+   "rig": "quadruped",
+   "name": "Cebra",
+   "keywords_es": [
+    "cebra",
+    "cebras"
+   ],
+   "keywords_en": [
+    "zebra",
+    "zebras"
+   ],
+   "env": "savanna",
+   "size": 0.5,
+   "params": {
+    "bodyL": 330,
+    "bodyH": 130,
+    "legL": 200,
+    "legW": 30,
+    "neckL": 120,
+    "neckA": 0.95,
+    "neckW": 74,
+    "headR": 44,
+    "snout": 74,
+    "snoutH": 0.85,
+    "ears": "pointy",
+    "earS": 0.9,
+    "tail": "tuft",
+    "tailL": 120,
+    "tailW": 10,
+    "body": "#f6f6f2",
+    "dark": "#161616",
+    "pattern": "stripes",
+    "mane": "short",
+    "maneC": "#161616",
+    "hooves": true,
+    "muzzle": "#3a3a3a"
+   }
+  },
+  {
+   "id": "donkey",
+   "rig": "quadruped",
+   "name": "Burro",
+   "keywords_es": [
+    "burro",
+    "burros",
+    "burra",
+    "asno",
+    "asnos",
+    "mula",
+    "mulas"
+   ],
+   "keywords_en": [
+    "donkey",
+    "donkeys",
+    "mule"
+   ],
+   "env": "farm",
+   "size": 0.42,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 125,
+    "legL": 170,
+    "legW": 28,
+    "neckL": 90,
+    "neckA": 0.8,
+    "neckW": 70,
+    "headR": 44,
+    "snout": 66,
+    "ears": "long",
+    "earS": 0.75,
+    "tail": "tuft",
+    "tailL": 110,
+    "tailW": 9,
+    "body": "#8d8d8f",
+    "belly": "#e4e4e4",
+    "hooves": true,
+    "muzzle": "#e8e8e8",
+    "mane": "short"
+   }
+  },
+  {
+   "id": "cow",
+   "rig": "quadruped",
+   "name": "Vaca",
+   "keywords_es": [
+    "vaca",
+    "vacas",
+    "toro",
+    "toros",
+    "buey",
+    "bueyes",
+    "ternero",
+    "terneros",
+    "ternera",
+    "becerro"
+   ],
+   "keywords_en": [
+    "cow",
+    "cows",
+    "bull",
+    "bulls",
+    "calf",
+    "cattle"
+   ],
+   "env": "farm",
+   "size": 0.46,
+   "params": {
+    "bodyL": 370,
+    "bodyH": 160,
+    "legL": 140,
+    "legW": 36,
+    "neckL": 40,
+    "neckA": 0.3,
+    "neckW": 90,
+    "headR": 52,
+    "snout": 48,
+    "snoutH": 0.9,
+    "ears": "side",
+    "horns": "short",
+    "tail": "tuft",
+    "tailL": 150,
+    "tailW": 8,
+    "body": "#f5f3ee",
+    "dark": "#26221f",
+    "pattern": "patches",
+    "hooves": true,
+    "muzzle": "#f0b3b8",
+    "nose": "#8a4a4f"
+   }
+  },
+  {
+   "id": "pig",
+   "rig": "quadruped",
+   "name": "Cerdo",
+   "keywords_es": [
+    "cerdo",
+    "cerdos",
+    "cerda",
+    "cerdito",
+    "cerditos",
+    "chancho",
+    "chanchos",
+    "puerco",
+    "puercos",
+    "marrano",
+    "cochino",
+    "jabali"
+   ],
+   "keywords_en": [
+    "pig",
+    "pigs",
+    "piglet",
+    "hog",
+    "boar"
+   ],
+   "env": "farm",
+   "size": 0.36,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 150,
+    "legL": 75,
+    "legW": 30,
+    "neckL": 10,
+    "neckA": 0.3,
+    "neckW": 100,
+    "headR": 60,
+    "snout": 26,
+    "ears": "pointy",
+    "earS": 0.8,
+    "tail": "curly",
+    "tailW": 8,
+    "body": "#f2a8b0",
+    "noseType": "pig",
+    "hooves": true,
+    "earIn": "#e57f8c"
+   }
+  },
+  {
+   "id": "sheep",
+   "rig": "quadruped",
+   "name": "Oveja",
+   "keywords_es": [
+    "oveja",
+    "ovejas",
+    "cordero",
+    "corderos",
+    "borrego",
+    "borregos",
+    "carnero"
+   ],
+   "keywords_en": [
+    "sheep",
+    "lamb",
+    "lambs",
+    "ram"
+   ],
+   "env": "farm",
+   "size": 0.36,
+   "params": {
+    "bodyL": 290,
+    "bodyH": 150,
+    "legL": 110,
+    "legW": 20,
+    "neckL": 30,
+    "neckA": 0.5,
+    "neckW": 70,
+    "headR": 44,
+    "snout": 40,
+    "ears": "side",
+    "tail": "short",
+    "tailW": 16,
+    "body": "#f6f2e6",
+    "wool": true,
+    "legC": "#2a2622",
+    "muzzle": "#3a3430",
+    "hooves": true
+   }
+  },
+  {
+   "id": "goat",
+   "rig": "quadruped",
+   "name": "Cabra",
+   "keywords_es": [
+    "cabra",
+    "cabras",
+    "chivo",
+    "chivos",
+    "cabrito"
+   ],
+   "keywords_en": [
+    "goat",
+    "goats"
+   ],
+   "env": "farm",
+   "size": 0.36,
+   "params": {
+    "bodyL": 280,
+    "bodyH": 115,
+    "legL": 140,
+    "legW": 24,
+    "neckL": 60,
+    "neckA": 0.8,
+    "neckW": 56,
+    "headR": 42,
+    "snout": 44,
+    "ears": "side",
+    "horns": "curved",
+    "hornC": "#bfae8e",
+    "tail": "short",
+    "tailW": 12,
+    "body": "#d8cfc0",
+    "beard": true,
+    "hooves": true
+   }
+  },
+  {
+   "id": "deer",
+   "rig": "quadruped",
+   "name": "Ciervo",
+   "keywords_es": [
+    "ciervo",
+    "ciervos",
+    "venado",
+    "venados",
+    "reno",
+    "renos",
+    "alce",
+    "alces",
+    "cervatillo",
+    "gacela",
+    "gacelas",
+    "antilope",
+    "antilopes"
+   ],
+   "keywords_en": [
+    "deer",
+    "reindeer",
+    "moose",
+    "elk",
+    "gazelle",
+    "antelope"
+   ],
+   "env": "forest",
+   "size": 0.48,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 115,
+    "legL": 190,
+    "legW": 22,
+    "neckL": 110,
+    "neckA": 1.0,
+    "neckW": 56,
+    "headR": 40,
+    "snout": 52,
+    "ears": "pointy",
+    "earS": 0.9,
+    "horns": "antlers",
+    "tail": "short",
+    "tailW": 14,
+    "tailTip": "#ffffff",
+    "body": "#a86a3c",
+    "belly": "#f0dcc0",
+    "hooves": true,
+    "pattern": "none"
+   }
+  },
+  {
+   "id": "giraffe",
+   "rig": "quadruped",
+   "name": "Jirafa",
+   "keywords_es": [
+    "jirafa",
+    "jirafas"
+   ],
+   "keywords_en": [
+    "giraffe",
+    "giraffes"
+   ],
+   "env": "savanna",
+   "size": 0.62,
+   "params": {
+    "bodyL": 270,
+    "bodyH": 125,
+    "legL": 250,
+    "legW": 24,
+    "neckL": 320,
+    "neckA": 1.15,
+    "neckW": 46,
+    "headR": 38,
+    "snout": 44,
+    "ears": "pointy",
+    "earS": 0.8,
+    "horns": "ossicones",
+    "tail": "tuft",
+    "tailL": 120,
+    "tailW": 8,
+    "body": "#f0c060",
+    "dark": "#a45a1c",
+    "pattern": "blocks",
+    "hooves": true,
+    "mane": "short",
+    "maneC": "#a45a1c"
+   }
+  },
+  {
+   "id": "elephant",
+   "rig": "quadruped",
+   "name": "Elefante",
+   "keywords_es": [
+    "elefante",
+    "elefantes",
+    "elefanta",
+    "mamut",
+    "mamuts"
+   ],
+   "keywords_en": [
+    "elephant",
+    "elephants",
+    "mammoth"
+   ],
+   "env": "savanna",
+   "size": 0.55,
+   "params": {
+    "bodyL": 380,
+    "bodyH": 220,
+    "legL": 150,
+    "legW": 70,
+    "neckL": 10,
+    "neckA": 0.3,
+    "neckW": 140,
+    "headR": 95,
+    "snout": 0,
+    "ears": "elephant",
+    "tail": "thin",
+    "tailL": 90,
+    "tailW": 8,
+    "trunk": true,
+    "tusks": true,
+    "body": "#9a9ca6",
+    "eyeS": 0.8,
+    "trunkL": 220
+   }
+  },
+  {
+   "id": "rhino",
+   "rig": "quadruped",
+   "name": "Rinoceronte",
+   "keywords_es": [
+    "rinoceronte",
+    "rinocerontes",
+    "rino"
+   ],
+   "keywords_en": [
+    "rhino",
+    "rhinoceros"
+   ],
+   "env": "savanna",
+   "size": 0.44,
+   "params": {
+    "bodyL": 380,
+    "bodyH": 180,
+    "legL": 100,
+    "legW": 56,
+    "neckL": 20,
+    "neckA": 0.2,
+    "neckW": 120,
+    "headR": 66,
+    "snout": 70,
+    "snoutH": 0.9,
+    "ears": "pointy",
+    "earS": 0.7,
+    "horns": "rhino",
+    "tail": "thin",
+    "tailL": 60,
+    "tailW": 6,
+    "body": "#8e8a86",
+    "eyeS": 0.8
+   }
+  },
+  {
+   "id": "hippo",
+   "rig": "quadruped",
+   "name": "Hipopótamo",
+   "keywords_es": [
+    "hipopotamo",
+    "hipopotamos"
+   ],
+   "keywords_en": [
+    "hippo",
+    "hippopotamus"
+   ],
+   "env": "savanna",
+   "size": 0.42,
+   "params": {
+    "bodyL": 380,
+    "bodyH": 190,
+    "legL": 80,
+    "legW": 56,
+    "neckL": 10,
+    "neckA": 0.2,
+    "neckW": 140,
+    "headR": 78,
+    "snout": 60,
+    "snoutH": 1.1,
+    "ears": "small",
+    "tail": "short",
+    "tailW": 10,
+    "body": "#8d7c8e",
+    "belly": "#d6a7b0",
+    "muzzle": "#a8909e",
+    "eyeS": 0.8
+   }
+  },
+  {
+   "id": "camel",
+   "rig": "quadruped",
+   "name": "Camello",
+   "keywords_es": [
+    "camello",
+    "camellos",
+    "dromedario",
+    "dromedarios",
+    "alpaca",
+    "alpacas",
+    "vicuna",
+    "vicunas"
+   ],
+   "keywords_en": [
+    "camel",
+    "camels",
+    "alpaca"
+   ],
+   "env": "desert",
+   "size": 0.5,
+   "params": {
+    "bodyL": 320,
+    "bodyH": 120,
+    "legL": 200,
+    "legW": 26,
+    "neckL": 140,
+    "neckA": 0.6,
+    "neckW": 52,
+    "headR": 40,
+    "snout": 54,
+    "ears": "small",
+    "tail": "tuft",
+    "tailL": 90,
+    "tailW": 8,
+    "hump": 0.9,
+    "body": "#cf9f62",
+    "hooves": true
+   }
+  },
+  {
+   "id": "rabbit",
+   "rig": "quadruped",
+   "name": "Conejo",
+   "keywords_es": [
+    "conejo",
+    "conejos",
+    "coneja",
+    "conejito",
+    "conejitos",
+    "liebre",
+    "liebres"
+   ],
+   "keywords_en": [
+    "rabbit",
+    "rabbits",
+    "bunny",
+    "hare"
+   ],
+   "env": "park",
+   "size": 0.3,
+   "params": {
+    "bodyL": 180,
+    "bodyH": 110,
+    "legL": 60,
+    "legW": 30,
+    "neckL": 10,
+    "neckA": 0.8,
+    "neckW": 70,
+    "headR": 48,
+    "snout": 14,
+    "ears": "long",
+    "earS": 1.05,
+    "tail": "short",
+    "tailW": 20,
+    "tailTip": "#ffffff",
+    "gait": "hop",
+    "body": "#c9b49e",
+    "whiskers": true,
+    "nose": "#e48a96"
+   }
+  },
+  {
+   "id": "mouse",
+   "rig": "quadruped",
+   "name": "Ratón",
+   "keywords_es": [
+    "raton",
+    "ratones",
+    "rata",
+    "ratas",
+    "ratoncito",
+    "hamster",
+    "hamsters"
+   ],
+   "keywords_en": [
+    "mouse",
+    "mice",
+    "rat",
+    "rats",
+    "hamster"
+   ],
+   "env": "home",
+   "size": 0.2,
+   "params": {
+    "bodyL": 180,
+    "bodyH": 90,
+    "legL": 45,
+    "legW": 16,
+    "neckL": 10,
+    "neckA": 0.4,
+    "neckW": 60,
+    "headR": 40,
+    "snout": 34,
+    "ears": "round",
+    "earS": 1.3,
+    "tail": "thin",
+    "tailL": 200,
+    "tailW": 6,
+    "body": "#9c948e",
+    "whiskers": true,
+    "nose": "#e48a96",
+    "eyeS": 1.1
+   }
+  },
+  {
+   "id": "squirrel",
+   "rig": "quadruped",
+   "name": "Ardilla",
+   "keywords_es": [
+    "ardilla",
+    "ardillas"
+   ],
+   "keywords_en": [
+    "squirrel",
+    "squirrels",
+    "chipmunk"
+   ],
+   "env": "forest",
+   "size": 0.2,
+   "params": {
+    "bodyL": 170,
+    "bodyH": 90,
+    "legL": 55,
+    "legW": 18,
+    "neckL": 20,
+    "neckA": 0.9,
+    "neckW": 50,
+    "headR": 38,
+    "snout": 20,
+    "ears": "pointy",
+    "earS": 0.8,
+    "tail": "squirrel",
+    "tailL": 200,
+    "tailW": 16,
+    "gait": "hop",
+    "body": "#b8622c",
+    "belly": "#f3dcc0"
+   }
+  },
+  {
+   "id": "raccoon",
+   "rig": "quadruped",
+   "name": "Mapache",
+   "keywords_es": [
+    "mapache",
+    "mapaches"
+   ],
+   "keywords_en": [
+    "raccoon",
+    "raccoons"
+   ],
+   "env": "forest",
+   "size": 0.26,
+   "params": {
+    "bodyL": 220,
+    "bodyH": 110,
+    "legL": 70,
+    "legW": 24,
+    "neckL": 20,
+    "neckA": 0.5,
+    "neckW": 66,
+    "headR": 46,
+    "snout": 34,
+    "ears": "pointy",
+    "earS": 0.8,
+    "tail": "bushy",
+    "tailL": 130,
+    "tailW": 14,
+    "ringed": true,
+    "mask": true,
+    "body": "#8e8a86",
+    "dark": "#2a2624",
+    "muzzle": "#ece8e2"
+   }
+  },
+  {
+   "id": "hedgehog",
+   "rig": "quadruped",
+   "name": "Erizo",
+   "keywords_es": [
+    "erizo",
+    "erizos",
+    "puercoespin"
+   ],
+   "keywords_en": [
+    "hedgehog",
+    "porcupine"
+   ],
+   "env": "forest",
+   "size": 0.24,
+   "params": {
+    "bodyL": 170,
+    "bodyH": 100,
+    "legL": 30,
+    "legW": 16,
+    "neckL": 0,
+    "neckA": 0.3,
+    "neckW": 60,
+    "headR": 36,
+    "snout": 34,
+    "ears": "round",
+    "earS": 0.6,
+    "tail": "none",
+    "spines": true,
+    "body": "#9a7a5a",
+    "dark": "#4a3628",
+    "muzzle": "#e8d4b8"
+   }
+  },
+  {
+   "id": "skunk",
+   "rig": "quadruped",
+   "name": "Zorrillo",
+   "keywords_es": [
+    "zorrillo",
+    "mofeta",
+    "mofetas",
+    "zorrino"
+   ],
+   "keywords_en": [
+    "skunk",
+    "skunks"
+   ],
+   "env": "forest",
+   "size": 0.24,
+   "params": {
+    "bodyL": 220,
+    "bodyH": 100,
+    "legL": 55,
+    "legW": 20,
+    "neckL": 15,
+    "neckA": 0.4,
+    "neckW": 60,
+    "headR": 40,
+    "snout": 30,
+    "ears": "round",
+    "earS": 0.6,
+    "tail": "squirrel",
+    "tailL": 170,
+    "tailW": 18,
+    "body": "#1d1d22",
+    "pattern": "back_stripe",
+    "stripeC": "#f4f4f4",
+    "tailTip": "#f4f4f4"
+   }
+  },
+  {
+   "id": "beaver",
+   "rig": "quadruped",
+   "name": "Castor",
+   "keywords_es": [
+    "castor",
+    "castores",
+    "nutria",
+    "nutrias"
+   ],
+   "keywords_en": [
+    "beaver",
+    "beavers",
+    "otter",
+    "otters"
+   ],
+   "env": "forest",
+   "size": 0.26,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 120,
+    "legL": 45,
+    "legW": 24,
+    "neckL": 10,
+    "neckA": 0.4,
+    "neckW": 80,
+    "headR": 46,
+    "snout": 30,
+    "ears": "round",
+    "earS": 0.5,
+    "tail": "flat",
+    "tailC": "#4a3a32",
+    "body": "#7a5232",
+    "muzzle": "#a07a5a"
+   }
+  },
+  {
+   "id": "monkey",
+   "rig": "quadruped",
+   "name": "Mono",
+   "keywords_es": [
+    "mono",
+    "monos",
+    "monito",
+    "monitos",
+    "chimpance",
+    "chimpances",
+    "simio",
+    "simios",
+    "macaco",
+    "macacos"
+   ],
+   "keywords_en": [
+    "monkey",
+    "monkeys",
+    "chimp",
+    "chimpanzee"
+   ],
+   "env": "jungle",
+   "size": 0.38,
+   "params": {
+    "tilt": 0.42,
+    "bodyL": 190,
+    "bodyH": 115,
+    "legL": 110,
+    "legW": 24,
+    "neckL": 20,
+    "neckA": 0.9,
+    "neckW": 60,
+    "headR": 50,
+    "snout": 14,
+    "ears": "round",
+    "earS": 0.8,
+    "tail": "curl",
+    "tailL": 160,
+    "tailW": 10,
+    "body": "#6b4a30",
+    "muzzle": "#e3c3a0",
+    "earIn": "#e3c3a0"
+   }
+  },
+  {
+   "id": "gorilla",
+   "rig": "quadruped",
+   "name": "Gorila",
+   "keywords_es": [
+    "gorila",
+    "gorilas",
+    "orangutan",
+    "orangutanes"
+   ],
+   "keywords_en": [
+    "gorilla",
+    "gorillas",
+    "orangutan",
+    "ape",
+    "apes"
+   ],
+   "env": "jungle",
+   "size": 0.46,
+   "params": {
+    "tilt": 0.5,
+    "bodyL": 230,
+    "bodyH": 170,
+    "legL": 100,
+    "legW": 46,
+    "neckL": 10,
+    "neckA": 0.6,
+    "neckW": 90,
+    "headR": 56,
+    "snout": 16,
+    "ears": "small",
+    "tail": "none",
+    "body": "#2e2a2c",
+    "muzzle": "#5a4e50",
+    "earIn": "#5a4e50"
+   }
+  },
+  {
+   "id": "kangaroo",
+   "rig": "quadruped",
+   "name": "Canguro",
+   "keywords_es": [
+    "canguro",
+    "canguros"
+   ],
+   "keywords_en": [
+    "kangaroo",
+    "kangaroos"
+   ],
+   "env": "desert",
+   "size": 0.46,
+   "params": {
+    "bodyL": 220,
+    "bodyH": 130,
+    "legL": 120,
+    "legW": 32,
+    "neckL": 60,
+    "neckA": 1.1,
+    "neckW": 56,
+    "headR": 40,
+    "snout": 44,
+    "ears": "long",
+    "earS": 0.7,
+    "tail": "thick",
+    "tailL": 200,
+    "gait": "hop",
+    "body": "#c08454",
+    "tilt": 0.8,
+    "frontArms": true
+   }
+  },
+  {
+   "id": "crocodile",
+   "rig": "quadruped",
+   "name": "Cocodrilo",
+   "keywords_es": [
+    "cocodrilo",
+    "cocodrilos",
+    "caiman",
+    "caimanes",
+    "lagarto",
+    "lagartos",
+    "aligator"
+   ],
+   "keywords_en": [
+    "crocodile",
+    "crocodiles",
+    "alligator",
+    "caiman"
+   ],
+   "env": "river",
+   "size": 0.42,
+   "params": {
+    "bodyL": 420,
+    "bodyH": 90,
+    "legL": 42,
+    "legW": 26,
+    "neckL": 10,
+    "neckA": 0.05,
+    "neckW": 80,
+    "headR": 44,
+    "snout": 130,
+    "snoutH": 0.6,
+    "ears": "none",
+    "tail": "reptile",
+    "tailL": 360,
+    "body": "#4f7a3a",
+    "belly": "#c9c48a",
+    "dark": "#2f4a22",
+    "pattern": "spots",
+    "eyeS": 1.0,
+    "crest": true,
+    "crestC": "#3a5a2a"
+   }
+  },
+  {
+   "id": "lizard",
+   "rig": "quadruped",
+   "name": "Lagartija",
+   "keywords_es": [
+    "lagartija",
+    "lagartijas",
+    "iguana",
+    "iguanas",
+    "camaleon",
+    "camaleones",
+    "geco",
+    "dragon",
+    "dragones"
+   ],
+   "keywords_en": [
+    "lizard",
+    "lizards",
+    "iguana",
+    "chameleon",
+    "gecko",
+    "dragon"
+   ],
+   "env": "desert",
+   "size": 0.32,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 60,
+    "legL": 34,
+    "legW": 16,
+    "neckL": 20,
+    "neckA": 0.2,
+    "neckW": 46,
+    "headR": 30,
+    "snout": 40,
+    "snoutH": 0.6,
+    "ears": "none",
+    "tail": "reptile",
+    "tailL": 260,
+    "body": "#6fae3a",
+    "belly": "#e4d68a",
+    "dark": "#3a6a22",
+    "pattern": "spots",
+    "crest": true,
+    "crestC": "#3a6a22"
+   }
+  },
+  {
+   "id": "turtle",
+   "rig": "quadruped",
+   "name": "Tortuga",
+   "keywords_es": [
+    "tortuga",
+    "tortugas"
+   ],
+   "keywords_en": [
+    "turtle",
+    "turtles",
+    "tortoise"
+   ],
+   "env": "river",
+   "size": 0.32,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 90,
+    "legL": 40,
+    "legW": 30,
+    "neckL": 40,
+    "neckA": 0.3,
+    "neckW": 34,
+    "headR": 30,
+    "snout": 24,
+    "ears": "none",
+    "tail": "short",
+    "tailW": 10,
+    "shell": true,
+    "shellC": "#6a8a3a",
+    "body": "#9ab06a"
+   }
+  },
+  {
+   "id": "frog",
+   "rig": "quadruped",
+   "name": "Rana",
+   "keywords_es": [
+    "rana",
+    "ranas",
+    "sapo",
+    "sapos",
+    "renacuajo"
+   ],
+   "keywords_en": [
+    "frog",
+    "frogs",
+    "toad",
+    "toads"
+   ],
+   "env": "river",
+   "size": 0.28,
+   "params": {
+    "bodyL": 170,
+    "bodyH": 110,
+    "legL": 40,
+    "legW": 34,
+    "neckL": 0,
+    "neckA": 0.3,
+    "neckW": 60,
+    "headR": 58,
+    "snout": 12,
+    "ears": "none",
+    "tail": "none",
+    "gait": "hop",
+    "body": "#5bb04a",
+    "belly": "#e8f0a0",
+    "eyeS": 1.5,
+    "pattern": "spots",
+    "dark": "#3a7a2a"
+   }
+  },
+  {
+   "id": "dinosaur",
+   "rig": "quadruped",
+   "name": "Dinosaurio",
+   "keywords_es": [
+    "dinosaurio",
+    "dinosaurios",
+    "brontosaurio",
+    "diplodoco"
+   ],
+   "keywords_en": [
+    "dinosaur",
+    "dinosaurs",
+    "brontosaurus",
+    "diplodocus"
+   ],
+   "env": "jungle",
+   "size": 0.62,
+   "params": {
+    "bodyL": 360,
+    "bodyH": 180,
+    "legL": 150,
+    "legW": 52,
+    "neckL": 300,
+    "neckA": 0.95,
+    "neckW": 60,
+    "headR": 40,
+    "snout": 34,
+    "ears": "none",
+    "tail": "reptile",
+    "tailL": 380,
+    "body": "#6aa060",
+    "belly": "#c8dca0",
+    "dark": "#4a7a40",
+    "pattern": "spots"
+   }
+  },
+  {
+   "id": "bat_q",
+   "rig": "quadruped",
+   "name": "Perezoso",
+   "keywords_es": [
+    "perezoso",
+    "perezosos"
+   ],
+   "keywords_en": [
+    "sloth",
+    "sloths"
+   ],
+   "env": "jungle",
+   "size": 0.3,
+   "params": {
+    "bodyL": 200,
+    "bodyH": 120,
+    "legL": 90,
+    "legW": 20,
+    "neckL": 20,
+    "neckA": 0.6,
+    "neckW": 60,
+    "headR": 46,
+    "snout": 14,
+    "ears": "none",
+    "tail": "none",
+    "body": "#9a8468",
+    "eyePatch": true,
+    "dark": "#4a3a2a",
+    "muzzle": "#e6d6bc"
+   }
+  },
+  {
+   "id": "hen",
+   "rig": "bird",
+   "name": "Gallina",
+   "keywords_es": [
+    "gallina",
+    "gallinas",
+    "pollo",
+    "pollos",
+    "gallo",
+    "gallos"
+   ],
+   "keywords_en": [
+    "chicken",
+    "chickens",
+    "hen",
+    "hens",
+    "rooster"
+   ],
+   "env": "farm",
+   "size": 0.3,
+   "params": {
+    "bodyRx": 90,
+    "bodyRy": 70,
+    "tilt": 0.35,
+    "neckL": 30,
+    "neckW": 46,
+    "headR": 32,
+    "beak": "short",
+    "beakL": 24,
+    "legL": 70,
+    "crest": "comb",
+    "wattle": true,
+    "tail": "upright",
+    "tailL": 80,
+    "body": "#c86a2e",
+    "belly": "#d98a4a",
+    "wingC": "#a8521e",
+    "tailC": "#2b2a3a",
+    "headC": "#d98a4a"
+   }
+  },
+  {
+   "id": "chick",
+   "rig": "bird",
+   "name": "Pollito",
+   "keywords_es": [
+    "pollito",
+    "pollitos",
+    "polluelo",
+    "polluelos"
+   ],
+   "keywords_en": [
+    "chick",
+    "chicks"
+   ],
+   "env": "farm",
+   "size": 0.16,
+   "params": {
+    "bodyRx": 60,
+    "bodyRy": 56,
+    "tilt": 0.4,
+    "neckL": 0,
+    "neckW": 40,
+    "headR": 36,
+    "beak": "short",
+    "beakL": 16,
+    "legL": 40,
+    "tail": "short",
+    "tailL": 24,
+    "body": "#ffd84a",
+    "belly": "#ffe88a",
+    "wingC": "#f2c43a"
+   }
+  },
+  {
+   "id": "duck",
+   "rig": "bird",
+   "name": "Pato",
+   "keywords_es": [
+    "pato",
+    "patos",
+    "patito",
+    "patitos",
+    "ganso",
+    "gansos",
+    "oca",
+    "ocas"
+   ],
+   "keywords_en": [
+    "duck",
+    "ducks",
+    "duckling",
+    "goose",
+    "geese"
+   ],
+   "env": "river",
+   "size": 0.28,
+   "params": {
+    "bodyRx": 100,
+    "bodyRy": 58,
+    "tilt": 0.1,
+    "neckL": 44,
+    "neckA": 1.35,
+    "neckW": 36,
+    "headR": 32,
+    "beak": "flat",
+    "beakL": 36,
+    "beakC": "#f2a72a",
+    "legL": 40,
+    "legC": "#f2a72a",
+    "feet": "web",
+    "tail": "short",
+    "tailL": 40,
+    "body": "#b8a58a",
+    "belly": "#e4d8c4",
+    "headC": "#2e7a4a",
+    "collar": "#ffffff",
+    "wingC": "#8a7a64"
+   }
+  },
+  {
+   "id": "swan",
+   "rig": "bird",
+   "name": "Cisne",
+   "keywords_es": [
+    "cisne",
+    "cisnes"
+   ],
+   "keywords_en": [
+    "swan",
+    "swans"
+   ],
+   "env": "river",
+   "size": 0.36,
+   "params": {
+    "bodyRx": 110,
+    "bodyRy": 60,
+    "tilt": 0.05,
+    "neckL": 120,
+    "neckA": 1.45,
+    "neckW": 30,
+    "headR": 28,
+    "beak": "flat",
+    "beakL": 34,
+    "beakC": "#f07a2a",
+    "legL": 30,
+    "legC": "#2a2a2a",
+    "feet": "web",
+    "tail": "short",
+    "tailL": 40,
+    "body": "#fbfbf8",
+    "mask": "#1d1d1d"
+   }
+  },
+  {
+   "id": "owl",
+   "rig": "bird",
+   "name": "Búho",
+   "keywords_es": [
+    "buho",
+    "buhos",
+    "lechuza",
+    "lechuzas",
+    "mochuelo"
+   ],
+   "keywords_en": [
+    "owl",
+    "owls"
+   ],
+   "env": "forest",
+   "size": 0.3,
+   "params": {
+    "bodyRx": 66,
+    "bodyRy": 86,
+    "tilt": 1.3,
+    "neckL": 0,
+    "neckW": 60,
+    "headR": 54,
+    "beak": "hook",
+    "beakL": 14,
+    "beakC": "#e2b23a",
+    "legL": 30,
+    "legC": "#d8a23a",
+    "crest": "tuft",
+    "tail": "short",
+    "tailL": 40,
+    "body": "#8a6a4a",
+    "belly": "#d9c4a0",
+    "wingC": "#6a4e34",
+    "headC": "#9a7a5a",
+    "eyeBig": true,
+    "eyeC": "#f2a21a",
+    "spots": "#5a4230"
+   }
+  },
+  {
+   "id": "eagle",
+   "rig": "bird",
+   "name": "Águila",
+   "keywords_es": [
+    "aguila",
+    "aguilas",
+    "halcon",
+    "halcones",
+    "buitre",
+    "buitres",
+    "condor",
+    "condores",
+    "gavilan"
+   ],
+   "keywords_en": [
+    "eagle",
+    "eagles",
+    "hawk",
+    "falcon",
+    "vulture",
+    "condor"
+   ],
+   "env": "sky",
+   "size": 0.4,
+   "params": {
+    "bodyRx": 110,
+    "bodyRy": 66,
+    "tilt": 0.55,
+    "neckL": 30,
+    "neckW": 50,
+    "headR": 34,
+    "beak": "hook",
+    "beakL": 34,
+    "beakC": "#f2c23a",
+    "legL": 60,
+    "legC": "#f2c23a",
+    "tail": "short",
+    "tailL": 80,
+    "body": "#5a3a22",
+    "belly": "#6a4a2e",
+    "wingC": "#4a2e1a",
+    "headC": "#f4f2ea",
+    "neckC": "#f4f2ea",
+    "flapHz": 1.4
+   }
+  },
+  {
+   "id": "parrot",
+   "rig": "bird",
+   "name": "Loro",
+   "keywords_es": [
+    "loro",
+    "loros",
+    "cotorra",
+    "cotorras",
+    "papagayo",
+    "papagayos",
+    "guacamayo",
+    "guacamayos",
+    "perico",
+    "pericos"
+   ],
+   "keywords_en": [
+    "parrot",
+    "parrots",
+    "macaw",
+    "parakeet"
+   ],
+   "env": "jungle",
+   "size": 0.3,
+   "params": {
+    "bodyRx": 70,
+    "bodyRy": 56,
+    "tilt": 0.9,
+    "neckL": 10,
+    "neckW": 46,
+    "headR": 36,
+    "beak": "hook",
+    "beakL": 26,
+    "beakC": "#2a2a2a",
+    "legL": 36,
+    "legC": "#6a6a6a",
+    "tail": "long",
+    "tailL": 110,
+    "body": "#e2322a",
+    "belly": "#e2322a",
+    "wingC": "#2a7ae2",
+    "tailC": "#2a7ae2",
+    "headC": "#e2322a",
+    "eyeRing": "#ffffff",
+    "flapHz": 3.5
+   }
+  },
+  {
+   "id": "crow",
+   "rig": "bird",
+   "name": "Cuervo",
+   "keywords_es": [
+    "cuervo",
+    "cuervos",
+    "urraca",
+    "urracas",
+    "mirlo"
+   ],
+   "keywords_en": [
+    "crow",
+    "crows",
+    "raven",
+    "magpie",
+    "blackbird"
+   ],
+   "env": "park",
+   "size": 0.28,
+   "params": {
+    "bodyRx": 80,
+    "bodyRy": 54,
+    "tilt": 0.35,
+    "neckL": 20,
+    "neckW": 40,
+    "headR": 30,
+    "beak": "short",
+    "beakL": 34,
+    "beakC": "#1a1a1a",
+    "legL": 60,
+    "legC": "#2a2a2a",
+    "tail": "short",
+    "tailL": 70,
+    "body": "#24262e",
+    "wingC": "#1a1c22",
+    "headC": "#2a2c34"
+   }
+  },
+  {
+   "id": "sparrow",
+   "rig": "bird",
+   "name": "Pájaro",
+   "keywords_es": [
+    "pajarito",
+    "pajaritos",
+    "gorrion",
+    "gorriones",
+    "canario",
+    "canarios",
+    "golondrina",
+    "golondrinas",
+    "jilguero",
+    "jilgueros"
+   ],
+   "keywords_en": [
+    "sparrow",
+    "canary",
+    "swallow",
+    "finch"
+   ],
+   "env": "park",
+   "size": 0.2,
+   "params": {
+    "bodyRx": 64,
+    "bodyRy": 46,
+    "tilt": 0.45,
+    "neckL": 6,
+    "neckW": 40,
+    "headR": 30,
+    "beak": "short",
+    "beakL": 16,
+    "beakC": "#3a3028",
+    "legL": 40,
+    "legC": "#8a6a4a",
+    "tail": "fork",
+    "tailL": 50,
+    "body": "#9a6a3e",
+    "belly": "#ecdcc0",
+    "wingC": "#6a4a2a",
+    "headC": "#8a5a32",
+    "cheek": "#f0e4d0",
+    "flapHz": 5
+   }
+  },
+  {
+   "id": "seagull",
+   "rig": "bird",
+   "name": "Gaviota",
+   "keywords_es": [
+    "gaviota",
+    "gaviotas",
+    "albatros",
+    "pelicano",
+    "pelicanos"
+   ],
+   "keywords_en": [
+    "seagull",
+    "gull",
+    "albatross",
+    "pelican"
+   ],
+   "env": "ocean_shore",
+   "size": 0.3,
+   "params": {
+    "bodyRx": 90,
+    "bodyRy": 52,
+    "tilt": 0.25,
+    "neckL": 20,
+    "neckW": 40,
+    "headR": 30,
+    "beak": "short",
+    "beakL": 34,
+    "beakC": "#f2c23a",
+    "legL": 60,
+    "legC": "#f2a23a",
+    "feet": "web",
+    "tail": "short",
+    "tailL": 50,
+    "body": "#f4f4f2",
+    "wingC": "#9aa2ae",
+    "flapHz": 1.6
+   }
+  },
+  {
+   "id": "penguin",
+   "rig": "bird",
+   "name": "Pingüino",
+   "keywords_es": [
+    "pinguino",
+    "pinguinos",
+    "pingüino",
+    "pingüinos"
+   ],
+   "keywords_en": [
+    "penguin",
+    "penguins"
+   ],
+   "env": "snow",
+   "size": 0.32,
+   "params": {
+    "bodyRx": 64,
+    "bodyRy": 96,
+    "tilt": 1.4,
+    "neckL": 0,
+    "neckW": 60,
+    "headR": 40,
+    "beak": "short",
+    "beakL": 28,
+    "beakC": "#f2a23a",
+    "legL": 14,
+    "legC": "#f2a23a",
+    "feet": "web",
+    "tail": "short",
+    "tailL": 20,
+    "wings": "flipper",
+    "body": "#1f2430",
+    "belly": "#fbfbf8",
+    "wingC": "#1a1e28",
+    "headC": "#1f2430",
+    "cheek": "#f2c23a"
+   }
+  },
+  {
+   "id": "flamingo",
+   "rig": "bird",
+   "name": "Flamenco",
+   "keywords_es": [
+    "flamenco",
+    "flamencos"
+   ],
+   "keywords_en": [
+    "flamingo",
+    "flamingos"
+   ],
+   "env": "river",
+   "size": 0.55,
+   "params": {
+    "bodyRx": 80,
+    "bodyRy": 50,
+    "tilt": 0.2,
+    "neckL": 150,
+    "neckA": 1.35,
+    "neckW": 20,
+    "headR": 24,
+    "beak": "bent",
+    "beakL": 40,
+    "beakC": "#f2e4e0",
+    "legL": 220,
+    "legC": "#f08aa0",
+    "tail": "short",
+    "tailL": 30,
+    "body": "#f58fa8",
+    "wingC": "#f06a8a",
+    "headC": "#f58fa8"
+   }
+  },
+  {
+   "id": "ostrich",
+   "rig": "bird",
+   "name": "Avestruz",
+   "keywords_es": [
+    "avestruz",
+    "avestruces",
+    "emu",
+    "emus",
+    "nandu"
+   ],
+   "keywords_en": [
+    "ostrich",
+    "emu"
+   ],
+   "env": "savanna",
+   "size": 0.55,
+   "params": {
+    "bodyRx": 110,
+    "bodyRy": 80,
+    "tilt": 0.2,
+    "neckL": 170,
+    "neckA": 1.4,
+    "neckW": 24,
+    "headR": 26,
+    "beak": "flat",
+    "beakL": 26,
+    "beakC": "#e2b49a",
+    "legL": 200,
+    "legC": "#e2b49a",
+    "tail": "upright",
+    "tailL": 60,
+    "body": "#2a2624",
+    "wingC": "#3a3430",
+    "tailC": "#f4f4f2",
+    "headC": "#d8a890",
+    "neckC": "#e2b49a"
+   }
+  },
+  {
+   "id": "peacock",
+   "rig": "bird",
+   "name": "Pavo real",
+   "keywords_es": [
+    "pavo real",
+    "pavos reales",
+    "pavorreal"
+   ],
+   "keywords_en": [
+    "peacock",
+    "peafowl"
+   ],
+   "env": "park",
+   "size": 0.42,
+   "params": {
+    "bodyRx": 80,
+    "bodyRy": 56,
+    "tilt": 0.4,
+    "neckL": 70,
+    "neckA": 1.3,
+    "neckW": 30,
+    "headR": 24,
+    "beak": "short",
+    "beakL": 18,
+    "legL": 80,
+    "crest": "crest",
+    "crestC": "#2a6ae2",
+    "tail": "fan",
+    "tailL": 120,
+    "tailC": "#1e8a5a",
+    "eyespot": "#2a4ae2",
+    "body": "#1e5ad2",
+    "wingC": "#2a8a8a",
+    "headC": "#1e5ad2"
+   }
+  },
+  {
+   "id": "turkey",
+   "rig": "bird",
+   "name": "Pavo",
+   "keywords_es": [
+    "pavo",
+    "pavos",
+    "guajolote"
+   ],
+   "keywords_en": [
+    "turkey",
+    "turkeys"
+   ],
+   "env": "farm",
+   "size": 0.36,
+   "params": {
+    "bodyRx": 100,
+    "bodyRy": 80,
+    "tilt": 0.35,
+    "neckL": 40,
+    "neckW": 30,
+    "headR": 26,
+    "beak": "short",
+    "beakL": 16,
+    "legL": 70,
+    "wattle": true,
+    "crestC": "#d8322e",
+    "tail": "fan",
+    "tailL": 90,
+    "tailC": "#6a4a2a",
+    "eyespot": "#c89a5a",
+    "body": "#4a3424",
+    "headC": "#9ab0e2",
+    "neckC": "#e25a5a"
+   }
+  },
+  {
+   "id": "hummingbird",
+   "rig": "bird",
+   "name": "Colibrí",
+   "keywords_es": [
+    "colibri",
+    "colibries",
+    "picaflor"
+   ],
+   "keywords_en": [
+    "hummingbird",
+    "hummingbirds"
+   ],
+   "env": "jungle",
+   "size": 0.18,
+   "params": {
+    "bodyRx": 50,
+    "bodyRy": 30,
+    "tilt": 0.6,
+    "neckL": 0,
+    "neckW": 30,
+    "headR": 22,
+    "beak": "needle",
+    "beakL": 56,
+    "beakC": "#1a1a1a",
+    "legL": 10,
+    "tail": "fork",
+    "tailL": 40,
+    "body": "#2ab07a",
+    "belly": "#e4f4ea",
+    "wingC": "#8ad4b0",
+    "headC": "#2ab07a",
+    "hover": true,
+    "flapHz": 7.5
+   }
+  },
+  {
+   "id": "toucan",
+   "rig": "bird",
+   "name": "Tucán",
+   "keywords_es": [
+    "tucan",
+    "tucanes"
+   ],
+   "keywords_en": [
+    "toucan",
+    "toucans"
+   ],
+   "env": "jungle",
+   "size": 0.3,
+   "params": {
+    "bodyRx": 66,
+    "bodyRy": 60,
+    "tilt": 0.85,
+    "neckL": 0,
+    "neckW": 46,
+    "headR": 34,
+    "beak": "big",
+    "beakL": 80,
+    "beakC": "#f2a22a",
+    "beakTip": "#e2322a",
+    "legL": 30,
+    "legC": "#3a6ae2",
+    "tail": "long",
+    "tailL": 80,
+    "body": "#1d1d22",
+    "belly": "#f8f0d0",
+    "wingC": "#16161a",
+    "eyeRing": "#7ad2f2"
+   }
+  },
+  {
+   "id": "woodpecker",
+   "rig": "bird",
+   "name": "Pájaro carpintero",
+   "keywords_es": [
+    "carpintero",
+    "carpinteros"
+   ],
+   "keywords_en": [
+    "woodpecker",
+    "woodpeckers"
+   ],
+   "env": "forest",
+   "size": 0.24,
+   "params": {
+    "bodyRx": 64,
+    "bodyRy": 46,
+    "tilt": 0.9,
+    "neckL": 10,
+    "neckW": 40,
+    "headR": 30,
+    "beak": "short",
+    "beakL": 34,
+    "beakC": "#3a3a3a",
+    "legL": 30,
+    "crest": "crest",
+    "crestC": "#e2322a",
+    "tail": "short",
+    "tailL": 50,
+    "body": "#2a2a2e",
+    "belly": "#f4f4f0",
+    "wingC": "#1e1e22",
+    "spots": "#f4f4f0"
+   }
+  },
+  {
+   "id": "bat",
+   "rig": "bird",
+   "name": "Murciélago",
+   "keywords_es": [
+    "murcielago",
+    "murcielagos",
+    "vampiro"
+   ],
+   "keywords_en": [
+    "bat",
+    "bats"
+   ],
+   "env": "night",
+   "size": 0.26,
+   "params": {
+    "bodyRx": 44,
+    "bodyRy": 40,
+    "tilt": 0.5,
+    "neckL": 0,
+    "neckW": 40,
+    "headR": 30,
+    "beak": "snout",
+    "beakL": 16,
+    "beakC": "#4a3a3e",
+    "legL": 12,
+    "legC": "#3a2e30",
+    "crest": "tuft",
+    "tail": "short",
+    "tailL": 10,
+    "wings": "membrane",
+    "body": "#4a3a3e",
+    "belly": "#6a5658",
+    "wingC": "#3a2c30",
+    "headC": "#4a3a3e",
+    "hover": true,
+    "flapHz": 4
+   }
+  },
+  {
+   "id": "fish",
+   "rig": "fish",
+   "name": "Pez",
+   "keywords_es": [
+    "pez",
+    "peces",
+    "pescado",
+    "pescados",
+    "pececito",
+    "pececitos",
+    "salmon",
+    "salmones",
+    "trucha",
+    "truchas",
+    "atun",
+    "sardina",
+    "sardinas",
+    "bacalao"
+   ],
+   "keywords_en": [
+    "fish",
+    "fishes",
+    "salmon",
+    "trout",
+    "tuna",
+    "sardine"
+   ],
+   "env": "ocean",
+   "size": 0.36,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 120,
+    "shape": "fish",
+    "tailT": "fork",
+    "dorsal": "tri",
+    "body": "#4a9ad2",
+    "belly": "#e4f2fa",
+    "fin": "#2a6aa2",
+    "stripes": "#2a5a8a"
+   }
+  },
+  {
+   "id": "goldfish",
+   "rig": "fish",
+   "name": "Pez dorado",
+   "keywords_es": [
+    "pez dorado",
+    "peces dorados",
+    "carpa",
+    "carpas",
+    "koi"
+   ],
+   "keywords_en": [
+    "goldfish",
+    "carp",
+    "koi"
+   ],
+   "env": "ocean",
+   "size": 0.32,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 140,
+    "shape": "fish",
+    "tailT": "round",
+    "dorsal": "tri",
+    "body": "#f28a2a",
+    "belly": "#ffd08a",
+    "fin": "#f2a24a",
+    "eyeS": 1.3
+   }
+  },
+  {
+   "id": "clownfish",
+   "rig": "fish",
+   "name": "Pez payaso",
+   "keywords_es": [
+    "pez payaso",
+    "peces payaso",
+    "nemo"
+   ],
+   "keywords_en": [
+    "clownfish",
+    "nemo"
+   ],
+   "env": "ocean",
+   "size": 0.3,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 120,
+    "shape": "fish",
+    "tailT": "round",
+    "dorsal": "long",
+    "body": "#f27a1a",
+    "belly": "#f8a24a",
+    "fin": "#f27a1a",
+    "bands": "#ffffff",
+    "eyeS": 1.3
+   }
+  },
+  {
+   "id": "piranha",
+   "rig": "fish",
+   "name": "Piraña",
+   "keywords_es": [
+    "piraña",
+    "pirañas",
+    "pirana",
+    "piranas"
+   ],
+   "keywords_en": [
+    "piranha",
+    "piranhas"
+   ],
+   "env": "river_under",
+   "size": 0.3,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 160,
+    "shape": "fish",
+    "tailT": "fork",
+    "dorsal": "small",
+    "body": "#8a9aa2",
+    "belly": "#e25a3a",
+    "fin": "#5a6a72",
+    "teeth": true,
+    "spots": "#c8d2d8"
+   }
+  },
+  {
+   "id": "shark",
+   "rig": "fish",
+   "name": "Tiburón",
+   "keywords_es": [
+    "tiburon",
+    "tiburones",
+    "escualo"
+   ],
+   "keywords_en": [
+    "shark",
+    "sharks"
+   ],
+   "env": "ocean",
+   "size": 0.55,
+   "params": {
+    "bodyL": 420,
+    "bodyH": 120,
+    "shape": "shark",
+    "tailT": "shark",
+    "dorsal": "tri",
+    "body": "#7a8a9a",
+    "belly": "#f2f4f6",
+    "fin": "#6a7a8a",
+    "teeth": true,
+    "eyeS": 0.8
+   }
+  },
+  {
+   "id": "dolphin",
+   "rig": "fish",
+   "name": "Delfín",
+   "keywords_es": [
+    "delfin",
+    "delfines",
+    "marsopa"
+   ],
+   "keywords_en": [
+    "dolphin",
+    "dolphins",
+    "porpoise"
+   ],
+   "env": "ocean",
+   "size": 0.5,
+   "params": {
+    "bodyL": 380,
+    "bodyH": 110,
+    "shape": "dolphin",
+    "tailT": "fluke",
+    "dorsal": "tri",
+    "body": "#7a96b2",
+    "belly": "#e8eef4",
+    "fin": "#6a86a2"
+   }
+  },
+  {
+   "id": "whale",
+   "rig": "fish",
+   "name": "Ballena",
+   "keywords_es": [
+    "ballena",
+    "ballenas",
+    "ballenato",
+    "cachalote"
+   ],
+   "keywords_en": [
+    "whale",
+    "whales",
+    "sperm whale"
+   ],
+   "env": "ocean",
+   "size": 0.8,
+   "params": {
+    "bodyL": 520,
+    "bodyH": 180,
+    "shape": "whale",
+    "tailT": "fluke",
+    "dorsal": "small",
+    "body": "#3a5a8a",
+    "belly": "#c8d8e8",
+    "fin": "#2a4a7a",
+    "blowhole": true,
+    "eyeS": 0.7
+   }
+  },
+  {
+   "id": "orca",
+   "rig": "fish",
+   "name": "Orca",
+   "keywords_es": [
+    "orca",
+    "orcas"
+   ],
+   "keywords_en": [
+    "orca",
+    "orcas",
+    "killer whale"
+   ],
+   "env": "ocean",
+   "size": 0.6,
+   "params": {
+    "bodyL": 420,
+    "bodyH": 140,
+    "shape": "dolphin",
+    "tailT": "fluke",
+    "dorsal": "sail",
+    "body": "#1d1f26",
+    "belly": "#fafafa",
+    "fin": "#16181e"
+   }
+  },
+  {
+   "id": "seahorse_eel",
+   "rig": "fish",
+   "name": "Anguila",
+   "keywords_es": [
+    "anguila",
+    "anguilas",
+    "morena",
+    "morenas"
+   ],
+   "keywords_en": [
+    "eel",
+    "eels",
+    "moray"
+   ],
+   "env": "ocean",
+   "size": 0.32,
+   "params": {
+    "bodyL": 460,
+    "bodyH": 60,
+    "shape": "fish",
+    "tailT": "round",
+    "dorsal": "long",
+    "body": "#6a7a3a",
+    "belly": "#c8c88a",
+    "fin": "#5a6a2a",
+    "spots": "#3a4a1a"
+   }
+  },
+  {
+   "id": "octopus",
+   "rig": "octopus",
+   "name": "Pulpo",
+   "keywords_es": [
+    "pulpo",
+    "pulpos"
+   ],
+   "keywords_en": [
+    "octopus",
+    "octopuses"
+   ],
+   "env": "ocean",
+   "size": 0.42,
+   "params": {
+    "kind": "octopus",
+    "R": 110,
+    "armL": 230,
+    "body": "#d8566b",
+    "spots": "#f2a0ac"
+   }
+  },
+  {
+   "id": "squid",
+   "rig": "octopus",
+   "name": "Calamar",
+   "keywords_es": [
+    "calamar",
+    "calamares",
+    "sepia"
+   ],
+   "keywords_en": [
+    "squid",
+    "cuttlefish"
+   ],
+   "env": "ocean",
+   "size": 0.42,
+   "params": {
+    "kind": "squid",
+    "R": 80,
+    "armL": 220,
+    "body": "#e8a07a",
+    "spots": "#c8604a"
+   }
+  },
+  {
+   "id": "jellyfish",
+   "rig": "octopus",
+   "name": "Medusa",
+   "keywords_es": [
+    "medusa",
+    "medusas",
+    "agua viva",
+    "aguaviva"
+   ],
+   "keywords_en": [
+    "jellyfish"
+   ],
+   "env": "ocean",
+   "size": 0.38,
+   "params": {
+    "kind": "jellyfish",
+    "R": 100,
+    "armL": 260,
+    "body": "#b88ae8",
+    "glow": true
+   }
+  },
+  {
+   "id": "ant",
+   "rig": "insect",
+   "name": "Hormiga",
+   "keywords_es": [
+    "hormiga",
+    "hormigas",
+    "termita",
+    "termitas"
+   ],
+   "keywords_en": [
+    "ant",
+    "ants",
+    "termite"
+   ],
+   "env": "park_close",
+   "size": 0.3,
+   "params": {
+    "kind": "ant",
+    "headR": 30,
+    "thoraxR": 22,
+    "abdRx": 46,
+    "abdRy": 34,
+    "legL": 70,
+    "body": "#3a1e16",
+    "antL": 70
+   }
+  },
+  {
+   "id": "bee",
+   "rig": "insect",
+   "name": "Abeja",
+   "keywords_es": [
+    "abeja",
+    "abejas",
+    "avispa",
+    "avispas",
+    "abejorro",
+    "abejorros"
+   ],
+   "keywords_en": [
+    "bee",
+    "bees",
+    "wasp",
+    "wasps",
+    "bumblebee"
+   ],
+   "env": "park_close",
+   "size": 0.3,
+   "params": {
+    "kind": "bee",
+    "headR": 28,
+    "thoraxR": 30,
+    "abdRx": 50,
+    "abdRy": 38,
+    "legL": 50,
+    "body": "#2a2420",
+    "abd": "#f2c22a",
+    "stripes": "#1d1a18",
+    "wings": "clear",
+    "stinger": true,
+    "antL": 50,
+    "hover": true,
+    "eyeBig": true,
+    "eyeC": "#1d1a18"
+   }
+  },
+  {
+   "id": "fly",
+   "rig": "insect",
+   "name": "Mosca",
+   "keywords_es": [
+    "mosca",
+    "moscas",
+    "moscardon"
+   ],
+   "keywords_en": [
+    "housefly",
+    "houseflies"
+   ],
+   "env": "home",
+   "size": 0.26,
+   "params": {
+    "kind": "fly",
+    "headR": 28,
+    "thoraxR": 30,
+    "abdRx": 40,
+    "abdRy": 30,
+    "legL": 50,
+    "body": "#2a2e34",
+    "wings": "clear",
+    "antL": 20,
+    "eyeBig": true,
+    "eyeC": "#a2261e",
+    "hover": true
+   }
+  },
+  {
+   "id": "mosquito",
+   "rig": "insect",
+   "name": "Mosquito",
+   "keywords_es": [
+    "mosquito",
+    "mosquitos",
+    "zancudo",
+    "zancudos"
+   ],
+   "keywords_en": [
+    "mosquito",
+    "mosquitoes",
+    "gnat"
+   ],
+   "env": "night",
+   "size": 0.28,
+   "params": {
+    "kind": "mosquito",
+    "headR": 18,
+    "thoraxR": 20,
+    "abdRx": 56,
+    "abdRy": 14,
+    "legL": 110,
+    "body": "#4a4036",
+    "wings": "clear",
+    "antL": 40,
+    "proboscis": true,
+    "hover": true
+   }
+  },
+  {
+   "id": "butterfly",
+   "rig": "insect",
+   "name": "Mariposa",
+   "keywords_es": [
+    "mariposa",
+    "mariposas",
+    "polilla",
+    "polillas"
+   ],
+   "keywords_en": [
+    "butterfly",
+    "butterflies",
+    "moth",
+    "moths"
+   ],
+   "env": "park_close",
+   "size": 0.36,
+   "params": {
+    "kind": "butterfly",
+    "headR": 18,
+    "thoraxR": 18,
+    "abdRx": 44,
+    "abdRy": 12,
+    "legL": 40,
+    "body": "#2a2420",
+    "wings": "butterfly",
+    "wingC": "#f28a1a",
+    "wingC2": "#ffd24a",
+    "antL": 60,
+    "hover": true
+   }
+  },
+  {
+   "id": "ladybug",
+   "rig": "insect",
+   "name": "Mariquita",
+   "keywords_es": [
+    "mariquita",
+    "mariquitas",
+    "catarina",
+    "catarinas",
+    "vaquita"
+   ],
+   "keywords_en": [
+    "ladybug",
+    "ladybugs",
+    "ladybird"
+   ],
+   "env": "park_close",
+   "size": 0.26,
+   "params": {
+    "kind": "ladybug",
+    "headR": 22,
+    "thoraxR": 26,
+    "abdRx": 46,
+    "abdRy": 34,
+    "legL": 34,
+    "body": "#1d1d1d",
+    "wings": "shell",
+    "wingC": "#e2221e",
+    "spots": "#151515",
+    "antL": 24
+   }
+  },
+  {
+   "id": "beetle",
+   "rig": "insect",
+   "name": "Escarabajo",
+   "keywords_es": [
+    "escarabajo",
+    "escarabajos",
+    "cucaracha",
+    "cucarachas"
+   ],
+   "keywords_en": [
+    "beetle",
+    "beetles",
+    "cockroach",
+    "cockroaches"
+   ],
+   "env": "park_close",
+   "size": 0.3,
+   "params": {
+    "kind": "beetle",
+    "headR": 24,
+    "thoraxR": 28,
+    "abdRx": 56,
+    "abdRy": 34,
+    "legL": 50,
+    "body": "#3a2418",
+    "wings": "shell",
+    "wingC": "#5a3a1a",
+    "antL": 60
+   }
+  },
+  {
+   "id": "grasshopper",
+   "rig": "insect",
+   "name": "Saltamontes",
+   "keywords_es": [
+    "saltamontes",
+    "grillo",
+    "grillos",
+    "langosta",
+    "langostas",
+    "chapulin"
+   ],
+   "keywords_en": [
+    "grasshopper",
+    "cricket",
+    "locust"
+   ],
+   "env": "park_close",
+   "size": 0.32,
+   "params": {
+    "kind": "grasshopper",
+    "headR": 26,
+    "thoraxR": 24,
+    "abdRx": 64,
+    "abdRy": 20,
+    "legL": 70,
+    "body": "#6aa83a",
+    "wings": "long",
+    "wingC": "#8ac84a",
+    "jumpLegs": true,
+    "antL": 90
+   }
+  },
+  {
+   "id": "dragonfly",
+   "rig": "insect",
+   "name": "Libélula",
+   "keywords_es": [
+    "libelula",
+    "libelulas"
+   ],
+   "keywords_en": [
+    "dragonfly",
+    "dragonflies"
+   ],
+   "env": "river",
+   "size": 0.34,
+   "params": {
+    "kind": "dragonfly",
+    "headR": 22,
+    "thoraxR": 20,
+    "abdRx": 80,
+    "abdRy": 10,
+    "legL": 30,
+    "body": "#2a8ab2",
+    "wings": "long",
+    "wingC": "#cfeaff",
+    "eyeBig": true,
+    "eyeC": "#1a5a8a",
+    "antL": 10,
+    "hover": true
+   }
+  },
+  {
+   "id": "firefly",
+   "rig": "insect",
+   "name": "Luciérnaga",
+   "keywords_es": [
+    "luciernaga",
+    "luciernagas"
+   ],
+   "keywords_en": [
+    "firefly",
+    "fireflies"
+   ],
+   "env": "night",
+   "size": 0.26,
+   "params": {
+    "kind": "firefly",
+    "headR": 20,
+    "thoraxR": 24,
+    "abdRx": 40,
+    "abdRy": 24,
+    "legL": 40,
+    "body": "#3a2e22",
+    "wings": "shell",
+    "wingC": "#5a4a32",
+    "glow": "#e8ff6a",
+    "antL": 40,
+    "hover": true
+   }
+  },
+  {
+   "id": "snake",
+   "rig": "snake",
+   "name": "Serpiente",
+   "keywords_es": [
+    "serpiente",
+    "serpientes",
+    "culebra",
+    "culebras",
+    "vibora",
+    "viboras",
+    "boa",
+    "boas",
+    "piton",
+    "anaconda",
+    "anacondas"
+   ],
+   "keywords_en": [
+    "snake",
+    "snakes",
+    "serpent",
+    "viper",
+    "python",
+    "boa",
+    "anaconda"
+   ],
+   "env": "jungle",
+   "size": 0.42,
+   "params": {
+    "kind": "snake",
+    "L": 560,
+    "W": 44,
+    "body": "#5c8f3a",
+    "pattern": "bands",
+    "dark": "#2f5a1e"
+   }
+  },
+  {
+   "id": "cobra",
+   "rig": "snake",
+   "name": "Cobra",
+   "keywords_es": [
+    "cobra",
+    "cobras"
+   ],
+   "keywords_en": [
+    "cobra",
+    "cobras"
+   ],
+   "env": "desert",
+   "size": 0.5,
+   "params": {
+    "kind": "snake",
+    "L": 520,
+    "W": 44,
+    "body": "#c8a24a",
+    "pattern": "rings",
+    "hood": true,
+    "headT": "round"
+   }
+  },
+  {
+   "id": "rattlesnake",
+   "rig": "snake",
+   "name": "Serpiente de cascabel",
+   "keywords_es": [
+    "cascabel",
+    "serpiente de cascabel",
+    "serpientes de cascabel"
+   ],
+   "keywords_en": [
+    "rattlesnake",
+    "rattlesnakes"
+   ],
+   "env": "desert",
+   "size": 0.42,
+   "params": {
+    "kind": "snake",
+    "L": 520,
+    "W": 44,
+    "body": "#b8925a",
+    "pattern": "diamonds",
+    "dark": "#5a3a1e",
+    "headT": "tri",
+    "rattle": true
+   }
+  },
+  {
+   "id": "worm",
+   "rig": "snake",
+   "name": "Gusano",
+   "keywords_es": [
+    "gusano",
+    "gusanos",
+    "lombriz",
+    "lombrices",
+    "oruga",
+    "orugas"
+   ],
+   "keywords_en": [
+    "worm",
+    "worms",
+    "earthworm",
+    "caterpillar"
+   ],
+   "env": "park_close",
+   "size": 0.3,
+   "params": {
+    "kind": "worm",
+    "L": 300,
+    "W": 40,
+    "body": "#e48a9a",
+    "pattern": "rings"
+   }
+  },
+  {
+   "id": "snail",
+   "rig": "snake",
+   "name": "Caracol",
+   "keywords_es": [
+    "caracol",
+    "caracoles",
+    "babosa",
+    "babosas"
+   ],
+   "keywords_en": [
+    "snail",
+    "snails",
+    "slug"
+   ],
+   "env": "park_close",
+   "size": 0.32,
+   "params": {
+    "kind": "snail",
+    "L": 220,
+    "W": 36,
+    "body": "#c8b48a",
+    "pattern": "none",
+    "shellC": "#b07a3e"
+   }
+  },
+  {
+   "id": "capybara",
+   "rig": "quadruped",
+   "name": "Capibara",
+   "keywords_es": [
+    "capibara",
+    "capibaras",
+    "carpincho",
+    "carpinchos",
+    "chiguire"
+   ],
+   "keywords_en": [
+    "capybara",
+    "capybaras"
+   ],
+   "env": "river",
+   "size": 0.34,
+   "params": {
+    "bodyL": 280,
+    "bodyH": 150,
+    "legL": 70,
+    "legW": 30,
+    "neckL": 10,
+    "neckA": 0.3,
+    "neckW": 100,
+    "headR": 56,
+    "snout": 40,
+    "snoutH": 1.0,
+    "ears": "small",
+    "tail": "none",
+    "body": "#9a6a42",
+    "muzzle": "#8a5a36",
+    "nose": "#3a2a22"
+   }
+  },
+  {
+   "id": "hyena",
+   "rig": "quadruped",
+   "name": "Hiena",
+   "keywords_es": [
+    "hiena",
+    "hienas"
+   ],
+   "keywords_en": [
+    "hyena",
+    "hyenas"
+   ],
+   "env": "savanna",
+   "size": 0.38,
+   "params": {
+    "tilt": 0.18,
+    "bodyL": 300,
+    "bodyH": 125,
+    "legL": 140,
+    "legW": 28,
+    "neckL": 60,
+    "neckA": 0.5,
+    "neckW": 76,
+    "headR": 50,
+    "snout": 40,
+    "ears": "round",
+    "earS": 0.9,
+    "tail": "bushy",
+    "tailL": 90,
+    "tailW": 12,
+    "body": "#b89a6a",
+    "dark": "#4a3a2a",
+    "pattern": "spots",
+    "mane": "short",
+    "maneC": "#4a3a2a"
+   }
+  },
+  {
+   "id": "badger",
+   "rig": "quadruped",
+   "name": "Tejón",
+   "keywords_es": [
+    "tejon",
+    "tejones",
+    "topo",
+    "topos"
+   ],
+   "keywords_en": [
+    "badger",
+    "badgers",
+    "mole",
+    "moles"
+   ],
+   "env": "forest",
+   "size": 0.24,
+   "params": {
+    "bodyL": 240,
+    "bodyH": 100,
+    "legL": 40,
+    "legW": 24,
+    "neckL": 10,
+    "neckA": 0.3,
+    "neckW": 70,
+    "headR": 42,
+    "snout": 40,
+    "ears": "small",
+    "tail": "short",
+    "tailW": 12,
+    "body": "#6a6a70",
+    "pattern": "back_stripe",
+    "stripeC": "#e8e8e8",
+    "mask": true,
+    "dark": "#1d1d22"
+   }
+  },
+  {
+   "id": "armadillo",
+   "rig": "quadruped",
+   "name": "Armadillo",
+   "keywords_es": [
+    "armadillo",
+    "armadillos",
+    "pangolin"
+   ],
+   "keywords_en": [
+    "armadillo",
+    "armadillos",
+    "pangolin"
+   ],
+   "env": "desert",
+   "size": 0.26,
+   "params": {
+    "bodyL": 220,
+    "bodyH": 100,
+    "legL": 38,
+    "legW": 20,
+    "neckL": 10,
+    "neckA": 0.2,
+    "neckW": 46,
+    "headR": 34,
+    "snout": 46,
+    "ears": "pointy",
+    "earS": 0.8,
+    "tail": "thin",
+    "tailL": 110,
+    "tailW": 14,
+    "shell": true,
+    "shellC": "#a89070",
+    "body": "#c8a88a"
+   }
+  },
+  {
+   "id": "anteater",
+   "rig": "quadruped",
+   "name": "Oso hormiguero",
+   "keywords_es": [
+    "oso hormiguero",
+    "osos hormigueros",
+    "hormiguero"
+   ],
+   "keywords_en": [
+    "anteater",
+    "anteaters"
+   ],
+   "env": "jungle",
+   "size": 0.4,
+   "params": {
+    "bodyL": 320,
+    "bodyH": 130,
+    "legL": 110,
+    "legW": 30,
+    "neckL": 40,
+    "neckA": 0.1,
+    "neckW": 70,
+    "headR": 36,
+    "snout": 130,
+    "snoutH": 0.45,
+    "ears": "small",
+    "tail": "bushy",
+    "tailL": 170,
+    "tailW": 22,
+    "body": "#8a7a62",
+    "pattern": "back_stripe",
+    "stripeC": "#2a2622"
+   }
+  },
+  {
+   "id": "platypus",
+   "rig": "quadruped",
+   "name": "Ornitorrinco",
+   "keywords_es": [
+    "ornitorrinco",
+    "ornitorrincos"
+   ],
+   "keywords_en": [
+    "platypus",
+    "platypuses"
+   ],
+   "env": "river",
+   "size": 0.28,
+   "params": {
+    "bodyL": 230,
+    "bodyH": 90,
+    "legL": 36,
+    "legW": 22,
+    "neckL": 10,
+    "neckA": 0.2,
+    "neckW": 70,
+    "headR": 36,
+    "snout": 60,
+    "snoutH": 0.6,
+    "muzzle": "#3a3a3e",
+    "nose": "#2a2a2e",
+    "ears": "none",
+    "tail": "flat",
+    "tailC": "#6a4a32",
+    "body": "#7a5a3e"
+   }
+  },
+  {
+   "id": "axolotl",
+   "rig": "quadruped",
+   "name": "Ajolote",
+   "keywords_es": [
+    "ajolote",
+    "ajolotes",
+    "axolote",
+    "salamandra",
+    "salamandras",
+    "triton"
+   ],
+   "keywords_en": [
+    "axolotl",
+    "axolotls",
+    "salamander",
+    "newt"
+   ],
+   "env": "river_under",
+   "size": 0.3,
+   "params": {
+    "bodyL": 220,
+    "bodyH": 70,
+    "legL": 34,
+    "legW": 16,
+    "neckL": 10,
+    "neckA": 0.2,
+    "neckW": 60,
+    "headR": 44,
+    "snout": 10,
+    "ears": "none",
+    "tail": "reptile",
+    "tailL": 200,
+    "crest": true,
+    "crestC": "#e86a9a",
+    "body": "#f4b0c8",
+    "belly": "#fbd8e4",
+    "eyeS": 1.1,
+    "habitat": "water"
+   }
+  },
+  {
+   "id": "trex",
+   "rig": "quadruped",
+   "name": "Tiranosaurio",
+   "keywords_es": [
+    "tiranosaurio",
+    "tiranosaurios",
+    "t-rex",
+    "trex",
+    "velociraptor",
+    "velociraptores",
+    "raptor"
+   ],
+   "keywords_en": [
+    "t-rex",
+    "trex",
+    "tyrannosaurus",
+    "velociraptor",
+    "raptor"
+   ],
+   "env": "jungle",
+   "size": 0.6,
+   "params": {
+    "tilt": 0.55,
+    "frontArms": true,
+    "bodyL": 320,
+    "bodyH": 150,
+    "legL": 170,
+    "legW": 48,
+    "neckL": 60,
+    "neckA": 0.5,
+    "neckW": 90,
+    "headR": 60,
+    "snout": 90,
+    "snoutH": 0.8,
+    "ears": "none",
+    "tail": "reptile",
+    "tailL": 330,
+    "body": "#6a8a4a",
+    "belly": "#d8d8a0",
+    "dark": "#3a5a2a",
+    "pattern": "stripes",
+    "eyeS": 0.9
+   }
+  },
+  {
+   "id": "seal",
+   "rig": "fish",
+   "name": "Foca",
+   "keywords_es": [
+    "foca",
+    "focas",
+    "lobo marino",
+    "lobos marinos",
+    "leon marino",
+    "leones marinos",
+    "morsa",
+    "morsas",
+    "manati",
+    "manaties"
+   ],
+   "keywords_en": [
+    "seal",
+    "seals",
+    "sea lion",
+    "walrus",
+    "manatee"
+   ],
+   "env": "ocean",
+   "size": 0.42,
+   "params": {
+    "bodyL": 320,
+    "bodyH": 130,
+    "shape": "dolphin",
+    "tailT": "round",
+    "dorsal": "none",
+    "body": "#8a8a92",
+    "belly": "#c8c8cc",
+    "fin": "#6a6a72",
+    "eyeS": 1.6
+   }
+  },
+  {
+   "id": "seahorse",
+   "rig": "fish",
+   "name": "Caballito de mar",
+   "keywords_es": [
+    "caballito de mar",
+    "caballitos de mar",
+    "hipocampo"
+   ],
+   "keywords_en": [
+    "seahorse",
+    "seahorses"
+   ],
+   "env": "ocean",
+   "size": 0.28,
+   "params": {
+    "bodyL": 160,
+    "bodyH": 120,
+    "shape": "fish",
+    "tailT": "round",
+    "dorsal": "small",
+    "body": "#f2b23a",
+    "belly": "#f8d88a",
+    "fin": "#e29a2a",
+    "eyeS": 1.2
+   }
+  },
+  {
+   "id": "starfish_ray",
+   "rig": "fish",
+   "name": "Mantarraya",
+   "keywords_es": [
+    "mantarraya",
+    "mantarrayas",
+    "raya",
+    "rayas",
+    "manta"
+   ],
+   "keywords_en": [
+    "stingray",
+    "manta",
+    "ray"
+   ],
+   "env": "ocean",
+   "size": 0.5,
+   "params": {
+    "bodyL": 300,
+    "bodyH": 90,
+    "shape": "fish",
+    "tailT": "fork",
+    "dorsal": "none",
+    "body": "#5a6a7a",
+    "belly": "#e8eef4",
+    "fin": "#4a5a6a",
+    "spots": "#8a9aaa"
+   }
+  },
+  {
+   "id": "mantis",
+   "rig": "insect",
+   "name": "Mantis",
+   "keywords_es": [
+    "mantis",
+    "mantis religiosa",
+    "santateresa"
+   ],
+   "keywords_en": [
+    "mantis",
+    "praying mantis"
+   ],
+   "env": "park_close",
+   "size": 0.32,
+   "params": {
+    "kind": "grasshopper",
+    "headR": 26,
+    "thoraxR": 18,
+    "abdRx": 70,
+    "abdRy": 18,
+    "legL": 80,
+    "body": "#7ac83a",
+    "wings": "long",
+    "wingC": "#a8e86a",
+    "jumpLegs": false,
+    "antL": 60,
+    "eyeBig": true,
+    "eyeC": "#3a8a2a"
+   }
+  },
+  {
+   "id": "pterodactyl",
+   "rig": "bird",
+   "name": "Pterodáctilo",
+   "keywords_es": [
+    "pterodactilo",
+    "pterodactilos",
+    "pteranodon",
+    "dragon volador"
+   ],
+   "keywords_en": [
+    "pterodactyl",
+    "pteranodon"
+   ],
+   "env": "sky",
+   "size": 0.46,
+   "params": {
+    "bodyRx": 70,
+    "bodyRy": 40,
+    "tilt": 0.4,
+    "neckL": 50,
+    "neckW": 30,
+    "headR": 30,
+    "beak": "needle",
+    "beakL": 90,
+    "beakC": "#c8a26a",
+    "legL": 40,
+    "legC": "#8a6a4a",
+    "crest": "crest",
+    "crestC": "#c86a3a",
+    "tail": "short",
+    "tailL": 20,
+    "wings": "membrane",
+    "body": "#a8784a",
+    "wingC": "#c8945a",
+    "headC": "#a8784a",
+    "flapHz": 1.4,
+    "hover": true
+   }
+  }
+ ]
+}

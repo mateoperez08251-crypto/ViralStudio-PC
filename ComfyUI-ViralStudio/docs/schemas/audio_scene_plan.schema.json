@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "viralstudio.audio_scene_plan.v1",
+  "title": "audio_scene_plan v1 (plan/audio_plan.json). Invariantes que el JSON Schema no expresa (partición contigua 0→frame_count, palabras dentro de su escena, beats dentro de su escena) los valida vs/audio_timeline.validate_plan().",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "input_mode",
+    "audio",
+    "video",
+    "transcript",
+    "visual_bible",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "input_mode": {
+      "const": "audio"
+    },
+    "planner": {
+      "enum": [
+        "rules",
+        "llm"
+      ]
+    },
+    "audio": {
+      "type": "object",
+      "required": [
+        "duration_s",
+        "narration_source",
+        "tts_used"
+      ],
+      "properties": {
+        "duration_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "narration_source": {
+          "const": "original_audio"
+        },
+        "tts_used": {
+          "const": false
+        }
+      }
+    },
+    "video": {
+      "type": "object",
+      "required": [
+        "fps",
+        "width",
+        "height",
+        "frame_count"
+      ]
+    },
+    "transcript": {
+      "type": "object",
+      "required": [
+        "words"
+      ],
+      "properties": {
+        "words": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text",
+              "start_s",
+              "end_s"
+            ],
+            "properties": {
+              "needs_review": {
+                "type": "boolean"
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual_bible": {
+      "type": "object",
+      "required": [
+        "characters",
+        "backgrounds"
+      ]
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "start_s",
+          "end_s",
+          "start_frame",
+          "end_frame",
+          "word_ids",
+          "render_backend",
+          "asset_ids",
+          "narration_exact"
+        ]
+      }
+    }
+  }
+}

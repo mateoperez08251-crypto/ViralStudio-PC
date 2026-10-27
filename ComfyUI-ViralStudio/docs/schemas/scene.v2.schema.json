@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "viralstudio.scene.v2",
+  "title": "Escena del modo «Mi audio → video» (v2). Convive con scene.schema.json (v1, modo clásico): no se mezclan enums.",
+  "type": "object",
+  "required": [
+    "schema",
+    "scene_id",
+    "audio_start_s",
+    "audio_end_s",
+    "start_frame",
+    "end_frame",
+    "exact_narration",
+    "word_ids",
+    "visual_justification",
+    "render_backend",
+    "asset_ids",
+    "revision",
+    "narration_source",
+    "tts_used"
+  ],
+  "properties": {
+    "schema": {
+      "const": "viralstudio.scene.v2"
+    },
+    "scene_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audio_start_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "audio_end_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "start_frame": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end_frame": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "exact_narration": {
+      "type": "string"
+    },
+    "word_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visual_justification": {
+      "type": "string"
+    },
+    "render_backend": {
+      "enum": [
+        "vector2d",
+        "layered2d",
+        "infographic",
+        "legacy_canvas",
+        "external_clip",
+        "web3d"
+      ]
+    },
+    "template": {
+      "enum": [
+        "character_scene",
+        "closeup",
+        "counter",
+        "kinetic",
+        "document",
+        "compare",
+        "countdown",
+        "ambient"
+      ]
+    },
+    "asset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "character_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_beats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "at_s",
+          "action"
+        ]
+      }
+    },
+    "camera": {
+      "type": "object"
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "caption_policy": {
+      "enum": [
+        "word_timed",
+        "none"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "narration_source": {
+      "const": "original_audio"
+    },
+    "tts_used": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}

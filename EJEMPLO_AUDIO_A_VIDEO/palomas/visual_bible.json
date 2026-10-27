@@ -1,0 +1,62 @@
+{
+ "style": "cutout_ilustrado",
+ "characters": [
+  {
+   "id": "pigeon_01",
+   "asset_id": "pigeon_rig_v1",
+   "variant": "default",
+   "name": "palomas",
+   "first_word": "palomas",
+   "description": "Paloma ilustrada",
+   "locked": false
+  },
+  {
+   "id": "person_01",
+   "asset_id": "person_rig_v1",
+   "variant": "child",
+   "name": "niño",
+   "first_word": "niño",
+   "description": "Persona articulada",
+   "locked": false,
+   "colors": {
+    "skin": "#f1c7a1",
+    "hairColor": "#6b4428"
+   }
+  }
+ ],
+ "backgrounds": [
+  {
+   "id": "plaza_layered_01",
+   "asset_id": "plaza_layered_v1",
+   "name": "plaza"
+  },
+  {
+   "id": "park_day_01",
+   "asset_id": "park_day_v1",
+   "name": "(por defecto)"
+  },
+  {
+   "id": "studio_gradient_01",
+   "asset_id": "studio_gradient_v1",
+   "name": "(infografías)"
+  }
+ ],
+ "props": [
+  {
+   "id": "bench_01",
+   "asset_id": "bench_v1",
+   "name": "banco"
+  },
+  {
+   "id": "camera_01",
+   "asset_id": "camera_v1",
+   "name": "cámara"
+  }
+ ],
+ "palette": [
+  "#6A9C93",
+  "#6A6182",
+  "#E8B97B",
+  "#252732"
+ ]
+}

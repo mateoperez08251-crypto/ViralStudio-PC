@@ -1,0 +1,66 @@
+{
+ "style": "cutout_ilustrado",
+ "characters": [
+  {
+   "id": "spider_01",
+   "asset_id": "spider_rig_v1",
+   "variant": "default",
+   "name": "arañas",
+   "first_word": "arañas",
+   "description": "Araña articulada",
+   "locked": false
+  },
+  {
+   "id": "sleeper_01",
+   "asset_id": "sleeper_rig_v1",
+   "variant": "default",
+   "name": "dormimos",
+   "first_word": "dormimos.",
+   "description": "Persona durmiendo (perfil)",
+   "locked": false
+  },
+  {
+   "id": "person_01",
+   "asset_id": "person_rig_v1",
+   "variant": "man",
+   "name": "científico",
+   "first_word": "científico",
+   "description": "Persona articulada",
+   "locked": false,
+   "colors": {
+    "skin": "#f1c7a1",
+    "hairColor": "#6b4428"
+   }
+  }
+ ],
+ "backgrounds": [
+  {
+   "id": "studio_gradient_01",
+   "asset_id": "studio_gradient_v1",
+   "name": "estudio"
+  },
+  {
+   "id": "bedroom_night_01",
+   "asset_id": "bedroom_night_v1",
+   "name": "(por defecto)"
+  },
+  {
+   "id": "park_day_01",
+   "asset_id": "park_day_v1",
+   "name": "(por defecto)"
+  }
+ ],
+ "props": [
+  {
+   "id": "book_01",
+   "asset_id": "book_v1",
+   "name": "estudio"
+  }
+ ],
+ "palette": [
+  "#6A9C93",
+  "#6A6182",
+  "#E8B97B",
+  "#252732"
+ ]
+}

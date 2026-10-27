@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "job_id",
+    "project_id",
+    "state",
+    "revision"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "DRAFT",
+        "INGESTED",
+        "PLANNED",
+        "VALIDATED",
+        "ASSET_READY",
+        "ANIMATING",
+        "RENDERING",
+        "QA_PENDING",
+        "APPROVED",
+        "MIXING",
+        "DONE",
+        "FAILED_RETRYABLE",
+        "FAILED_BLOCKED",
+        "CANCELLED"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "progress": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "error": {
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "artifacts": {
+      "type": "array"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

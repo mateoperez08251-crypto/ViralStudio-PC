@@ -1,0 +1,415 @@
+[
+ {
+  "scene_id": "s001",
+  "story_span": "En una de las épocas más *oscuras* de la historia, una mujer decidió desafiar a la muerte.",
+  "audio_start_s": 0.1,
+  "audio_end_s": 5.046,
+  "exact_narration": "En una de las épocas más *oscuras* de la historia, una mujer decidió desafiar a la muerte.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "night_city",
+  "era": "",
+  "character_ids": [
+   "irena"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "look_up",
+    "who": "irena"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "fear",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "danger",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [
+   "storm"
+  ],
+  "sfx_cues": [
+   "impact"
+  ],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 5.233333,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s002",
+  "story_span": "Su nombre era *Irena Sendler*.",
+  "audio_start_s": 5.333,
+  "audio_end_s": 7.248,
+  "exact_narration": "Su nombre era *Irena Sendler*.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "stage",
+  "era": "",
+  "character_ids": [
+   "irena"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "idle",
+    "who": "irena"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "flash"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "portrait",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "labels_only",
+  "expected_duration_s": 2.2,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s003",
+  "story_span": "En *1940*, los nazis encerraron a miles de familias judías.",
+  "audio_start_s": 7.533,
+  "audio_end_s": 12.074,
+  "exact_narration": "En *1940*, los nazis encerraron a miles de familias judías.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "void",
+  "era": "1940",
+  "character_ids": [],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "whip"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "year",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "labels_only",
+  "expected_duration_s": 4.833333,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s004",
+  "story_span": "Detrás de los muros del gueto de *Varsovia*, en Polonia.",
+  "audio_start_s": 12.367,
+  "audio_end_s": 15.362,
+  "exact_narration": "Detrás de los muros del gueto de *Varsovia*, en Polonia.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "void",
+  "era": "",
+  "character_ids": [],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "zoom"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "map",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "labels_only",
+  "expected_duration_s": 3.3,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s005",
+  "story_span": "Irena entraba cada día como enfermera… y salía con niños escondidos.",
+  "audio_start_s": 15.667,
+  "audio_end_s": 19.867,
+  "exact_narration": "Irena entraba cada día como enfermera… y salía con niños escondidos.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "ghetto",
+  "era": "",
+  "character_ids": [
+   "irena"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "carry",
+    "who": "irena"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "dip"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "scene",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 4.5,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s006",
+  "story_span": "En maletas, en ataúdes, en sacos de patatas.",
+  "audio_start_s": 20.167,
+  "audio_end_s": 22.873,
+  "exact_narration": "En maletas, en ataúdes, en sacos de patatas.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "void",
+  "era": "",
+  "character_ids": [],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "flash"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "montage",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 3.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s007",
+  "story_span": "Salvó a *dos mil quinientos* niños.",
+  "audio_start_s": 23.167,
+  "audio_end_s": 25.384,
+  "exact_narration": "Salvó a *dos mil quinientos* niños.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "void",
+  "era": "",
+  "character_ids": [],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "number",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [
+   "impact"
+  ],
+  "music_cues": [],
+  "text_policy": "labels_only",
+  "expected_duration_s": 2.533333,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s008",
+  "story_span": "La atraparon, la torturaron… pero *nunca* habló.",
+  "audio_start_s": 25.7,
+  "audio_end_s": 28.402,
+  "exact_narration": "La atraparon, la torturaron… pero *nunca* habló.",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "prison",
+  "era": "",
+  "character_ids": [
+   "irena",
+   "soldado"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "angry",
+    "who": "irena"
+   },
+   {
+    "at_s": 0,
+    "verb": "angry",
+    "who": "soldado"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "glitch"
+  },
+  "lighting": {
+   "mood": "danger",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "confront",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 3.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s009",
+  "story_span": "¿Tú habrías arriesgado tu vida por un desconocido?",
+  "audio_start_s": 28.7,
+  "audio_end_s": 31.536,
+  "exact_narration": "¿Tú habrías arriesgado tu vida por un desconocido?",
+  "historical_sources": [],
+  "visual_justification": "ilustra la frase narrada",
+  "style_profile": "",
+  "location": "void",
+  "era": "",
+  "character_ids": [],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "kinetic",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "labels_only",
+  "expected_duration_s": 3.133333,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ }
+]

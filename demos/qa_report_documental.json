@@ -1,0 +1,67 @@
+{
+ "status": "PASS",
+ "checks": [
+  {
+   "check": "pistas",
+   "status": "PASS",
+   "detail": "video=sí audio=sí"
+  },
+  {
+   "check": "resolución",
+   "status": "PASS",
+   "detail": "1920×1080 (esperado 1920×1080)"
+  },
+  {
+   "check": "fps",
+   "status": "PASS",
+   "detail": "30.00 fps (esperado 30)"
+  },
+  {
+   "check": "códec",
+   "status": "PASS",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "check": "duración",
+   "status": "PASS",
+   "detail": "23.23s vs línea de tiempo 23.23s"
+  },
+  {
+   "check": "sincronía A/V",
+   "status": "PASS",
+   "detail": "video 23.20s · audio 23.23s"
+  },
+  {
+   "check": "cuadros negros",
+   "status": "PASS",
+   "detail": "ninguno"
+  },
+  {
+   "check": "imagen congelada",
+   "status": "PASS",
+   "detail": "ninguna"
+  },
+  {
+   "check": "sonoridad",
+   "status": "PASS",
+   "detail": "-14.2 LUFS · pico -1.5 dBTP (objetivo −14 LUFS, ≤ −1 dBTP)"
+  },
+  {
+   "check": "voz en cada escena",
+   "status": "PASS",
+   "detail": "todas narradas"
+  },
+  {
+   "check": "subtítulos",
+   "status": "PASS",
+   "detail": "13 grupos sincronizados"
+  },
+  {
+   "check": "fidelidad narración→imagen",
+   "status": "PASS",
+   "detail": "cada plano justificado por la narración"
+  }
+ ],
+ "duration": 23.233,
+ "generated": "2026-10-25 05:10:33"
+}

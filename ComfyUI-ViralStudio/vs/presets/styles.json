@@ -1,0 +1,102 @@
+{
+  "cine_oscuro": {
+    "name": "Cine oscuro (stickman dorado)", "icon": "🎬",
+    "desc": "Personajes de línea viva crema sobre noche cinematográfica, acentos dorados y rojos. El estilo de tu video de Irena.",
+    "mode": "line", "bg": "#0f1116", "ink": "#efe6d6", "head": "#16181f", "accent": "#e3a83e", "danger": "#c4473a", "cool": "#6f9fd8",
+    "crowd": "#b3bccb", "ground": "#15181f", "grain": 0.06, "vignette": 0.6, "boil": 12, "jitter": 1.6,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "karaoke"
+  },
+  "documental_sepia": {
+    "name": "Documental sepia (siluetas)", "icon": "🎞️",
+    "desc": "Siluetas negras con contorno blanco sobre fotografía antigua desenfocada, grano, polvo y rayas de película (estilo ARTE).",
+    "mode": "doc", "bg": "#b49a74", "ink": "#f4ede4", "accent": "#ff5a1f", "danger": "#d0402a", "cool": "#7a8a96",
+    "grain": 0.1, "vignette": 0.62, "boil": 0, "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond",
+    "fontKinetic": "League Gothic", "time": "day", "captions": "cine", "mapSea": "#8c7656", "mapLand": "#c9b48e", "mapHi": "#ff5a1f"
+  },
+  "carbon_noir": {
+    "name": "Ilustración a carbón (noir)", "icon": "✍️",
+    "desc": "Figuras humanas pintadas a carbón, grises con tinte rosado, luz dramática de lámpara y claroscuro.",
+    "mode": "charcoal", "bg": "#b8a6a4", "ink": "#1c1716", "skin": "#d6d0ca", "accent": "#f2efe6", "danger": "#8a2b25", "cool": "#6a7a86",
+    "outfits": ["#2a2829", "#3a3634", "#4a4446", "#33302f"], "hairs": ["#151313", "#2a2422", "#3a3330"],
+    "wall": "#b9a7a5", "desk": "#8f8b8c", "floor": "#6a6264", "grain": 0.08, "vignette": 0.65, "boil": 0, "saturate": 0.3,
+    "keyLight": {"x": 0.75, "y": 0.4, "r": 0.85, "dark": 0.5}, "lightX": 0.85,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "cine", "mapSea": "#7e7476", "mapLand": "#b0a4a2", "mapHi": "#e8e2da"
+  },
+  "ilustrado_color": {
+    "name": "Ilustración a color", "icon": "🎨",
+    "desc": "Figuras humanas ilustradas con color, textura de pincel y luz cálida. Ideal para historias y biografías.",
+    "mode": "painted", "bg": "#262c3a", "ink": "#efe6d6", "skin": "#e2b48c", "accent": "#f0b648", "danger": "#d0503a", "cool": "#6f9fd8",
+    "outfits": ["#7b3b2e", "#3d5a7a", "#5a6b3e", "#6e5a70", "#8a6a45"], "hairs": ["#2a1d16", "#4a3426", "#6b4a2e", "#1a1716"],
+    "grain": 0.07, "vignette": 0.55, "boil": 0, "keyLight": {"x": 0.6, "y": 0.3, "r": 1.0, "dark": 0.38}, "lightX": 0.75,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "dusk", "captions": "viral"
+  },
+  "titere_papel": {
+    "name": "Títere de papel (stop-motion)", "icon": "✂️",
+    "desc": "Teatro de cartulina con chinchetas de latón, sombras de papel y movimiento a 15 cuadros por segundo.",
+    "mode": "puppet", "bg": "#3a2c22", "ink": "#2a1d16", "accent": "#e3a83e", "danger": "#a8322a", "cool": "#5d6b7f",
+    "skin": "#efd5ae", "ground": "#4a3a2c", "grain": 0.08, "vignette": 0.55, "step": 15, "boil": 15, "jitter": 0.6, "texture": "paper",
+    "outfits": ["#5d6b7f", "#7b5a47", "#56664f", "#6e5a70", "#8a7356", "#4f5d6b"],
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "papel"
+  },
+  "sombras_atardecer": {
+    "name": "Sombras al atardecer", "icon": "🌅",
+    "desc": "Siluetas negras sobre cielos de atardecer intensos. Muy viral para motivación, guerras y leyendas.",
+    "mode": "silhouette", "bg": "#e0703a", "ink": "#08080a", "accent": "#ffd27a", "danger": "#ff3a2a", "sky1": "#2a1a3a", "sky2": "#f08a3a",
+    "grain": 0.05, "vignette": 0.5, "boil": 0, "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond",
+    "fontKinetic": "League Gothic", "time": "dusk", "captions": "viral", "mapSea": "#2a1a2a", "mapLand": "#c06030", "mapHi": "#ffd27a"
+  },
+  "terror": {
+    "name": "Terror / misterio", "icon": "🩸",
+    "desc": "Oscuridad, niebla, rojo sangre, cámara inquieta. Para creepypastas, casos sin resolver y leyendas urbanas.",
+    "mode": "line", "bg": "#0a0b0d", "ink": "#d8d4cc", "head": "#0e0f12", "accent": "#d0302a", "danger": "#ff2a1a", "cool": "#5a7a8a",
+    "crowd": "#7a8088", "ground": "#0d0e10", "grain": 0.1, "vignette": 0.75, "boil": 14, "jitter": 2.2,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "karaoke"
+  },
+  "comic_pop": {
+    "name": "Cómic pop", "icon": "💥",
+    "desc": "Contornos gruesos, colores saturados y trama de puntos. Divertido y enérgico.",
+    "mode": "comic", "bg": "#f4e7c5", "ink": "#14110f", "accent": "#ffcf2a", "danger": "#e8342a", "cool": "#2a8ad8", "good": "#3ab86a",
+    "skin": "#f5c9a0", "ground": "#d8b878", "lineW": 6, "grain": 0.03, "vignette": 0.3, "boil": 8, "jitter": 1.0, "texture": "halftone",
+    "outfits": ["#2a8ad8", "#e8342a", "#3ab86a", "#9a4ad8", "#ff8a2a"],
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "Playfair Display", "fontKinetic": "League Gothic",
+    "time": "day", "captions": "caja"
+  },
+  "neon": {
+    "name": "Neón cyberpunk", "icon": "🌃",
+    "desc": "Líneas de luz neón sobre noche violeta, líneas de escaneo. Tecnología, IA, futuro.",
+    "mode": "neon", "bg": "#0b0618", "ink": "#e8f0ff", "head": "#0b0618", "accent": "#ff2ad4", "danger": "#ff3a5a", "cool": "#2ae8ff",
+    "good": "#4aff9a", "glow": 18, "grain": 0.05, "vignette": 0.6, "boil": 10, "jitter": 1.0, "texture": "scan",
+    "outfits": ["#2ae8ff", "#ff2ad4", "#ffe82a", "#4aff9a"],
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "neon"
+  },
+  "pizarra": {
+    "name": "Pizarra (explicativo)", "icon": "🧠",
+    "desc": "Tiza blanca sobre pizarra verde oscuro. Para ciencia, finanzas y explicaciones.",
+    "mode": "chalk", "bg": "#1f3329", "ink": "#eef2e8", "head": "#1f3329", "accent": "#ffd86a", "danger": "#ff8a7a", "cool": "#8ad8ff",
+    "ground": "#1a2b22", "grain": 0.07, "vignette": 0.5, "boil": 10, "jitter": 1.4,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "night", "captions": "minimal"
+  },
+  "pergamino": {
+    "name": "Pergamino antiguo", "icon": "📜",
+    "desc": "Tinta sepia sobre pergamino. Mitología, imperios, religión e historia antigua.",
+    "mode": "ink", "bg": "#e8d8b0", "ink": "#3a2614", "head": "#efe2c2", "accent": "#a8321a", "danger": "#8a1a0a", "cool": "#3a5a6a",
+    "ground": "#d8c498", "grain": 0.06, "vignette": 0.6, "boil": 10, "jitter": 1.3, "texture": "parchment", "sky1": "#e8d8b0", "sky2": "#f2e6c8",
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "day", "captions": "cine", "mapSea": "#d8c49a", "mapLand": "#bfa070", "mapHi": "#a8321a"
+  },
+  "minimal_claro": {
+    "name": "Minimalista claro", "icon": "⚪",
+    "desc": "Fondo claro, tinta negra y un solo color de acento. Limpio, moderno, tipo explainer.",
+    "mode": "line", "bg": "#eeeae2", "ink": "#16161a", "head": "#ffffff", "accent": "#ff5a1f", "danger": "#e0302a", "cool": "#2a6ad8",
+    "crowd": "#6a6a72", "ground": "#dcd6ca", "sky1": "#e8e4dc", "sky2": "#f6f3ee", "grain": 0.03, "vignette": 0.25, "boil": 10, "jitter": 1.2,
+    "fontDisplay": "Archivo Black", "font": "Montserrat", "fontSerif": "EB Garamond", "fontKinetic": "League Gothic",
+    "time": "day", "captions": "minimal", "mapSea": "#dcd6ca", "mapLand": "#bdb6aa", "mapHi": "#ff5a1f"
+  }
+}

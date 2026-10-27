@@ -1,0 +1,20 @@
+{
+  "viral": {"name": "Viral (mayúsculas + pop)", "words": 3, "upper": true, "font": "Montserrat", "weight": 900, "size": [84, 74],
+    "color": "#ffffff", "active": "#ffe14a", "em": "#ffe14a", "red": "#ff4a3a", "dim": 1, "stroke": 11, "pop": 1.14, "enter": "pop"},
+  "karaoke": {"name": "Karaoke cinematográfico", "words": 4, "upper": false, "font": "Montserrat", "weight": 800, "size": [74, 62],
+    "color": "rgba(239,230,214,1)", "active": "rgba(239,230,214,1)", "em": "rgba(240,182,72,1)", "red": "rgba(236,104,84,1)", "dim": 0.5,
+    "stroke": 0, "pop": 1.1, "enter": "fade"},
+  "caja": {"name": "Caja de color (palabra activa)", "words": 3, "upper": true, "font": "Montserrat", "weight": 900, "size": [80, 70],
+    "color": "#ffffff", "active": "#14110f", "box": "#ffe14a", "em": "#ffe14a", "red": "#ff4a3a", "dim": 1, "stroke": 10, "pop": 1.06, "enter": "pop"},
+  "cine": {"name": "Cine documental", "words": 6, "upper": false, "font": "Montserrat", "weight": 700, "size": [62, 52],
+    "color": "rgba(244,240,232,1)", "active": "rgba(255,255,255,1)", "em": "rgba(255,214,120,1)", "red": "rgba(255,120,100,1)", "dim": 0.62,
+    "stroke": 0, "pop": 1.0, "enter": "fade"},
+  "papel": {"name": "Tira de papel", "words": 4, "upper": false, "font": "Montserrat", "weight": 800, "size": [66, 58],
+    "color": "rgba(42,29,22,1)", "active": "rgba(42,29,22,1)", "em": "rgba(178,106,18,1)", "red": "rgba(168,50,42,1)", "dim": 0.38,
+    "stroke": 0, "pop": 1.08, "enter": "paper", "paper": "#efe4cf"},
+  "neon": {"name": "Neón", "words": 3, "upper": true, "font": "Montserrat", "weight": 900, "size": [80, 70],
+    "color": "#e8f0ff", "active": "#ff2ad4", "em": "#2ae8ff", "red": "#ff3a5a", "dim": 0.7, "stroke": 0, "glow": true, "pop": 1.12, "enter": "pop"},
+  "minimal": {"name": "Minimal", "words": 5, "upper": false, "font": "Montserrat", "weight": 700, "size": [64, 54],
+    "color": "rgba(255,255,255,1)", "active": "rgba(255,255,255,1)", "em": "rgba(255,216,106,1)", "red": "rgba(255,138,122,1)", "dim": 0.55,
+    "stroke": 0, "pop": 1.0, "enter": "fade", "scrim": true}
+}

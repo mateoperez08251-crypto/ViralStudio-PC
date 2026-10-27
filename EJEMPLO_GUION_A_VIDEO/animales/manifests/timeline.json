@@ -1,0 +1,37 @@
+[
+ {
+  "id": "s001",
+  "start": null,
+  "dur": null,
+  "shot": "closeup",
+  "narration": "En la sabana africana, un elefante camina despacio."
+ },
+ {
+  "id": "s002",
+  "start": null,
+  "dur": null,
+  "shot": "scene",
+  "narration": "De pronto, un león ruge y el elefante corre."
+ },
+ {
+  "id": "s003",
+  "start": null,
+  "dur": null,
+  "shot": "scene",
+  "narration": "Mientras tanto, en el mar, un pulpo nada tranquilo: tiene 3 corazones."
+ },
+ {
+  "id": "s004",
+  "start": null,
+  "dur": null,
+  "shot": "scene",
+  "narration": "En la granja, la vaca Lola mira al granjero."
+ },
+ {
+  "id": "s005",
+  "start": null,
+  "dur": null,
+  "shot": "scene",
+  "narration": "Y en la plaza, una paloma vuela asustada porque un perro corre hacia ella."
+ }
+]

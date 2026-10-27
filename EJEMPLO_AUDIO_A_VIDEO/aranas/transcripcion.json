@@ -1,0 +1,487 @@
+{
+ "schema_version": 1,
+ "source": "asr",
+ "language": "es",
+ "language_probability": 0.984,
+ "engine": "faster-whisper",
+ "model": "small",
+ "device": "cpu",
+ "alignment": {
+  "method": "faster-whisper",
+  "note": "WhisperX no está instalado: se usan los tiempos de faster-whisper"
+ },
+ "diarization": {
+  "method": "single",
+  "speakers": [
+   "narrador"
+  ],
+  "note": "narrador único"
+ },
+ "duration_s": 22.229333,
+ "text": "De verdad nos tragamos ocho arañas al año mientras dormimos. Imagina que duermes con la boca abierta. Una araña baja del techo por su hilo. Pero las arañas sienten las vibraciones. Tu respiración y tu corazón son una alarma de peligro. Ningún estudio científico ha registrado un solo caso. Es un dato inventado.",
+ "words": [
+  {
+   "id": "w0001",
+   "text": "De",
+   "start_s": 0.0,
+   "end_s": 0.42,
+   "confidence": 0.794,
+   "needs_review": false
+  },
+  {
+   "id": "w0002",
+   "text": "verdad",
+   "start_s": 0.42,
+   "end_s": 0.74,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0003",
+   "text": "nos",
+   "start_s": 0.74,
+   "end_s": 1.0,
+   "confidence": 0.879,
+   "needs_review": false
+  },
+  {
+   "id": "w0004",
+   "text": "tragamos",
+   "start_s": 1.0,
+   "end_s": 1.5,
+   "confidence": 0.813,
+   "needs_review": false
+  },
+  {
+   "id": "w0005",
+   "text": "ocho",
+   "start_s": 1.5,
+   "end_s": 2.1,
+   "confidence": 0.829,
+   "needs_review": false
+  },
+  {
+   "id": "w0006",
+   "text": "arañas",
+   "start_s": 2.1,
+   "end_s": 2.48,
+   "confidence": 0.974,
+   "needs_review": false
+  },
+  {
+   "id": "w0007",
+   "text": "al",
+   "start_s": 2.48,
+   "end_s": 2.72,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0008",
+   "text": "año",
+   "start_s": 2.72,
+   "end_s": 2.94,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0009",
+   "text": "mientras",
+   "start_s": 2.94,
+   "end_s": 3.22,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0010",
+   "text": "dormimos.",
+   "start_s": 3.22,
+   "end_s": 3.92,
+   "confidence": 0.978,
+   "needs_review": false
+  },
+  {
+   "id": "w0011",
+   "text": "Imagina",
+   "start_s": 4.42,
+   "end_s": 4.98,
+   "confidence": 0.99,
+   "needs_review": false
+  },
+  {
+   "id": "w0012",
+   "text": "que",
+   "start_s": 4.98,
+   "end_s": 5.16,
+   "confidence": 0.984,
+   "needs_review": false
+  },
+  {
+   "id": "w0013",
+   "text": "duermes",
+   "start_s": 5.16,
+   "end_s": 5.68,
+   "confidence": 0.992,
+   "needs_review": false
+  },
+  {
+   "id": "w0014",
+   "text": "con",
+   "start_s": 5.68,
+   "end_s": 5.86,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0015",
+   "text": "la",
+   "start_s": 5.86,
+   "end_s": 5.98,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0016",
+   "text": "boca",
+   "start_s": 5.98,
+   "end_s": 6.16,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0017",
+   "text": "abierta.",
+   "start_s": 6.16,
+   "end_s": 6.7,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0018",
+   "text": "Una",
+   "start_s": 7.2,
+   "end_s": 7.4,
+   "confidence": 0.983,
+   "needs_review": false
+  },
+  {
+   "id": "w0019",
+   "text": "araña",
+   "start_s": 7.4,
+   "end_s": 7.78,
+   "confidence": 0.993,
+   "needs_review": false
+  },
+  {
+   "id": "w0020",
+   "text": "baja",
+   "start_s": 7.78,
+   "end_s": 8.08,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0021",
+   "text": "del",
+   "start_s": 8.08,
+   "end_s": 8.34,
+   "confidence": 0.993,
+   "needs_review": false
+  },
+  {
+   "id": "w0022",
+   "text": "techo",
+   "start_s": 8.34,
+   "end_s": 8.7,
+   "confidence": 0.958,
+   "needs_review": false
+  },
+  {
+   "id": "w0023",
+   "text": "por",
+   "start_s": 8.7,
+   "end_s": 8.94,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0024",
+   "text": "su",
+   "start_s": 8.94,
+   "end_s": 9.1,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0025",
+   "text": "hilo.",
+   "start_s": 9.1,
+   "end_s": 9.3,
+   "confidence": 0.987,
+   "needs_review": false
+  },
+  {
+   "id": "w0026",
+   "text": "Pero",
+   "start_s": 9.82,
+   "end_s": 10.06,
+   "confidence": 0.989,
+   "needs_review": false
+  },
+  {
+   "id": "w0027",
+   "text": "las",
+   "start_s": 10.06,
+   "end_s": 10.28,
+   "confidence": 0.985,
+   "needs_review": false
+  },
+  {
+   "id": "w0028",
+   "text": "arañas",
+   "start_s": 10.28,
+   "end_s": 10.72,
+   "confidence": 0.989,
+   "needs_review": false
+  },
+  {
+   "id": "w0029",
+   "text": "sienten",
+   "start_s": 10.72,
+   "end_s": 11.32,
+   "confidence": 0.991,
+   "needs_review": false
+  },
+  {
+   "id": "w0030",
+   "text": "las",
+   "start_s": 11.32,
+   "end_s": 11.46,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0031",
+   "text": "vibraciones.",
+   "start_s": 11.46,
+   "end_s": 12.06,
+   "confidence": 0.981,
+   "needs_review": false
+  },
+  {
+   "id": "w0032",
+   "text": "Tu",
+   "start_s": 12.62,
+   "end_s": 12.74,
+   "confidence": 0.966,
+   "needs_review": false
+  },
+  {
+   "id": "w0033",
+   "text": "respiración",
+   "start_s": 12.74,
+   "end_s": 13.42,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0034",
+   "text": "y",
+   "start_s": 13.42,
+   "end_s": 13.58,
+   "confidence": 0.997,
+   "needs_review": false
+  },
+  {
+   "id": "w0035",
+   "text": "tu",
+   "start_s": 13.58,
+   "end_s": 13.72,
+   "confidence": 0.995,
+   "needs_review": false
+  },
+  {
+   "id": "w0036",
+   "text": "corazón",
+   "start_s": 13.72,
+   "end_s": 14.16,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0037",
+   "text": "son",
+   "start_s": 14.16,
+   "end_s": 14.58,
+   "confidence": 0.983,
+   "needs_review": false
+  },
+  {
+   "id": "w0038",
+   "text": "una",
+   "start_s": 14.58,
+   "end_s": 14.8,
+   "confidence": 0.836,
+   "needs_review": false
+  },
+  {
+   "id": "w0039",
+   "text": "alarma",
+   "start_s": 14.8,
+   "end_s": 15.14,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0040",
+   "text": "de",
+   "start_s": 15.14,
+   "end_s": 15.24,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0041",
+   "text": "peligro.",
+   "start_s": 15.24,
+   "end_s": 15.7,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0042",
+   "text": "Ningún",
+   "start_s": 16.24,
+   "end_s": 16.66,
+   "confidence": 0.966,
+   "needs_review": false
+  },
+  {
+   "id": "w0043",
+   "text": "estudio",
+   "start_s": 16.66,
+   "end_s": 17.04,
+   "confidence": 0.966,
+   "needs_review": false
+  },
+  {
+   "id": "w0044",
+   "text": "científico",
+   "start_s": 17.04,
+   "end_s": 18.0,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0045",
+   "text": "ha",
+   "start_s": 18.0,
+   "end_s": 18.16,
+   "confidence": 0.984,
+   "needs_review": false
+  },
+  {
+   "id": "w0046",
+   "text": "registrado",
+   "start_s": 18.16,
+   "end_s": 18.76,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0047",
+   "text": "un",
+   "start_s": 18.76,
+   "end_s": 18.92,
+   "confidence": 0.996,
+   "needs_review": false
+  },
+  {
+   "id": "w0048",
+   "text": "solo",
+   "start_s": 18.92,
+   "end_s": 19.14,
+   "confidence": 0.964,
+   "needs_review": false
+  },
+  {
+   "id": "w0049",
+   "text": "caso.",
+   "start_s": 19.14,
+   "end_s": 19.52,
+   "confidence": 0.999,
+   "needs_review": false
+  },
+  {
+   "id": "w0050",
+   "text": "Es",
+   "start_s": 20.12,
+   "end_s": 20.32,
+   "confidence": 0.96,
+   "needs_review": false
+  },
+  {
+   "id": "w0051",
+   "text": "un",
+   "start_s": 20.32,
+   "end_s": 20.54,
+   "confidence": 0.998,
+   "needs_review": false
+  },
+  {
+   "id": "w0052",
+   "text": "dato",
+   "start_s": 20.54,
+   "end_s": 20.8,
+   "confidence": 0.993,
+   "needs_review": false
+  },
+  {
+   "id": "w0053",
+   "text": "inventado.",
+   "start_s": 20.8,
+   "end_s": 21.48,
+   "confidence": 0.998,
+   "needs_review": false
+  }
+ ],
+ "segments": [
+  {
+   "start_s": 0.0,
+   "end_s": 5.86,
+   "text": "De verdad nos tragamos ocho arañas al año mientras dormimos. Imagina que duermes con",
+   "avg_logprob": -0.115,
+   "no_speech_prob": 0.051,
+   "n_words": 14
+  },
+  {
+   "start_s": 5.86,
+   "end_s": 11.46,
+   "text": "la boca abierta. Una araña baja del techo por su hilo. Pero las arañas sienten las",
+   "avg_logprob": -0.115,
+   "no_speech_prob": 0.051,
+   "n_words": 16
+  },
+  {
+   "start_s": 11.46,
+   "end_s": 18.0,
+   "text": "vibraciones. Tu respiración y tu corazón son una alarma de peligro. Ningún estudio científico",
+   "avg_logprob": -0.115,
+   "no_speech_prob": 0.051,
+   "n_words": 14
+  },
+  {
+   "start_s": 18.0,
+   "end_s": 21.48,
+   "text": "ha registrado un solo caso. Es un dato inventado.",
+   "avg_logprob": -0.115,
+   "no_speech_prob": 0.051,
+   "n_words": 9
+  }
+ ],
+ "review_count": 0,
+ "needs_review": false,
+ "no_speech": false,
+ "audio_sha256": "966559585e38de02c1f0f48e8d5f95622c0629cf13c06b4dbbd3df16ee02f46b",
+ "seconds": 9.7
+}

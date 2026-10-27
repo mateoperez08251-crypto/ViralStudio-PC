@@ -1,0 +1,26 @@
+[
+ {
+  "chapter": "ch01",
+  "scenes": [
+   "s001",
+   "s002",
+   "s003",
+   "s004",
+   "s005",
+   "s006",
+   "s007",
+   "s008",
+   "s009"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/-home-user/4a534862-ceee-5caf-9cc1-e069e501b1bd/scratchpad/e2e/data/projects/20261025-045114-3840/hf/renders/part_01.mp4",
+  "sha256": "51fc2cf612534e17044d193c10af395d2fd958594040a593501c8de4c46bad5c",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 0.0,
+  "dur_s": 31.7333
+ }
+]

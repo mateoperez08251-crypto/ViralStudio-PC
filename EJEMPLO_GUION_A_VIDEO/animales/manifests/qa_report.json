@@ -1,0 +1,150 @@
+{
+ "status": "PASS",
+ "checks": [
+  {
+   "check": "pistas",
+   "status": "PASS",
+   "detail": "video=sí audio=sí"
+  },
+  {
+   "check": "resolución",
+   "status": "PASS",
+   "detail": "1080×1920 (esperado 1080×1920)"
+  },
+  {
+   "check": "fps",
+   "status": "PASS",
+   "detail": "30.00 fps (esperado 30)"
+  },
+  {
+   "check": "códec",
+   "status": "PASS",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "check": "duración",
+   "status": "PASS",
+   "detail": "18.63s vs línea de tiempo 18.63s"
+  },
+  {
+   "check": "sincronía A/V",
+   "status": "PASS",
+   "detail": "video 18.63s · audio 18.63s"
+  },
+  {
+   "check": "cuadros negros",
+   "status": "PASS",
+   "detail": "ninguno"
+  },
+  {
+   "check": "imagen congelada",
+   "status": "PASS",
+   "detail": "ninguna"
+  },
+  {
+   "check": "sonoridad",
+   "status": "INFO",
+   "detail": "-17.2 LUFS · pico -1.5 dBTP (objetivo −14 LUFS, ≤ −1 dBTP) · el modo audio conserva el nivel original salvo que actives la normalización"
+  },
+  {
+   "check": "subtítulos",
+   "status": "PASS",
+   "detail": "10 grupos sincronizados"
+  },
+  {
+   "check": "frames de video",
+   "status": "PASS",
+   "detail": "559 frames (esperados 559 = ceil(18.627s × 30))"
+  },
+  {
+   "check": "duración del audio",
+   "status": "PASS",
+   "detail": "audio del MP4 18.633s vs narración 18.627s (Δ +5.7 ms; tolerancia 1 frame + relleno AAC)"
+  },
+  {
+   "check": "video cubre todo el audio",
+   "status": "PASS",
+   "detail": "video 18.633s ≥ audio 18.627s − 1 frame"
+  },
+  {
+   "check": "continuidad de la narración (voz del guion)",
+   "status": "PASS",
+   "detail": "0.5s: lag 0.0 ms, r=1.0 · 7.81s: lag 0.0 ms, r=1.0 · 15.33s: lag 0.0 ms, r=1.0 · deriva 0.00 ms (sin cortes, sin cambio de velocidad)",
+   "windows": [
+    {
+     "at_s": 0.5,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 7.81,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 15.33,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    }
+   ]
+  },
+  {
+   "check": "partición de escenas",
+   "status": "PASS",
+   "detail": "5 escenas contiguas 0→559 frames, sin huecos ni solapes"
+  },
+  {
+   "check": "narración = guion",
+   "status": "PASS",
+   "detail": "voz kokoro del guion · 52 palabras con tiempo, idénticas al guion"
+  },
+  {
+   "check": "transcripción",
+   "status": "PASS",
+   "detail": "52 palabras · 0 marcadas para revisar · fuente script_tts"
+  },
+  {
+   "check": "assets",
+   "status": "PASS",
+   "detail": "12 assets registrados con licencia"
+  },
+  {
+   "check": "zonas seguras (textos dentro del cuadro)",
+   "status": "PASS",
+   "detail": "16 instantes revisados: subtítulos e infografías dentro del cuadro",
+   "problems": []
+  },
+  {
+   "check": "escenas visibles (no negras)",
+   "status": "PASS",
+   "detail": "todas con imagen"
+  },
+  {
+   "check": "animación visible",
+   "status": "PASS",
+   "detail": "personajes/cámara en movimiento en todas las escenas con personajes",
+   "frames": [
+    "qa_frames/sc001_ini.png",
+    "qa_frames/sc001_mid.png",
+    "qa_frames/sc001_fin.png",
+    "qa_frames/sc002_ini.png",
+    "qa_frames/sc002_mid.png",
+    "qa_frames/sc002_fin.png",
+    "qa_frames/sc003_ini.png",
+    "qa_frames/sc003_mid.png",
+    "qa_frames/sc003_fin.png",
+    "qa_frames/sc004_ini.png",
+    "qa_frames/sc004_mid.png",
+    "qa_frames/sc004_fin.png",
+    "qa_frames/sc005_ini.png",
+    "qa_frames/sc005_mid.png",
+    "qa_frames/sc005_fin.png"
+   ]
+  }
+ ],
+ "duration": 18.633333,
+ "audio_duration": 18.633,
+ "frames_dir": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/out/qa_frames",
+ "mode": "audio",
+ "generated": "2026-10-26 04:23:09"
+}

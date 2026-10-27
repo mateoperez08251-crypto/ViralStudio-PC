@@ -1,0 +1,148 @@
+[
+ {
+  "id": "hyperframes",
+  "url": "https://github.com/heygen-com/hyperframes",
+  "version": "0.8.193",
+  "license": "Apache-2.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "render HTML→MP4",
+  "used": true
+ },
+ {
+  "id": "gsap",
+  "url": "https://gsap.com/standard-license",
+  "version": "3.14.2",
+  "license": "GSAP Standard 'no charge' license",
+  "commercial": true,
+  "attribution": "no",
+  "role": "línea de tiempo de animación",
+  "used": true
+ },
+ {
+  "id": "comfyui",
+  "url": "https://github.com/comfyanonymous/ComfyUI",
+  "license": "GPL-3.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "anfitrión, cola de LLM y música",
+  "used": false
+ },
+ {
+  "id": "qwen3.8-27b",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "license": "Apache-2.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "guionista (LLM)",
+  "used": false
+ },
+ {
+  "id": "qwen3.5-9b",
+  "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+  "license": "Apache-2.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "guionista alternativo",
+  "used": false
+ },
+ {
+  "id": "qwen3-tts",
+  "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "license": "Apache-2.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "voz (diseño + clonado)",
+  "used": false
+ },
+ {
+  "id": "kokoro-82m",
+  "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "license": "Apache-2.0",
+  "commercial": true,
+  "attribution": "no",
+  "role": "voz rápida",
+  "used": true
+ },
+ {
+  "id": "faster-whisper",
+  "url": "https://github.com/SYSTRAN/faster-whisper",
+  "license": "MIT (código y pesos)",
+  "commercial": true,
+  "attribution": "no",
+  "role": "tiempos por palabra",
+  "used": true
+ },
+ {
+  "id": "ace-step-1.5",
+  "url": "https://huggingface.co/Comfy-Org/ACE-Step-1.5",
+  "license": "Apache-2.0 (repack) / MIT (original)",
+  "commercial": true,
+  "attribution": "no",
+  "role": "música original",
+  "used": false
+ },
+ {
+  "id": "pixabay-sfx",
+  "url": "https://pixabay.com/service/license-summary/",
+  "license": "Pixabay Content License",
+  "commercial": true,
+  "attribution": "no",
+  "role": "efectos de sonido (librería de HyperFrames)",
+  "used": true
+ },
+ {
+  "id": "natural-earth",
+  "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "license": "Dominio público",
+  "commercial": true,
+  "attribution": "no",
+  "role": "contornos de países (mapas)",
+  "used": false
+ },
+ {
+  "id": "google-fonts",
+  "url": "https://fonts.google.com",
+  "license": "SIL Open Font License",
+  "commercial": true,
+  "attribution": "no",
+  "role": "tipografías (Archivo Black, League Gothic, Montserrat, EB Garamond…)",
+  "used": true
+ },
+ {
+  "id": "whisperx",
+  "url": "https://github.com/m-bain/whisperX",
+  "license": "BSD-2-Clause (código); modelos de alineación con su propia licencia",
+  "commercial": true,
+  "attribution": "no",
+  "role": "alineación fina de palabras (opcional)",
+  "used": false
+ },
+ {
+  "id": "pyannote-community-1",
+  "url": "https://huggingface.co/pyannote/speaker-diarization-community-1",
+  "license": "CC-BY-4.0 (requiere aceptar condiciones)",
+  "commercial": true,
+  "attribution": "sí",
+  "role": "diarización de hablantes (opcional)",
+  "used": false
+ },
+ {
+  "id": "viralstudio-vector-assets",
+  "url": "engine/6x-7x_*.js",
+  "license": "Original de ViralStudio (código SVG propio)",
+  "commercial": true,
+  "attribution": "no",
+  "role": "marionetas, fondos por capas, props e infografías del modo audio",
+  "used": false
+ },
+ {
+  "id": "user-narration",
+  "url": "(archivo subido por el usuario)",
+  "license": "Derechos del usuario",
+  "commercial": null,
+  "attribution": "—",
+  "role": "narración original (no se modifica ni se sintetiza)",
+  "used": false
+ }
+]

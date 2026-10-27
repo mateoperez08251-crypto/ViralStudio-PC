@@ -1,0 +1,312 @@
+{
+ "plan_version": 2,
+ "scenes": [
+  {
+   "id": "sc001",
+   "start_s": 0.0,
+   "end_s": 3.433333,
+   "start_frame": 0,
+   "end_frame": 103,
+   "narration_exact": "¿Por qué las palomas mueven la cabeza al caminar?",
+   "word_ids": [
+    "w0001",
+    "w0002",
+    "w0003",
+    "w0004",
+    "w0005",
+    "w0006",
+    "w0007",
+    "w0008",
+    "w0009"
+   ],
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01"
+   ],
+   "action_beats": [
+    {
+     "at_s": 2.52,
+     "word_id": "w0009",
+     "action": "walk",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "slow_push",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "head"
+    },
+    "focus_word": "w0007",
+    "focus_at_s": 1.92
+   },
+   "overlays": [],
+   "visual_prompt": "character_scene: Paloma ilustrada en Plaza al atardecer (capas); cámara wide slow_push",
+   "visual_justification": "«palomas» → pigeon_01; «caminar» → pigeon_01.walk; «cabeza» → primer plano de head",
+   "revision": 1,
+   "locked": false
+  },
+  {
+   "id": "sc002",
+   "start_s": 3.433333,
+   "end_s": 8.933333,
+   "start_frame": 103,
+   "end_frame": 268,
+   "narration_exact": "Mira esta paloma en la plaza. Un niño la observa desde un banco sorprendido.",
+   "word_ids": [
+    "w0010",
+    "w0011",
+    "w0012",
+    "w0013",
+    "w0014",
+    "w0015",
+    "w0016",
+    "w0017",
+    "w0018",
+    "w0019",
+    "w0020",
+    "w0021",
+    "w0022",
+    "w0023"
+   ],
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "action_beats": [
+    {
+     "at_s": 3.54,
+     "word_id": "w0010",
+     "action": "look_right",
+     "target": "person_01"
+    },
+    {
+     "at_s": 6.38,
+     "word_id": "w0019",
+     "action": "look_left",
+     "target": "person_01"
+    },
+    {
+     "at_s": 7.72,
+     "word_id": "w0023",
+     "action": "surprise",
+     "target": "person_01"
+    }
+   ],
+   "camera": {
+    "shot": "medium",
+    "movement": "orbit"
+   },
+   "overlays": [],
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara medium pan_right",
+   "visual_justification": "«paloma» → pigeon_01; «niño» → person_01; «plaza» → escenario plaza_layered_01; «Mira» → person_01.look_right; «observa» → person_01.look_left; «sorprendido» → person_01.surprise",
+   "revision": 2,
+   "locked": false
+  },
+  {
+   "id": "sc003",
+   "start_s": 8.933333,
+   "end_s": 13.9,
+   "start_frame": 268,
+   "end_frame": 417,
+   "narration_exact": "Su cuerpo avanza, pero la cabeza se queda quieta en el aire.",
+   "word_ids": [
+    "w0024",
+    "w0025",
+    "w0026",
+    "w0027",
+    "w0028",
+    "w0029",
+    "w0030",
+    "w0031",
+    "w0032",
+    "w0033",
+    "w0034",
+    "w0035"
+   ],
+   "template": "closeup",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01"
+   ],
+   "action_beats": [
+    {
+     "at_s": 9.44,
+     "word_id": "w0026",
+     "action": "walk",
+     "target": "pigeon_01"
+    },
+    {
+     "at_s": 11.32,
+     "word_id": "w0032",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "closeup",
+    "movement": "push_in",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "body"
+    },
+    "focus_word": "w0025",
+    "focus_at_s": 9.16
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0032",
+     "target": "pigeon_01",
+     "part": "head",
+     "at_s": 11.32
+    }
+   ],
+   "visual_prompt": "closeup: Paloma ilustrada en Plaza al atardecer (capas); cámara closeup push_in; infografía guide_line",
+   "visual_justification": "«avanza» → pigeon_01.walk; «quieta» → pigeon_01.head_stabilize; «cuerpo» → primer plano de body",
+   "revision": 1,
+   "locked": false
+  },
+  {
+   "id": "sc004",
+   "start_s": 13.9,
+   "end_s": 16.733333,
+   "start_frame": 417,
+   "end_frame": 502,
+   "narration_exact": "Luego da un salto rápido hacia adelante.",
+   "word_ids": [
+    "w0036",
+    "w0037",
+    "w0038",
+    "w0039",
+    "w0040",
+    "w0041",
+    "w0042"
+   ],
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "action_beats": [
+    {
+     "at_s": 14.71,
+     "word_id": "w0039",
+     "action": "hop",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "pan_left"
+   },
+   "overlays": [],
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara wide pan_left",
+   "visual_justification": "«salto» → pigeon_01.hop",
+   "revision": 1,
+   "locked": false
+  },
+  {
+   "id": "sc005",
+   "start_s": 16.733333,
+   "end_s": 19.466667,
+   "start_frame": 502,
+   "end_frame": 584,
+   "narration_exact": "Lo hace unas 15 veces por segundo.",
+   "word_ids": [
+    "w0043",
+    "w0044",
+    "w0045",
+    "w0046",
+    "w0047",
+    "w0048",
+    "w0049"
+   ],
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "action_beats": [],
+   "camera": {
+    "shot": "medium",
+    "movement": "pull_out"
+   },
+   "overlays": [
+    {
+     "type": "counter_badge",
+     "word": "w0046",
+     "value": 15.0,
+     "label": "veces por segundo",
+     "at_s": 17.47
+    }
+   ],
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara medium pull_out; infografía counter_badge",
+   "visual_justification": "cifra narrada «15» → contador 15",
+   "revision": 1,
+   "locked": false
+  },
+  {
+   "id": "sc006",
+   "start_s": 19.466667,
+   "end_s": 22.996,
+   "start_frame": 584,
+   "end_frame": 690,
+   "narration_exact": "Así ve el mundo nítido como una cámara estable.",
+   "word_ids": [
+    "w0050",
+    "w0051",
+    "w0052",
+    "w0053",
+    "w0054",
+    "w0055",
+    "w0056",
+    "w0057",
+    "w0058"
+   ],
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "action_beats": [
+    {
+     "at_s": 21.77,
+     "word_id": "w0058",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "track"
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0058",
+     "target": "pigeon_01",
+     "part": "head",
+     "at_s": 21.77
+    }
+   ],
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara wide track; infografía guide_line",
+   "visual_justification": "«estable» → pigeon_01.head_stabilize",
+   "revision": 1,
+   "locked": false
+  }
+ ]
+}

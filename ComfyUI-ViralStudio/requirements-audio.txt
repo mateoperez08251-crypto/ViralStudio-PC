@@ -1,0 +1,15 @@
+# Modo «Mi audio → video» — versiones con las que se ejecutaron las pruebas (Python 3.13, CPU, oct-2026).
+# Orquestador (standalone.py / vs/*):
+aiohttp==3.14.5
+numpy==2.5.4
+soundfile==0.14.0
+# ASR local (entorno de voz VS_TTS_PYTHON; puede ser el mismo Python en local):
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+# Opcionales (NO necesarios para el modo básico; pueden fijar versiones de torch):
+#   whisperx            alineación fina de palabras
+#   pyannote.audio      diarización (requiere HF_TOKEN y aceptar las condiciones de Community-1)
+# Solo para regenerar el fixture de pruebas (narración sintética):
+#   kokoro-onnx==0.6.1
+# Herramientas externas: ffmpeg/ffprobe ≥ 6, Node 22, hyperframes@0.8.193 (npm), Chrome/Chromium.
+# Pruebas de zonas seguras y de interfaz: playwright (npm) con Chromium.

@@ -1,0 +1,201 @@
+{
+ "schema_version": 1,
+ "assets": [
+  {
+   "asset_id": "bedroom_night_v1",
+   "kind": "backgrounds",
+   "name": "Dormitorio de noche",
+   "version": 1,
+   "hash": "6f97285baf822481",
+   "engine_file": "61_vector_world.js",
+   "parts": null,
+   "scenes": [
+    "sc001",
+    "sc002",
+    "sc003",
+    "sc004",
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "counter_badge",
+   "kind": "infographics",
+   "name": "Contador con unidad",
+   "version": 1,
+   "hash": "1b1fcd046acc81ae",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc001"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "document_card",
+   "kind": "infographics",
+   "name": "Documento / artículo",
+   "version": 1,
+   "hash": "c4e6704ba1bc6a11",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "month_strip",
+   "kind": "infographics",
+   "name": "Tira de meses",
+   "version": 1,
+   "hash": "8d0b230e414c3a48",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc001"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "ripples",
+   "kind": "infographics",
+   "name": "Ondas (vibración / sonido / alarma)",
+   "version": 1,
+   "hash": "12d565919849af7e",
+   "engine_file": null,
+   "parts": null,
+   "scenes": [
+    "sc004",
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "sleeper_rig_v1",
+   "kind": "characters",
+   "name": "Persona durmiendo (perfil)",
+   "version": 1,
+   "hash": "f11401747a59b724",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "pillow",
+    "chest",
+    "head",
+    "hair",
+    "ear",
+    "eye",
+    "mouth",
+    "blanket"
+   ],
+   "scenes": [
+    "sc001",
+    "sc002",
+    "sc003",
+    "sc004",
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "spider_rig_v1",
+   "kind": "characters",
+   "name": "Araña articulada",
+   "version": 1,
+   "hash": "7de5f486385f0c0a",
+   "engine_file": "62_vector_characters.js",
+   "parts": [
+    "abdomen",
+    "cephalothorax",
+    "eyes",
+    "fang_L",
+    "fang_R",
+    "leg_1L",
+    "leg_1L_k",
+    "leg_2L",
+    "leg_2L_k",
+    "leg_3L",
+    "leg_3L_k",
+    "leg_4L",
+    "leg_4L_k",
+    "leg_1R",
+    "leg_1R_k",
+    "leg_2R",
+    "leg_2R_k",
+    "leg_3R",
+    "leg_3R_k",
+    "leg_4R",
+    "leg_4R_k"
+   ],
+   "scenes": [
+    "sc001",
+    "sc003",
+    "sc004",
+    "sc005"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  },
+  {
+   "asset_id": "studio_gradient_v1",
+   "kind": "backgrounds",
+   "name": "Fondo de estudio (infografías)",
+   "version": 1,
+   "hash": "ec3b14213a0e319f",
+   "engine_file": "61_vector_world.js",
+   "parts": null,
+   "scenes": [
+    "sc006"
+   ],
+   "status": "ok",
+   "provenance": {
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+   },
+   "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+   "commercial": true
+  }
+ ],
+ "missing": []
+}

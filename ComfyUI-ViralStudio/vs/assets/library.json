@@ -1,0 +1,1190 @@
+{
+  "schema_version": 1,
+  "license_default": {
+    "license": "Original de ViralStudio (código SVG propio, sin assets de terceros)",
+    "commercial": true,
+    "attribution": false,
+    "origin": "generated_locally",
+    "author": "ViralStudio Pro"
+  },
+  "characters": {
+    "pigeon_rig_v1": {
+      "name": "Paloma ilustrada",
+      "version": 1,
+      "builder": "pigeon",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "paloma",
+        "palomas",
+        "pajaro",
+        "pajaros",
+        "ave",
+        "aves",
+        "pichon",
+        "pigeon",
+        "pigeons",
+        "bird",
+        "birds",
+        "dove"
+      ],
+      "parts": [
+        "body",
+        "wing",
+        "tail",
+        "neck",
+        "head",
+        "eye",
+        "eyelid",
+        "beak",
+        "thigh_L",
+        "shin_L",
+        "foot_L",
+        "thigh_R",
+        "shin_R",
+        "foot_R"
+      ],
+      "actions": [
+        "idle",
+        "walk",
+        "peck",
+        "look_left",
+        "look_right",
+        "blink",
+        "hop",
+        "head_stabilize",
+        "body_bob",
+        "appear",
+        "travel",
+        "fly"
+      ],
+      "focus": {
+        "head": [
+          0.62,
+          -0.78
+        ],
+        "eye": [
+          0.66,
+          -0.8
+        ],
+        "body": [
+          0.0,
+          -0.35
+        ],
+        "legs": [
+          0.0,
+          0.0
+        ]
+      },
+      "variants": {
+        "default": {},
+        "brown": {
+          "body": "#9a8a7c"
+        },
+        "white": {
+          "body": "#e8e6ef"
+        }
+      }
+    },
+    "person_rig_v1": {
+      "name": "Persona articulada",
+      "version": 1,
+      "builder": "person",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "persona",
+        "personas",
+        "gente",
+        "hombre",
+        "mujer",
+        "nino",
+        "nina",
+        "chico",
+        "chica",
+        "senor",
+        "senora",
+        "abuelo",
+        "abuela",
+        "medico",
+        "cientifico",
+        "periodista",
+        "humano",
+        "humanos",
+        "man",
+        "woman",
+        "child",
+        "kid",
+        "boy",
+        "girl",
+        "person",
+        "people",
+        "human"
+      ],
+      "parts": [
+        "torso",
+        "neck",
+        "head",
+        "hair",
+        "eye_L",
+        "eye_R",
+        "lid_L",
+        "lid_R",
+        "brow_L",
+        "brow_R",
+        "mouth",
+        "upper_arm_L",
+        "fore_arm_L",
+        "hand_L",
+        "upper_arm_R",
+        "fore_arm_R",
+        "hand_R",
+        "thigh_L",
+        "shin_L",
+        "shoe_L",
+        "thigh_R",
+        "shin_R",
+        "shoe_R"
+      ],
+      "actions": [
+        "idle",
+        "walk",
+        "talk",
+        "point",
+        "look_left",
+        "look_right",
+        "blink",
+        "surprise",
+        "sit",
+        "wave",
+        "think",
+        "appear",
+        "travel"
+      ],
+      "focus": {
+        "head": [
+          0.0,
+          -1.58
+        ],
+        "face": [
+          0.04,
+          -1.6
+        ],
+        "eye": [
+          0.06,
+          -1.62
+        ],
+        "body": [
+          0.0,
+          -1.0
+        ],
+        "hands": [
+          0.3,
+          -0.9
+        ]
+      },
+      "variants": {
+        "man": {
+          "hair": "short",
+          "shirt": "#3f6fb5"
+        },
+        "woman": {
+          "hair": "long",
+          "shirt": "#c4566a"
+        },
+        "child": {
+          "hair": "short",
+          "shirt": "#e0a33a",
+          "scale": 0.72
+        },
+        "elder": {
+          "hair": "bald",
+          "shirt": "#6b7f5a"
+        }
+      }
+    },
+    "sleeper_rig_v1": {
+      "name": "Persona durmiendo (perfil)",
+      "version": 1,
+      "builder": "sleeper",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "dormir",
+        "duerme",
+        "duermes",
+        "dormimos",
+        "dormido",
+        "dormida",
+        "durmiendo",
+        "sueno",
+        "suenos",
+        "cama",
+        "ronca",
+        "roncar",
+        "ronquido",
+        "almohada",
+        "noche",
+        "sleep",
+        "sleeping",
+        "asleep",
+        "bed",
+        "snore"
+      ],
+      "parts": [
+        "pillow",
+        "chest",
+        "head",
+        "hair",
+        "ear",
+        "eye",
+        "mouth",
+        "blanket"
+      ],
+      "actions": [
+        "idle",
+        "breathe",
+        "snore",
+        "blink",
+        "wake",
+        "mouth_open",
+        "appear"
+      ],
+      "focus": {
+        "head": [
+          0.15,
+          -0.55
+        ],
+        "mouth": [
+          0.42,
+          -0.5
+        ],
+        "eye": [
+          0.2,
+          -0.66
+        ],
+        "face": [
+          0.3,
+          -0.6
+        ]
+      },
+      "variants": {
+        "default": {},
+        "woman": {
+          "hair": "long"
+        }
+      }
+    },
+    "spider_rig_v1": {
+      "name": "Araña articulada",
+      "version": 1,
+      "builder": "spider",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "arana",
+        "aranas",
+        "aracnido",
+        "aracnidos",
+        "spider",
+        "spiders",
+        "bicho",
+        "bichos",
+        "insecto",
+        "insectos"
+      ],
+      "parts": [
+        "abdomen",
+        "cephalothorax",
+        "eyes",
+        "fang_L",
+        "fang_R",
+        "leg_1L",
+        "leg_1L_k",
+        "leg_2L",
+        "leg_2L_k",
+        "leg_3L",
+        "leg_3L_k",
+        "leg_4L",
+        "leg_4L_k",
+        "leg_1R",
+        "leg_1R_k",
+        "leg_2R",
+        "leg_2R_k",
+        "leg_3R",
+        "leg_3R_k",
+        "leg_4R",
+        "leg_4R_k"
+      ],
+      "actions": [
+        "idle",
+        "walk",
+        "descend",
+        "crawl",
+        "appear",
+        "travel"
+      ],
+      "focus": {
+        "body": [
+          0.0,
+          0.0
+        ],
+        "head": [
+          0.0,
+          -0.35
+        ]
+      },
+      "variants": {
+        "default": {},
+        "dark": {
+          "body": "#3b2d24"
+        }
+      }
+    },
+    "cat_rig_v1": {
+      "name": "Gato atigrado",
+      "version": 1,
+      "builder": "cat",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "gato",
+        "gata",
+        "gatos",
+        "gatito",
+        "felino",
+        "cat",
+        "cats",
+        "kitten"
+      ],
+      "parts": [
+        "body",
+        "head",
+        "ear_L",
+        "ear_R",
+        "eye_L",
+        "eye_R",
+        "tail_1",
+        "tail_2",
+        "tail_3",
+        "leg_FL",
+        "leg_FR",
+        "leg_BL",
+        "leg_BR"
+      ],
+      "actions": [
+        "idle",
+        "walk",
+        "look_left",
+        "look_right",
+        "blink",
+        "appear",
+        "travel",
+        "shiver"
+      ],
+      "focus": {
+        "head": [
+          0.55,
+          -0.62
+        ],
+        "body": [
+          0.0,
+          -0.4
+        ]
+      },
+      "variants": {
+        "default": {},
+        "orange": {
+          "body": "#d98a3a"
+        }
+      }
+    },
+    "eye_closeup_v1": {
+      "name": "Ojo en primer plano",
+      "version": 1,
+      "builder": "eye",
+      "engine_file": "62_vector_characters.js",
+      "keywords": [
+        "ojo",
+        "ojos",
+        "vista",
+        "mirada",
+        "mirar",
+        "pupila",
+        "iris",
+        "retina",
+        "parpado",
+        "ver",
+        "eye",
+        "eyes",
+        "vision",
+        "look",
+        "pupil"
+      ],
+      "parts": [
+        "iris",
+        "pupil",
+        "highlight",
+        "lid_top",
+        "lashes",
+        "brow"
+      ],
+      "actions": [
+        "idle",
+        "blink",
+        "look_left",
+        "look_right",
+        "dilate",
+        "appear"
+      ],
+      "focus": {
+        "eye": [
+          0.0,
+          0.0
+        ],
+        "pupil": [
+          0.0,
+          0.0
+        ]
+      },
+      "variants": {
+        "default": {},
+        "brown": {
+          "iris": "#7a4a22"
+        },
+        "blue": {
+          "iris": "#3d7bd6"
+        }
+      }
+    }
+  },
+  "backgrounds": {
+    "plaza_layered_v1": {
+      "name": "Plaza al atardecer (capas)",
+      "version": 1,
+      "builder": "plaza",
+      "engine_file": "61_vector_world.js",
+      "keywords": [
+        "plaza",
+        "calle",
+        "calles",
+        "ciudad",
+        "pueblo",
+        "acera",
+        "banco",
+        "farola",
+        "adoquines",
+        "edificio",
+        "edificios",
+        "city",
+        "street",
+        "square",
+        "town"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "far_buildings",
+        "buildings",
+        "lamps",
+        "ground",
+        "foreground",
+        "dust"
+      ]
+    },
+    "bedroom_night_v1": {
+      "name": "Dormitorio de noche",
+      "version": 1,
+      "builder": "bedroom",
+      "engine_file": "61_vector_world.js",
+      "keywords": [
+        "dormitorio",
+        "habitacion",
+        "cuarto",
+        "cama",
+        "noche",
+        "almohada",
+        "manta",
+        "sabana",
+        "bedroom",
+        "room",
+        "bed",
+        "night"
+      ],
+      "layers": [
+        "wall",
+        "light_rays",
+        "bed",
+        "floor"
+      ]
+    },
+    "space_nebula_v1": {
+      "name": "Espacio / nebulosa",
+      "version": 1,
+      "builder": "space",
+      "engine_file": "61_vector_world.js",
+      "keywords": [
+        "espacio",
+        "universo",
+        "estrella",
+        "estrellas",
+        "galaxia",
+        "planeta",
+        "planetas",
+        "cosmos",
+        "cerebro",
+        "mente",
+        "space",
+        "universe",
+        "star",
+        "stars",
+        "galaxy",
+        "brain",
+        "mind"
+      ],
+      "layers": [
+        "deep",
+        "nebula",
+        "stars",
+        "dust"
+      ]
+    },
+    "park_day_v1": {
+      "name": "Parque / paisaje de día",
+      "version": 1,
+      "builder": "park",
+      "engine_file": "61_vector_world.js",
+      "keywords": [
+        "parque",
+        "campo",
+        "arbol",
+        "arboles",
+        "hierba",
+        "cesped",
+        "paisaje",
+        "naturaleza",
+        "jardin",
+        "sol",
+        "park",
+        "field",
+        "tree",
+        "grass",
+        "landscape",
+        "nature",
+        "garden"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "clouds",
+        "hills_far",
+        "hills",
+        "trees",
+        "ground"
+      ]
+    },
+    "studio_gradient_v1": {
+      "name": "Fondo de estudio (infografías)",
+      "version": 1,
+      "builder": "studio",
+      "engine_file": "61_vector_world.js",
+      "keywords": [
+        "dato",
+        "datos",
+        "estudio",
+        "ciencia",
+        "cientifico",
+        "numero",
+        "cifra",
+        "porcentaje",
+        "data",
+        "science",
+        "number"
+      ],
+      "layers": [
+        "gradient",
+        "glow",
+        "grid"
+      ]
+    },
+    "forest_day_v1": {
+      "name": "Bosque",
+      "version": 1,
+      "builder": "forest",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "bosque",
+        "bosques",
+        "arboleda",
+        "pinar",
+        "pinos",
+        "montana",
+        "montanas",
+        "forest",
+        "forests",
+        "woods",
+        "mountain"
+      ],
+      "layers": [
+        "sky",
+        "clouds",
+        "hills",
+        "pines_far",
+        "pines",
+        "ground",
+        "bushes"
+      ]
+    },
+    "jungle_v1": {
+      "name": "Selva tropical",
+      "version": 1,
+      "builder": "jungle",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "selva",
+        "selvas",
+        "jungla",
+        "junglas",
+        "amazonas",
+        "amazonia",
+        "tropical",
+        "jungle",
+        "rainforest"
+      ],
+      "layers": [
+        "sky",
+        "light_rays",
+        "foliage",
+        "vines",
+        "palms",
+        "ground",
+        "ferns"
+      ]
+    },
+    "savanna_v1": {
+      "name": "Sabana africana",
+      "version": 1,
+      "builder": "savanna",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "sabana africana",
+        "sabanas africanas",
+        "africa",
+        "africana",
+        "africanas",
+        "africano",
+        "africanos",
+        "safari",
+        "safaris",
+        "savanna",
+        "savannah"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "hills",
+        "acacias",
+        "ground",
+        "grass"
+      ]
+    },
+    "farm_v1": {
+      "name": "Granja",
+      "version": 1,
+      "builder": "farm",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "granja",
+        "granjas",
+        "establo",
+        "corral",
+        "rancho",
+        "huerta",
+        "granjero",
+        "farm",
+        "farms",
+        "barn",
+        "ranch"
+      ],
+      "layers": [
+        "sky",
+        "clouds",
+        "hills",
+        "barn",
+        "fence",
+        "ground",
+        "hay"
+      ]
+    },
+    "home_living_v1": {
+      "name": "Casa (salón)",
+      "version": 1,
+      "builder": "home",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "casa",
+        "casas",
+        "hogar",
+        "salon",
+        "sala",
+        "cocina",
+        "apartamento",
+        "departamento",
+        "house",
+        "home",
+        "living",
+        "kitchen",
+        "apartment"
+      ],
+      "layers": [
+        "wall",
+        "window",
+        "furniture",
+        "floor",
+        "rug"
+      ]
+    },
+    "desert_v1": {
+      "name": "Desierto",
+      "version": 1,
+      "builder": "desert",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "desierto",
+        "desiertos",
+        "dunas",
+        "duna",
+        "sahara",
+        "oasis",
+        "desert",
+        "dunes"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "dunes_far",
+        "dunes",
+        "cacti",
+        "ground"
+      ]
+    },
+    "snow_v1": {
+      "name": "Nieve / polo",
+      "version": 1,
+      "builder": "snow",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "nieve",
+        "polo",
+        "polos",
+        "artico",
+        "antartida",
+        "antartico",
+        "hielo",
+        "glaciar",
+        "invierno",
+        "snow",
+        "ice",
+        "arctic",
+        "antarctica",
+        "winter",
+        "glacier"
+      ],
+      "layers": [
+        "sky",
+        "mountains",
+        "icebergs",
+        "ground",
+        "snowfall"
+      ]
+    },
+    "ocean_under_v1": {
+      "name": "Fondo marino",
+      "version": 1,
+      "builder": "ocean",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "mar",
+        "mares",
+        "oceano",
+        "oceanos",
+        "arrecife",
+        "arrecifes",
+        "coral",
+        "corales",
+        "submarino",
+        "profundidades",
+        "sea",
+        "ocean",
+        "reef",
+        "underwater"
+      ],
+      "layers": [
+        "water",
+        "light_rays",
+        "rocks",
+        "coral",
+        "sand",
+        "bubbles"
+      ]
+    },
+    "beach_v1": {
+      "name": "Playa",
+      "version": 1,
+      "builder": "beach",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "playa",
+        "playas",
+        "costa",
+        "orilla",
+        "arena",
+        "beach",
+        "shore",
+        "coast",
+        "sand"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "clouds",
+        "sea",
+        "palms",
+        "sand",
+        "shells"
+      ]
+    },
+    "river_v1": {
+      "name": "Río / estanque",
+      "version": 1,
+      "builder": "river",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "rio",
+        "rios",
+        "lago",
+        "lagos",
+        "estanque",
+        "estanques",
+        "laguna",
+        "lagunas",
+        "pantano",
+        "charca",
+        "river",
+        "lake",
+        "pond",
+        "swamp"
+      ],
+      "layers": [
+        "sky",
+        "clouds",
+        "hills",
+        "trees",
+        "bank",
+        "water",
+        "reeds"
+      ]
+    },
+    "sky_v1": {
+      "name": "Cielo",
+      "version": 1,
+      "builder": "sky",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "cielo",
+        "cielos",
+        "nubes",
+        "nube",
+        "aire",
+        "sky",
+        "clouds",
+        "cloud"
+      ],
+      "layers": [
+        "sky",
+        "sun",
+        "clouds",
+        "near_clouds"
+      ]
+    },
+    "night_meadow_v1": {
+      "name": "Noche (prado con luna)",
+      "version": 1,
+      "builder": "night",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "luna",
+        "lunas",
+        "nocturno",
+        "nocturna",
+        "nocturnos",
+        "anochece",
+        "moon",
+        "moonlight"
+      ],
+      "layers": [
+        "sky",
+        "stars",
+        "moon",
+        "hills",
+        "pines",
+        "ground"
+      ]
+    },
+    "garden_macro_v1": {
+      "name": "Jardín de cerca",
+      "version": 1,
+      "builder": "garden",
+      "engine_file": "64_vector_worlds2.js",
+      "keywords": [
+        "flor",
+        "flores",
+        "hoja",
+        "hojas",
+        "petalo",
+        "petalos",
+        "polen",
+        "nectar",
+        "colmena",
+        "hormiguero",
+        "flower",
+        "flowers",
+        "leaf",
+        "leaves",
+        "pollen",
+        "hive"
+      ],
+      "layers": [
+        "sky",
+        "bokeh",
+        "flowers",
+        "grass_blades",
+        "soil",
+        "leaf"
+      ]
+    }
+  },
+  "props": {
+    "bench_v1": {
+      "name": "Banco de plaza",
+      "builder": "bench",
+      "keywords": [
+        "banco",
+        "bench",
+        "asiento"
+      ]
+    },
+    "lamp_v1": {
+      "name": "Farola",
+      "builder": "lamp",
+      "keywords": [
+        "farola",
+        "lampara",
+        "lamp",
+        "streetlight"
+      ]
+    },
+    "tree_v1": {
+      "name": "Árbol",
+      "builder": "tree",
+      "keywords": [
+        "arbol",
+        "arboles",
+        "tree"
+      ]
+    },
+    "plant_v1": {
+      "name": "Maceta",
+      "builder": "plant",
+      "keywords": [
+        "planta",
+        "maceta",
+        "plant"
+      ]
+    },
+    "camera_v1": {
+      "name": "Cámara",
+      "builder": "camera",
+      "keywords": [
+        "camara",
+        "foto",
+        "video",
+        "grabar",
+        "camera"
+      ]
+    },
+    "seeds_v1": {
+      "name": "Migas / semillas",
+      "builder": "seeds",
+      "keywords": [
+        "migas",
+        "semillas",
+        "comida",
+        "pan",
+        "seeds",
+        "crumbs",
+        "food"
+      ]
+    },
+    "book_v1": {
+      "name": "Libro abierto",
+      "builder": "book",
+      "keywords": [
+        "libro",
+        "libros",
+        "medicina",
+        "estudio",
+        "investigacion",
+        "book"
+      ]
+    }
+  },
+  "infographics": {
+    "counter_badge": {
+      "name": "Contador con unidad",
+      "params": [
+        "value",
+        "label",
+        "from"
+      ]
+    },
+    "neon_number": {
+      "name": "Número neón",
+      "params": [
+        "value"
+      ]
+    },
+    "kinetic_title": {
+      "name": "Tipografía cinética",
+      "params": [
+        "text"
+      ]
+    },
+    "document_card": {
+      "name": "Documento / artículo",
+      "params": [
+        "title",
+        "stamp"
+      ]
+    },
+    "callout": {
+      "name": "Etiqueta con flecha",
+      "params": [
+        "text",
+        "target",
+        "part"
+      ]
+    },
+    "ripples": {
+      "name": "Ondas (vibración / sonido / alarma)",
+      "params": [
+        "target",
+        "part",
+        "color"
+      ]
+    },
+    "highlight_ring": {
+      "name": "Anillo de foco",
+      "params": [
+        "target",
+        "part"
+      ]
+    },
+    "guide_line": {
+      "name": "Línea guía vertical (posición fija)",
+      "params": [
+        "target",
+        "part"
+      ]
+    },
+    "countdown": {
+      "name": "Cuenta atrás",
+      "params": [
+        "from",
+        "to"
+      ]
+    },
+    "compare_scale": {
+      "name": "Balanza comparativa",
+      "params": [
+        "left",
+        "right"
+      ]
+    },
+    "month_strip": {
+      "name": "Tira de meses",
+      "params": [
+        "highlight"
+      ]
+    },
+    "multiplier": {
+      "name": "Etiqueta ×N",
+      "params": [
+        "value",
+        "label"
+      ]
+    }
+  },
+  "templates": {
+    "character_scene": "personajes con acciones en un escenario por capas (plano general/medio)",
+    "closeup": "primer plano de una parte del personaje (cabeza, ojo, boca) con cámara que empuja",
+    "counter": "cifra dicha en la narración, con contador animado sobre el escenario",
+    "kinetic": "frase clave en tipografía cinética (solo palabras narradas)",
+    "document": "documento/artículo con título tomado literalmente de la narración",
+    "compare": "comparación (balanza) entre dos conceptos narrados",
+    "countdown": "cuenta atrás de segundos narrados",
+    "ambient": "plano de ambientación (silencio, sin palabras)"
+  },
+  "styles": {
+    "vector_explicativo": {
+      "name": "Vector explicativo",
+      "palette": [
+        "#2b3a67",
+        "#e8b97b",
+        "#6a9c93",
+        "#f2efe9"
+      ],
+      "grain": 0.04,
+      "vignette": 0.35
+    },
+    "cutout_ilustrado": {
+      "name": "Cutout ilustrado",
+      "palette": [
+        "#6A9C93",
+        "#6A6182",
+        "#E8B97B",
+        "#252732"
+      ],
+      "grain": 0.06,
+      "vignette": 0.45
+    },
+    "cientifico_animado": {
+      "name": "Científico animado",
+      "palette": [
+        "#0e1430",
+        "#5b7cfa",
+        "#ffd166",
+        "#ef476f"
+      ],
+      "grain": 0.03,
+      "vignette": 0.5
+    },
+    "escenas_2_5d": {
+      "name": "Escenas 2.5D",
+      "palette": [
+        "#3a2f4a",
+        "#f0a868",
+        "#7fb7be",
+        "#efe6d6"
+      ],
+      "grain": 0.05,
+      "vignette": 0.5
+    },
+    "vector_realista_mixto": {
+      "name": "Vector realista mixto",
+      "palette": [
+        "#2a2a2e",
+        "#c9a27e",
+        "#7d8fa3",
+        "#efe9e1"
+      ],
+      "grain": 0.07,
+      "vignette": 0.55
+    }
+  }
+}

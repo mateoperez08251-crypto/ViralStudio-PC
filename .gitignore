@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.viralstudio_tools/
+*.part
+
+_data/
+vs_run/
+tmp*/
+conexion.json
+cola.sqlite3*
+entradas/
+resultados/

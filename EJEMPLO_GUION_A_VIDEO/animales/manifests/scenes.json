@@ -1,0 +1,249 @@
+[
+ {
+  "scene_id": "s001",
+  "story_span": "En la sabana africana, un elefante camina despacio.",
+  "audio_start_s": 0.0,
+  "audio_end_s": 3.176,
+  "exact_narration": "En la sabana africana, un elefante camina despacio.",
+  "historical_sources": [],
+  "visual_justification": "aparece Protagonista",
+  "style_profile": "",
+  "location": "space",
+  "era": "",
+  "character_ids": [
+   "protagonista"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "walk",
+    "who": "protagonista"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "tension",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "closeup",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [
+   "impact"
+  ],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 1.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s002",
+  "story_span": "De pronto, un león ruge y el elefante corre.",
+  "audio_start_s": 0.0,
+  "audio_end_s": 2.663,
+  "exact_narration": "De pronto, un león ruge y el elefante corre.",
+  "historical_sources": [],
+  "visual_justification": "aparece Protagonista",
+  "style_profile": "",
+  "location": "space",
+  "era": "",
+  "character_ids": [
+   "protagonista"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "run",
+    "who": "protagonista"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "scene",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 1.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s003",
+  "story_span": "Mientras tanto, en el mar, un pulpo nada tranquilo: tiene 3 corazones.",
+  "audio_start_s": 0.0,
+  "audio_end_s": 4.136,
+  "exact_narration": "Mientras tanto, en el mar, un pulpo nada tranquilo: tiene 3 corazones.",
+  "historical_sources": [],
+  "visual_justification": "aparece Protagonista",
+  "style_profile": "",
+  "location": "space",
+  "era": "",
+  "character_ids": [
+   "protagonista"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "walk",
+    "who": "protagonista"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "scene",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 1.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s004",
+  "story_span": "En la granja, la vaca Lola mira al granjero.",
+  "audio_start_s": 0.0,
+  "audio_end_s": 2.508,
+  "exact_narration": "En la granja, la vaca Lola mira al granjero.",
+  "historical_sources": [],
+  "visual_justification": "aparece Protagonista",
+  "style_profile": "",
+  "location": "sea",
+  "era": "",
+  "character_ids": [
+   "protagonista"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "look_up",
+    "who": "protagonista"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "scene",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 1.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ },
+ {
+  "scene_id": "s005",
+  "story_span": "Y en la plaza, una paloma vuela asustada porque un perro corre hacia ella.",
+  "audio_start_s": 0.0,
+  "audio_end_s": 3.965,
+  "exact_narration": "Y en la plaza, una paloma vuela asustada porque un perro corre hacia ella.",
+  "historical_sources": [],
+  "visual_justification": "aparece Protagonista",
+  "style_profile": "",
+  "location": "street",
+  "era": "",
+  "character_ids": [
+   "protagonista"
+  ],
+  "prop_ids": [],
+  "asset_refs": [],
+  "action_beats": [
+   {
+    "at_s": 0,
+    "verb": "run",
+    "who": "protagonista"
+   }
+  ],
+  "camera": {
+   "preset": "auto",
+   "transition_in": "cut"
+  },
+  "lighting": {
+   "mood": "",
+   "time": "night"
+  },
+  "animation": {
+   "shot": "scene",
+   "engine": "vs-engine canvas 2D (HyperFrames)"
+  },
+  "contact_events": [],
+  "vfx": [],
+  "sfx_cues": [],
+  "music_cues": [],
+  "text_policy": "none",
+  "expected_duration_s": 1.0,
+  "render_backend": "web",
+  "qa_gates": [
+   "fidelity",
+   "audio_sync",
+   "no_black_frames"
+  ],
+  "revision": 1
+ }
+]

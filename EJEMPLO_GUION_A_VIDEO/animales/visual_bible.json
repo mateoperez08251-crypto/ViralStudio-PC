@@ -1,0 +1,120 @@
+{
+ "style": "cutout_ilustrado",
+ "characters": [
+  {
+   "id": "elephant_01",
+   "asset_id": "sp_elephant_v1",
+   "variant": "default",
+   "name": "elefante",
+   "first_word": "elefante",
+   "description": "Elefante",
+   "locked": false
+  },
+  {
+   "id": "lion_01",
+   "asset_id": "sp_lion_v1",
+   "variant": "default",
+   "name": "león",
+   "first_word": "león",
+   "description": "León",
+   "locked": false
+  },
+  {
+   "id": "octopus_01",
+   "asset_id": "sp_octopus_v1",
+   "variant": "default",
+   "name": "pulpo",
+   "first_word": "pulpo",
+   "description": "Pulpo",
+   "locked": false
+  },
+  {
+   "id": "cow_01",
+   "asset_id": "sp_cow_v1",
+   "variant": "default",
+   "name": "Lola",
+   "first_word": "vaca",
+   "description": "Vaca",
+   "locked": false,
+   "aliases": [
+    "lola"
+   ]
+  },
+  {
+   "id": "farmer_01",
+   "asset_id": "person_rig_v1",
+   "variant": "man",
+   "name": "granjero",
+   "first_word": "granjero.",
+   "description": "Persona articulada",
+   "locked": false,
+   "colors": {
+    "skin": "#f5d2b5",
+    "hairColor": "#1f1a17"
+   },
+   "role": "farmer",
+   "look": {
+    "hat": "straw",
+    "shirt": "#c8322a",
+    "pants": "#3a5a8a"
+   }
+  },
+  {
+   "id": "pigeon_01",
+   "asset_id": "pigeon_rig_v1",
+   "variant": "default",
+   "name": "paloma",
+   "first_word": "paloma",
+   "description": "Paloma ilustrada",
+   "locked": false
+  },
+  {
+   "id": "dog_01",
+   "asset_id": "sp_dog_v1",
+   "variant": "default",
+   "name": "perro",
+   "first_word": "perro",
+   "description": "Perro",
+   "locked": false
+  }
+ ],
+ "backgrounds": [
+  {
+   "id": "savanna_01",
+   "asset_id": "savanna_v1",
+   "name": "sabana africana"
+  },
+  {
+   "id": "ocean_under_01",
+   "asset_id": "ocean_under_v1",
+   "name": "mar"
+  },
+  {
+   "id": "farm_01",
+   "asset_id": "farm_v1",
+   "name": "granja"
+  },
+  {
+   "id": "plaza_layered_01",
+   "asset_id": "plaza_layered_v1",
+   "name": "plaza"
+  },
+  {
+   "id": "park_day_01",
+   "asset_id": "park_day_v1",
+   "name": "(por defecto)"
+  },
+  {
+   "id": "studio_gradient_01",
+   "asset_id": "studio_gradient_v1",
+   "name": "(infografías)"
+  }
+ ],
+ "props": [],
+ "palette": [
+  "#6A9C93",
+  "#6A6182",
+  "#E8B97B",
+  "#252732"
+ ]
+}

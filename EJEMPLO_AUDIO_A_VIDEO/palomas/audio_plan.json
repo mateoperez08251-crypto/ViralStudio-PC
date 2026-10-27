@@ -1,0 +1,1448 @@
+{
+ "schema_version": 1,
+ "input_mode": "audio",
+ "planner": "rules",
+ "created": 1792980915.0019956,
+ "audio": {
+  "source_path": "audio/source/original.mp3",
+  "master_path": "audio/source_voice_master.wav",
+  "duration_s": 22.996,
+  "sample_rate": 48000,
+  "channels": 1,
+  "sha256": "296fe24d6e4900771e0ac21c34eb21ba0da8f11edfcdea1870e9c16be10cb759",
+  "narration_source": "original_audio",
+  "tts_used": false
+ },
+ "video": {
+  "format": "vertical",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "frame_count": 690
+ },
+ "transcript": {
+  "language": "es",
+  "text": "¿Por qué las palomas mueven la cabeza al caminar? Mira esta paloma en la plaza. Un niño la observa desde un banco sorprendido. Su cuerpo avanza, pero la cabeza se queda quieta en el aire. Luego da un salto rápido hacia adelante. Lo hace unas 15 veces por segundo. Así ve el mundo nítido como una cámara estable.",
+  "words": [
+   {
+    "id": "w0001",
+    "text": "¿Por",
+    "start_s": 0.0,
+    "end_s": 0.48,
+    "confidence": 0.675,
+    "needs_review": false
+   },
+   {
+    "id": "w0002",
+    "text": "qué",
+    "start_s": 0.48,
+    "end_s": 0.62,
+    "confidence": 0.965,
+    "needs_review": false
+   },
+   {
+    "id": "w0003",
+    "text": "las",
+    "start_s": 0.62,
+    "end_s": 0.8,
+    "confidence": 0.99,
+    "needs_review": false
+   },
+   {
+    "id": "w0004",
+    "text": "palomas",
+    "start_s": 0.8,
+    "end_s": 1.22,
+    "confidence": 0.99,
+    "needs_review": false
+   },
+   {
+    "id": "w0005",
+    "text": "mueven",
+    "start_s": 1.22,
+    "end_s": 1.76,
+    "confidence": 0.997,
+    "needs_review": false
+   },
+   {
+    "id": "w0006",
+    "text": "la",
+    "start_s": 1.76,
+    "end_s": 1.92,
+    "confidence": 0.997,
+    "needs_review": false
+   },
+   {
+    "id": "w0007",
+    "text": "cabeza",
+    "start_s": 1.92,
+    "end_s": 2.32,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0008",
+    "text": "al",
+    "start_s": 2.32,
+    "end_s": 2.52,
+    "confidence": 0.995,
+    "needs_review": false
+   },
+   {
+    "id": "w0009",
+    "text": "caminar?",
+    "start_s": 2.52,
+    "end_s": 2.98,
+    "confidence": 0.99,
+    "needs_review": false
+   },
+   {
+    "id": "w0010",
+    "text": "Mira",
+    "start_s": 3.54,
+    "end_s": 3.74,
+    "confidence": 0.73,
+    "needs_review": false
+   },
+   {
+    "id": "w0011",
+    "text": "esta",
+    "start_s": 3.74,
+    "end_s": 4.12,
+    "confidence": 0.536,
+    "needs_review": false
+   },
+   {
+    "id": "w0012",
+    "text": "paloma",
+    "start_s": 4.12,
+    "end_s": 4.62,
+    "confidence": 0.998,
+    "needs_review": false
+   },
+   {
+    "id": "w0013",
+    "text": "en",
+    "start_s": 4.62,
+    "end_s": 4.8,
+    "confidence": 0.993,
+    "needs_review": false
+   },
+   {
+    "id": "w0014",
+    "text": "la",
+    "start_s": 4.8,
+    "end_s": 4.92,
+    "confidence": 0.995,
+    "needs_review": false
+   },
+   {
+    "id": "w0015",
+    "text": "plaza.",
+    "start_s": 4.92,
+    "end_s": 5.34,
+    "confidence": 0.975,
+    "needs_review": false
+   },
+   {
+    "id": "w0016",
+    "text": "Un",
+    "start_s": 5.8,
+    "end_s": 5.98,
+    "confidence": 0.989,
+    "needs_review": false
+   },
+   {
+    "id": "w0017",
+    "text": "niño",
+    "start_s": 5.98,
+    "end_s": 6.2,
+    "confidence": 0.995,
+    "needs_review": false
+   },
+   {
+    "id": "w0018",
+    "text": "la",
+    "start_s": 6.2,
+    "end_s": 6.38,
+    "confidence": 0.987,
+    "needs_review": false
+   },
+   {
+    "id": "w0019",
+    "text": "observa",
+    "start_s": 6.38,
+    "end_s": 6.94,
+    "confidence": 0.997,
+    "needs_review": false
+   },
+   {
+    "id": "w0020",
+    "text": "desde",
+    "start_s": 6.94,
+    "end_s": 7.08,
+    "confidence": 0.992,
+    "needs_review": false
+   },
+   {
+    "id": "w0021",
+    "text": "un",
+    "start_s": 7.08,
+    "end_s": 7.32,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0022",
+    "text": "banco",
+    "start_s": 7.32,
+    "end_s": 7.72,
+    "confidence": 0.997,
+    "needs_review": false
+   },
+   {
+    "id": "w0023",
+    "text": "sorprendido.",
+    "start_s": 7.72,
+    "end_s": 8.54,
+    "confidence": 0.992,
+    "needs_review": false
+   },
+   {
+    "id": "w0024",
+    "text": "Su",
+    "start_s": 9.04,
+    "end_s": 9.16,
+    "confidence": 0.975,
+    "needs_review": false
+   },
+   {
+    "id": "w0025",
+    "text": "cuerpo",
+    "start_s": 9.16,
+    "end_s": 9.44,
+    "confidence": 1.0,
+    "needs_review": false
+   },
+   {
+    "id": "w0026",
+    "text": "avanza,",
+    "start_s": 9.44,
+    "end_s": 9.96,
+    "confidence": 0.982,
+    "needs_review": false
+   },
+   {
+    "id": "w0027",
+    "text": "pero",
+    "start_s": 10.28,
+    "end_s": 10.34,
+    "confidence": 0.998,
+    "needs_review": false
+   },
+   {
+    "id": "w0028",
+    "text": "la",
+    "start_s": 10.34,
+    "end_s": 10.48,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0029",
+    "text": "cabeza",
+    "start_s": 10.48,
+    "end_s": 10.84,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0030",
+    "text": "se",
+    "start_s": 10.84,
+    "end_s": 11.08,
+    "confidence": 0.998,
+    "needs_review": false
+   },
+   {
+    "id": "w0031",
+    "text": "queda",
+    "start_s": 11.08,
+    "end_s": 11.32,
+    "confidence": 0.998,
+    "needs_review": false
+   },
+   {
+    "id": "w0032",
+    "text": "quieta",
+    "start_s": 11.32,
+    "end_s": 11.76,
+    "confidence": 0.992,
+    "needs_review": false
+   },
+   {
+    "id": "w0033",
+    "text": "en",
+    "start_s": 11.76,
+    "end_s": 11.88,
+    "confidence": 0.994,
+    "needs_review": false
+   },
+   {
+    "id": "w0034",
+    "text": "el",
+    "start_s": 11.88,
+    "end_s": 12.02,
+    "confidence": 1.0,
+    "needs_review": false
+   },
+   {
+    "id": "w0035",
+    "text": "aire.",
+    "start_s": 12.02,
+    "end_s": 12.28,
+    "confidence": 1.0,
+    "needs_review": false
+   },
+   {
+    "id": "w0036",
+    "text": "Luego",
+    "start_s": 14.01,
+    "end_s": 14.27,
+    "confidence": 0.993,
+    "needs_review": false
+   },
+   {
+    "id": "w0037",
+    "text": "da",
+    "start_s": 14.27,
+    "end_s": 14.57,
+    "confidence": 0.831,
+    "needs_review": false
+   },
+   {
+    "id": "w0038",
+    "text": "un",
+    "start_s": 14.57,
+    "end_s": 14.71,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0039",
+    "text": "salto",
+    "start_s": 14.71,
+    "end_s": 15.13,
+    "confidence": 0.996,
+    "needs_review": false
+   },
+   {
+    "id": "w0040",
+    "text": "rápido",
+    "start_s": 15.13,
+    "end_s": 15.49,
+    "confidence": 0.995,
+    "needs_review": false
+   },
+   {
+    "id": "w0041",
+    "text": "hacia",
+    "start_s": 15.49,
+    "end_s": 15.79,
+    "confidence": 0.991,
+    "needs_review": false
+   },
+   {
+    "id": "w0042",
+    "text": "adelante.",
+    "start_s": 15.79,
+    "end_s": 16.27,
+    "confidence": 0.739,
+    "needs_review": false
+   },
+   {
+    "id": "w0043",
+    "text": "Lo",
+    "start_s": 16.87,
+    "end_s": 16.97,
+    "confidence": 0.987,
+    "needs_review": false
+   },
+   {
+    "id": "w0044",
+    "text": "hace",
+    "start_s": 16.97,
+    "end_s": 17.21,
+    "confidence": 0.998,
+    "needs_review": false
+   },
+   {
+    "id": "w0045",
+    "text": "unas",
+    "start_s": 17.21,
+    "end_s": 17.47,
+    "confidence": 0.982,
+    "needs_review": false
+   },
+   {
+    "id": "w0046",
+    "text": "15",
+    "start_s": 17.47,
+    "end_s": 17.81,
+    "confidence": 0.914,
+    "needs_review": false
+   },
+   {
+    "id": "w0047",
+    "text": "veces",
+    "start_s": 17.81,
+    "end_s": 18.19,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0048",
+    "text": "por",
+    "start_s": 18.19,
+    "end_s": 18.57,
+    "confidence": 0.996,
+    "needs_review": false
+   },
+   {
+    "id": "w0049",
+    "text": "segundo.",
+    "start_s": 18.57,
+    "end_s": 19.03,
+    "confidence": 0.999,
+    "needs_review": false
+   },
+   {
+    "id": "w0050",
+    "text": "Así",
+    "start_s": 19.57,
+    "end_s": 19.79,
+    "confidence": 0.988,
+    "needs_review": false
+   },
+   {
+    "id": "w0051",
+    "text": "ve",
+    "start_s": 19.79,
+    "end_s": 20.01,
+    "confidence": 0.949,
+    "needs_review": false
+   },
+   {
+    "id": "w0052",
+    "text": "el",
+    "start_s": 20.01,
+    "end_s": 20.15,
+    "confidence": 0.995,
+    "needs_review": false
+   },
+   {
+    "id": "w0053",
+    "text": "mundo",
+    "start_s": 20.15,
+    "end_s": 20.33,
+    "confidence": 0.987,
+    "needs_review": false
+   },
+   {
+    "id": "w0054",
+    "text": "nítido",
+    "start_s": 20.33,
+    "end_s": 20.89,
+    "confidence": 0.964,
+    "needs_review": false
+   },
+   {
+    "id": "w0055",
+    "text": "como",
+    "start_s": 20.89,
+    "end_s": 21.23,
+    "confidence": 0.923,
+    "needs_review": false
+   },
+   {
+    "id": "w0056",
+    "text": "una",
+    "start_s": 21.23,
+    "end_s": 21.43,
+    "confidence": 0.997,
+    "needs_review": false
+   },
+   {
+    "id": "w0057",
+    "text": "cámara",
+    "start_s": 21.43,
+    "end_s": 21.77,
+    "confidence": 0.991,
+    "needs_review": false
+   },
+   {
+    "id": "w0058",
+    "text": "estable.",
+    "start_s": 21.77,
+    "end_s": 22.19,
+    "confidence": 0.974,
+    "needs_review": false
+   }
+  ],
+  "needs_review": false,
+  "source": "asr"
+ },
+ "visual_bible": {
+  "style": "cutout_ilustrado",
+  "characters": [
+   {
+    "id": "pigeon_01",
+    "asset_id": "pigeon_rig_v1",
+    "variant": "default",
+    "name": "palomas",
+    "first_word": "palomas",
+    "description": "Paloma ilustrada",
+    "locked": false
+   },
+   {
+    "id": "person_01",
+    "asset_id": "person_rig_v1",
+    "variant": "child",
+    "name": "niño",
+    "first_word": "niño",
+    "description": "Persona articulada",
+    "locked": false,
+    "colors": {
+     "skin": "#f1c7a1",
+     "hairColor": "#6b4428"
+    }
+   }
+  ],
+  "backgrounds": [
+   {
+    "id": "plaza_layered_01",
+    "asset_id": "plaza_layered_v1",
+    "name": "plaza"
+   },
+   {
+    "id": "park_day_01",
+    "asset_id": "park_day_v1",
+    "name": "(por defecto)"
+   },
+   {
+    "id": "studio_gradient_01",
+    "asset_id": "studio_gradient_v1",
+    "name": "(infografías)"
+   }
+  ],
+  "props": [
+   {
+    "id": "bench_01",
+    "asset_id": "bench_v1",
+    "name": "banco"
+   },
+   {
+    "id": "camera_01",
+    "asset_id": "camera_v1",
+    "name": "cámara"
+   }
+  ],
+  "palette": [
+   "#6A9C93",
+   "#6A6182",
+   "#E8B97B",
+   "#252732"
+  ]
+ },
+ "captions": {
+  "enabled": true,
+  "style": "explainer"
+ },
+ "units": [
+  {
+   "start_s": 0.0,
+   "end_s": 2.98,
+   "text": "¿Por qué las palomas mueven la cabeza al caminar?",
+   "word_ids": [
+    "w0001",
+    "w0002",
+    "w0003",
+    "w0004",
+    "w0005",
+    "w0006",
+    "w0007",
+    "w0008",
+    "w0009"
+   ]
+  },
+  {
+   "start_s": 3.54,
+   "end_s": 8.54,
+   "text": "Mira esta paloma en la plaza. Un niño la observa desde un banco sorprendido.",
+   "word_ids": [
+    "w0010",
+    "w0011",
+    "w0012",
+    "w0013",
+    "w0014",
+    "w0015",
+    "w0016",
+    "w0017",
+    "w0018",
+    "w0019",
+    "w0020",
+    "w0021",
+    "w0022",
+    "w0023"
+   ]
+  },
+  {
+   "start_s": 9.04,
+   "end_s": 12.28,
+   "text": "Su cuerpo avanza, pero la cabeza se queda quieta en el aire.",
+   "word_ids": [
+    "w0024",
+    "w0025",
+    "w0026",
+    "w0027",
+    "w0028",
+    "w0029",
+    "w0030",
+    "w0031",
+    "w0032",
+    "w0033",
+    "w0034",
+    "w0035"
+   ]
+  },
+  {
+   "start_s": 14.01,
+   "end_s": 16.27,
+   "text": "Luego da un salto rápido hacia adelante.",
+   "word_ids": [
+    "w0036",
+    "w0037",
+    "w0038",
+    "w0039",
+    "w0040",
+    "w0041",
+    "w0042"
+   ]
+  },
+  {
+   "start_s": 16.87,
+   "end_s": 19.03,
+   "text": "Lo hace unas 15 veces por segundo.",
+   "word_ids": [
+    "w0043",
+    "w0044",
+    "w0045",
+    "w0046",
+    "w0047",
+    "w0048",
+    "w0049"
+   ]
+  },
+  {
+   "start_s": 19.57,
+   "end_s": 22.19,
+   "text": "Así ve el mundo nítido como una cámara estable.",
+   "word_ids": [
+    "w0050",
+    "w0051",
+    "w0052",
+    "w0053",
+    "w0054",
+    "w0055",
+    "w0056",
+    "w0057",
+    "w0058"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "sc001",
+   "units": [
+    0,
+    0
+   ],
+   "word_ids": [
+    "w0001",
+    "w0002",
+    "w0003",
+    "w0004",
+    "w0005",
+    "w0006",
+    "w0007",
+    "w0008",
+    "w0009"
+   ],
+   "narration_exact": "¿Por qué las palomas mueven la cabeza al caminar?",
+   "visual_prompt": "character_scene: Paloma ilustrada en Plaza al atardecer (capas); cámara wide slow_push",
+   "visual_justification": "«palomas» → pigeon_01; «caminar» → pigeon_01.walk; «cabeza» → primer plano de head",
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    }
+   ],
+   "props": [],
+   "action_beats": [
+    {
+     "at_s": 2.52,
+     "word_id": "w0009",
+     "action": "walk",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "slow_push",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "head"
+    },
+    "focus_word": "w0007",
+    "focus_at_s": 1.92
+   },
+   "overlays": [],
+   "highlight_word_ids": [
+    "w0004",
+    "w0007"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 1,
+   "start_frame": 0,
+   "end_frame": 103,
+   "start_s": 0.0,
+   "end_s": 3.433333
+  },
+  {
+   "id": "sc002",
+   "units": [
+    1,
+    1
+   ],
+   "word_ids": [
+    "w0010",
+    "w0011",
+    "w0012",
+    "w0013",
+    "w0014",
+    "w0015",
+    "w0016",
+    "w0017",
+    "w0018",
+    "w0019",
+    "w0020",
+    "w0021",
+    "w0022",
+    "w0023"
+   ],
+   "narration_exact": "Mira esta paloma en la plaza. Un niño la observa desde un banco sorprendido.",
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara medium pan_right",
+   "visual_justification": "«paloma» → pigeon_01; «niño» → person_01; «plaza» → escenario plaza_layered_01; «Mira» → person_01.look_right; «observa» → person_01.look_left; «sorprendido» → person_01.surprise",
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "bench_v1",
+    "person_rig_v1",
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "bench_01",
+     "word": "w0022"
+    }
+   ],
+   "action_beats": [
+    {
+     "at_s": 3.54,
+     "word_id": "w0010",
+     "action": "look_right",
+     "target": "person_01"
+    },
+    {
+     "at_s": 6.38,
+     "word_id": "w0019",
+     "action": "look_left",
+     "target": "person_01"
+    },
+    {
+     "at_s": 7.72,
+     "word_id": "w0023",
+     "action": "surprise",
+     "target": "person_01"
+    }
+   ],
+   "camera": {
+    "shot": "medium",
+    "movement": "orbit"
+   },
+   "overlays": [],
+   "highlight_word_ids": [
+    "w0012",
+    "w0015"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 2,
+   "start_frame": 103,
+   "end_frame": 268,
+   "start_s": 3.433333,
+   "end_s": 8.933333
+  },
+  {
+   "id": "sc003",
+   "units": [
+    2,
+    2
+   ],
+   "word_ids": [
+    "w0024",
+    "w0025",
+    "w0026",
+    "w0027",
+    "w0028",
+    "w0029",
+    "w0030",
+    "w0031",
+    "w0032",
+    "w0033",
+    "w0034",
+    "w0035"
+   ],
+   "narration_exact": "Su cuerpo avanza, pero la cabeza se queda quieta en el aire.",
+   "visual_prompt": "closeup: Paloma ilustrada en Plaza al atardecer (capas); cámara closeup push_in; infografía guide_line",
+   "visual_justification": "«avanza» → pigeon_01.walk; «quieta» → pigeon_01.head_stabilize; «cuerpo» → primer plano de body",
+   "template": "closeup",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "guide_line",
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    }
+   ],
+   "props": [],
+   "action_beats": [
+    {
+     "at_s": 9.44,
+     "word_id": "w0026",
+     "action": "walk",
+     "target": "pigeon_01"
+    },
+    {
+     "at_s": 11.32,
+     "word_id": "w0032",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "closeup",
+    "movement": "push_in",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "body"
+    },
+    "focus_word": "w0025",
+    "focus_at_s": 9.16
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0032",
+     "target": "pigeon_01",
+     "part": "head",
+     "at_s": 11.32
+    }
+   ],
+   "highlight_word_ids": [
+    "w0025",
+    "w0029"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 1,
+   "start_frame": 268,
+   "end_frame": 417,
+   "start_s": 8.933333,
+   "end_s": 13.9
+  },
+  {
+   "id": "sc004",
+   "units": [
+    3,
+    3
+   ],
+   "word_ids": [
+    "w0036",
+    "w0037",
+    "w0038",
+    "w0039",
+    "w0040",
+    "w0041",
+    "w0042"
+   ],
+   "narration_exact": "Luego da un salto rápido hacia adelante.",
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara wide pan_left",
+   "visual_justification": "«salto» → pigeon_01.hop",
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "person_rig_v1",
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [],
+   "action_beats": [
+    {
+     "at_s": 14.71,
+     "word_id": "w0039",
+     "action": "hop",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "pan_left"
+   },
+   "overlays": [],
+   "highlight_word_ids": [
+    "w0042"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 1,
+   "start_frame": 417,
+   "end_frame": 502,
+   "start_s": 13.9,
+   "end_s": 16.733333
+  },
+  {
+   "id": "sc005",
+   "units": [
+    4,
+    4
+   ],
+   "word_ids": [
+    "w0043",
+    "w0044",
+    "w0045",
+    "w0046",
+    "w0047",
+    "w0048",
+    "w0049"
+   ],
+   "narration_exact": "Lo hace unas 15 veces por segundo.",
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara medium pull_out; infografía counter_badge",
+   "visual_justification": "cifra narrada «15» → contador 15",
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "counter_badge",
+    "person_rig_v1",
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [],
+   "action_beats": [],
+   "camera": {
+    "shot": "medium",
+    "movement": "pull_out"
+   },
+   "overlays": [
+    {
+     "type": "counter_badge",
+     "word": "w0046",
+     "value": 15.0,
+     "label": "veces por segundo",
+     "at_s": 17.47
+    }
+   ],
+   "highlight_word_ids": [
+    "w0046"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 1,
+   "start_frame": 502,
+   "end_frame": 584,
+   "start_s": 16.733333,
+   "end_s": 19.466667
+  },
+  {
+   "id": "sc006",
+   "units": [
+    5,
+    5
+   ],
+   "word_ids": [
+    "w0050",
+    "w0051",
+    "w0052",
+    "w0053",
+    "w0054",
+    "w0055",
+    "w0056",
+    "w0057",
+    "w0058"
+   ],
+   "narration_exact": "Así ve el mundo nítido como una cámara estable.",
+   "visual_prompt": "character_scene: Paloma ilustrada, Persona articulada en Plaza al atardecer (capas); cámara wide track; infografía guide_line",
+   "visual_justification": "«estable» → pigeon_01.head_stabilize",
+   "template": "character_scene",
+   "render_backend": "layered2d",
+   "background_id": "plaza_layered_01",
+   "layer_order": [
+    "background",
+    "props",
+    "characters",
+    "overlays",
+    "captions"
+   ],
+   "asset_ids": [
+    "camera_v1",
+    "guide_line",
+    "person_rig_v1",
+    "pigeon_rig_v1",
+    "plaza_layered_v1"
+   ],
+   "character_ids": [
+    "pigeon_01",
+    "person_01"
+   ],
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "head_stabilize"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "camera_01",
+     "word": "w0057"
+    }
+   ],
+   "action_beats": [
+    {
+     "at_s": 21.77,
+     "word_id": "w0058",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "track"
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0058",
+     "target": "pigeon_01",
+     "part": "head",
+     "at_s": 21.77
+    }
+   ],
+   "highlight_word_ids": [
+    "w0057"
+   ],
+   "transition_in": "cut",
+   "caption_policy": "word_timed",
+   "qa_status": "pending",
+   "locked": false,
+   "revision": 1,
+   "start_frame": 584,
+   "end_frame": 690,
+   "start_s": 19.466667,
+   "end_s": 22.996
+  }
+ ],
+ "choices": [
+  {
+   "units": [
+    0,
+    0
+   ],
+   "template": "character_scene",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "shot": "wide",
+    "movement": "slow_push",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "head"
+    },
+    "focus_word": "w0007"
+   },
+   "overlays": [],
+   "beats": [
+    {
+     "word": "w0009",
+     "action": "walk",
+     "target": "pigeon_01"
+    }
+   ],
+   "highlight": [
+    "w0004",
+    "w0007"
+   ],
+   "justification": "«palomas» → pigeon_01; «caminar» → pigeon_01.walk; «cabeza» → primer plano de head"
+  },
+  {
+   "units": [
+    1,
+    1
+   ],
+   "template": "character_scene",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "bench_01",
+     "word": "w0022"
+    }
+   ],
+   "camera": {
+    "shot": "medium",
+    "movement": "pan_right"
+   },
+   "overlays": [],
+   "beats": [
+    {
+     "word": "w0010",
+     "action": "look_right",
+     "target": "person_01"
+    },
+    {
+     "word": "w0019",
+     "action": "look_left",
+     "target": "person_01"
+    },
+    {
+     "word": "w0023",
+     "action": "surprise",
+     "target": "person_01"
+    }
+   ],
+   "highlight": [
+    "w0012",
+    "w0015"
+   ],
+   "justification": "«paloma» → pigeon_01; «niño» → person_01; «plaza» → escenario plaza_layered_01; «Mira» → person_01.look_right; «observa» → person_01.look_left; «sorprendido» → person_01.surprise"
+  },
+  {
+   "units": [
+    2,
+    2
+   ],
+   "template": "closeup",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "shot": "closeup",
+    "movement": "push_in",
+    "focus": {
+     "target": "pigeon_01",
+     "part": "body"
+    },
+    "focus_word": "w0025"
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0032",
+     "target": "pigeon_01",
+     "part": "head"
+    }
+   ],
+   "beats": [
+    {
+     "word": "w0026",
+     "action": "walk",
+     "target": "pigeon_01"
+    },
+    {
+     "word": "w0032",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "highlight": [
+    "w0025",
+    "w0029"
+   ],
+   "justification": "«avanza» → pigeon_01.walk; «quieta» → pigeon_01.head_stabilize; «cuerpo» → primer plano de body"
+  },
+  {
+   "units": [
+    3,
+    3
+   ],
+   "template": "character_scene",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "shot": "wide",
+    "movement": "pan_left"
+   },
+   "overlays": [],
+   "beats": [
+    {
+     "word": "w0039",
+     "action": "hop",
+     "target": "pigeon_01"
+    }
+   ],
+   "highlight": [
+    "w0042"
+   ],
+   "justification": "«salto» → pigeon_01.hop"
+  },
+  {
+   "units": [
+    4,
+    4
+   ],
+   "template": "character_scene",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "walk"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "shot": "medium",
+    "movement": "pull_out"
+   },
+   "overlays": [
+    {
+     "type": "counter_badge",
+     "word": "w0046",
+     "value": 15.0,
+     "label": "veces por segundo"
+    }
+   ],
+   "beats": [],
+   "highlight": [
+    "w0046"
+   ],
+   "justification": "cifra narrada «15» → contador 15"
+  },
+  {
+   "units": [
+    5,
+    5
+   ],
+   "template": "character_scene",
+   "background": "plaza_layered_01",
+   "characters": [
+    {
+     "id": "pigeon_01",
+     "action": "head_stabilize"
+    },
+    {
+     "id": "person_01",
+     "action": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "camera_01",
+     "word": "w0057"
+    }
+   ],
+   "camera": {
+    "shot": "wide",
+    "movement": "track"
+   },
+   "overlays": [
+    {
+     "type": "guide_line",
+     "word": "w0058",
+     "target": "pigeon_01",
+     "part": "head"
+    }
+   ],
+   "beats": [
+    {
+     "word": "w0058",
+     "action": "head_stabilize",
+     "target": "pigeon_01"
+    }
+   ],
+   "highlight": [
+    "w0057"
+   ],
+   "justification": "«estable» → pigeon_01.head_stabilize"
+  }
+ ],
+ "transcript_hash": "dec159c5888fb934",
+ "settings": {
+  "format": "vertical",
+  "fps": 30,
+  "visual_style": "cutout_ilustrado",
+  "captions": "explainer",
+  "music": false,
+  "sfx": false,
+  "pace_visual": "normal"
+ },
+ "plan_version": 2,
+ "saved_reason": "demo: re-render de una escena",
+ "saved_at": 1792981291.2829168
+}

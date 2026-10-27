@@ -1,0 +1,174 @@
+{
+ "audio": "narracion_aranas.m4a",
+ "duration_s": 22.229333,
+ "seconds": {
+  "ingest": 0.3,
+  "transcribe": 9.7,
+  "plan": 0.0,
+  "music": 0.0,
+  "build": 0.7,
+  "render": 189.0,
+  "qa": 14.4
+ },
+ "qa_status": "PASS",
+ "qa": [
+  {
+   "check": "pistas",
+   "status": "PASS",
+   "detail": "video=sí audio=sí"
+  },
+  {
+   "check": "resolución",
+   "status": "PASS",
+   "detail": "1080×1920 (esperado 1080×1920)"
+  },
+  {
+   "check": "fps",
+   "status": "PASS",
+   "detail": "30.00 fps (esperado 30)"
+  },
+  {
+   "check": "códec",
+   "status": "PASS",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "check": "duración",
+   "status": "PASS",
+   "detail": "22.23s vs línea de tiempo 22.23s"
+  },
+  {
+   "check": "sincronía A/V",
+   "status": "PASS",
+   "detail": "video 22.23s · audio 22.23s"
+  },
+  {
+   "check": "cuadros negros",
+   "status": "PASS",
+   "detail": "ninguno"
+  },
+  {
+   "check": "imagen congelada",
+   "status": "PASS",
+   "detail": "ninguna"
+  },
+  {
+   "check": "sonoridad",
+   "status": "INFO",
+   "detail": "-19.8 LUFS · pico -1.5 dBTP (objetivo −14 LUFS, ≤ −1 dBTP) · el modo audio conserva el nivel original salvo que actives la normalización"
+  },
+  {
+   "check": "subtítulos",
+   "status": "PASS",
+   "detail": "10 grupos sincronizados"
+  },
+  {
+   "check": "frames de video",
+   "status": "PASS",
+   "detail": "667 frames (esperados 667 = ceil(22.229s × 30))"
+  },
+  {
+   "check": "duración del audio",
+   "status": "PASS",
+   "detail": "audio del MP4 22.233s vs narración 22.229s (Δ +3.7 ms; tolerancia 1 frame + relleno AAC)"
+  },
+  {
+   "check": "video cubre todo el audio",
+   "status": "PASS",
+   "detail": "video 22.233s ≥ audio 22.229s − 1 frame"
+  },
+  {
+   "check": "continuidad de la voz original",
+   "status": "PASS",
+   "detail": "0.5s: lag 0.0 ms, r=1.0 · 9.61s: lag 0.0 ms, r=1.0 · 18.93s: lag 0.0 ms, r=1.0 · deriva 0.00 ms (sin cortes, sin cambio de velocidad)",
+   "windows": [
+    {
+     "at_s": 0.5,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 9.61,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 18.93,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    }
+   ]
+  },
+  {
+   "check": "partición de escenas",
+   "status": "PASS",
+   "detail": "6 escenas contiguas 0→667 frames, sin huecos ni solapes"
+  },
+  {
+   "check": "TTS no usado",
+   "status": "PASS",
+   "detail": "la narración es el audio original del usuario"
+  },
+  {
+   "check": "transcripción",
+   "status": "PASS",
+   "detail": "53 palabras · 0 marcadas para revisar · fuente asr"
+  },
+  {
+   "check": "assets",
+   "status": "PASS",
+   "detail": "8 assets registrados con licencia"
+  },
+  {
+   "check": "zonas seguras (textos dentro del cuadro)",
+   "status": "PASS",
+   "detail": "21 instantes revisados: subtítulos e infografías dentro del cuadro",
+   "problems": []
+  },
+  {
+   "check": "escenas visibles (no negras)",
+   "status": "PASS",
+   "detail": "todas con imagen"
+  },
+  {
+   "check": "animación visible",
+   "status": "PASS",
+   "detail": "personajes/cámara en movimiento en todas las escenas con personajes",
+   "frames": [
+    "qa_frames/sc001_ini.png",
+    "qa_frames/sc001_mid.png",
+    "qa_frames/sc001_fin.png",
+    "qa_frames/sc002_ini.png",
+    "qa_frames/sc002_mid.png",
+    "qa_frames/sc002_fin.png",
+    "qa_frames/sc003_ini.png",
+    "qa_frames/sc003_mid.png",
+    "qa_frames/sc003_fin.png",
+    "qa_frames/sc004_ini.png",
+    "qa_frames/sc004_mid.png",
+    "qa_frames/sc004_fin.png",
+    "qa_frames/sc005_ini.png",
+    "qa_frames/sc005_mid.png",
+    "qa_frames/sc005_fin.png",
+    "qa_frames/sc006_ini.png",
+    "qa_frames/sc006_mid.png",
+    "qa_frames/sc006_fin.png"
+   ]
+  }
+ ],
+ "transcript": {
+  "status": "ok",
+  "words": 53,
+  "language": "es",
+  "review_count": 0,
+  "engine": "faster-whisper small (cpu)",
+  "alignment": "faster-whisper",
+  "diarization": "narrador único"
+ },
+ "plan": {
+  "version": 1,
+  "scenes": 6,
+  "planner": "rules"
+ },
+ "total_s": 215.5
+}

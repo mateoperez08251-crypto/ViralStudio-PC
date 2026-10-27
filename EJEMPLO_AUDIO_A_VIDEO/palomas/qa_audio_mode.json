@@ -1,0 +1,152 @@
+{
+ "status": "PASS",
+ "checks": [
+  {
+   "check": "pistas",
+   "status": "PASS",
+   "detail": "video=sí audio=sí"
+  },
+  {
+   "check": "resolución",
+   "status": "PASS",
+   "detail": "1080×1920 (esperado 1080×1920)"
+  },
+  {
+   "check": "fps",
+   "status": "PASS",
+   "detail": "30.00 fps (esperado 30)"
+  },
+  {
+   "check": "códec",
+   "status": "PASS",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "check": "duración",
+   "status": "PASS",
+   "detail": "23.00s vs línea de tiempo 23.00s"
+  },
+  {
+   "check": "sincronía A/V",
+   "status": "PASS",
+   "detail": "video 23.00s · audio 23.00s"
+  },
+  {
+   "check": "cuadros negros",
+   "status": "PASS",
+   "detail": "ninguno"
+  },
+  {
+   "check": "imagen congelada",
+   "status": "PASS",
+   "detail": "ninguna"
+  },
+  {
+   "check": "sonoridad",
+   "status": "INFO",
+   "detail": "-17.7 LUFS · pico -1.9 dBTP (objetivo −14 LUFS, ≤ −1 dBTP) · el modo audio conserva el nivel original salvo que actives la normalización"
+  },
+  {
+   "check": "subtítulos",
+   "status": "PASS",
+   "detail": "11 grupos sincronizados"
+  },
+  {
+   "check": "frames de video",
+   "status": "PASS",
+   "detail": "690 frames (esperados 690 = ceil(22.996s × 30))"
+  },
+  {
+   "check": "duración del audio",
+   "status": "PASS",
+   "detail": "audio del MP4 23.000s vs narración 22.996s (Δ +4.0 ms; tolerancia 1 frame + relleno AAC)"
+  },
+  {
+   "check": "video cubre todo el audio",
+   "status": "PASS",
+   "detail": "video 23.000s ≥ audio 22.996s − 1 frame"
+  },
+  {
+   "check": "continuidad de la voz original",
+   "status": "PASS",
+   "detail": "0.5s: lag 0.0 ms, r=1.0 · 10.0s: lag 0.0 ms, r=1.0 · 19.7s: lag 0.0 ms, r=1.0 · deriva 0.00 ms (sin cortes, sin cambio de velocidad)",
+   "windows": [
+    {
+     "at_s": 0.5,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 10.0,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    },
+    {
+     "at_s": 19.7,
+     "lag_ms": 0.0,
+     "corr": 1.0
+    }
+   ]
+  },
+  {
+   "check": "partición de escenas",
+   "status": "PASS",
+   "detail": "6 escenas contiguas 0→690 frames, sin huecos ni solapes"
+  },
+  {
+   "check": "TTS no usado",
+   "status": "PASS",
+   "detail": "la narración es el audio original del usuario"
+  },
+  {
+   "check": "transcripción",
+   "status": "PASS",
+   "detail": "58 palabras · 0 marcadas para revisar · fuente asr"
+  },
+  {
+   "check": "assets",
+   "status": "PASS",
+   "detail": "7 assets registrados con licencia"
+  },
+  {
+   "check": "zonas seguras (textos dentro del cuadro)",
+   "status": "PASS",
+   "detail": "20 instantes revisados: subtítulos e infografías dentro del cuadro",
+   "problems": []
+  },
+  {
+   "check": "escenas visibles (no negras)",
+   "status": "PASS",
+   "detail": "todas con imagen"
+  },
+  {
+   "check": "animación visible",
+   "status": "PASS",
+   "detail": "personajes/cámara en movimiento en todas las escenas con personajes",
+   "frames": [
+    "qa_frames/sc001_ini.png",
+    "qa_frames/sc001_mid.png",
+    "qa_frames/sc001_fin.png",
+    "qa_frames/sc002_ini.png",
+    "qa_frames/sc002_mid.png",
+    "qa_frames/sc002_fin.png",
+    "qa_frames/sc003_ini.png",
+    "qa_frames/sc003_mid.png",
+    "qa_frames/sc003_fin.png",
+    "qa_frames/sc004_ini.png",
+    "qa_frames/sc004_mid.png",
+    "qa_frames/sc004_fin.png",
+    "qa_frames/sc005_ini.png",
+    "qa_frames/sc005_mid.png",
+    "qa_frames/sc005_fin.png",
+    "qa_frames/sc006_ini.png",
+    "qa_frames/sc006_mid.png",
+    "qa_frames/sc006_fin.png"
+   ]
+  }
+ ],
+ "duration": 23.0,
+ "audio_duration": 23.0,
+ "frames_dir": "/home/user/work/entrega/_data_palomas/projects/20261026-021504-e0c7/out/qa_frames",
+ "mode": "audio"
+}

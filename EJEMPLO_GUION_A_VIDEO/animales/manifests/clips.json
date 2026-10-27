@@ -1,0 +1,82 @@
+[
+ {
+  "chapter": "sc001",
+  "scenes": [
+   "sc001"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/hf/renders/part_sc001.mp4",
+  "sha256": "34079f74588a0a92954136fc7f93df2edc1d7428882524a3a430bec646c5b8f9",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 0.0,
+  "dur_s": 3.666667
+ },
+ {
+  "chapter": "sc002",
+  "scenes": [
+   "sc002"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/hf/renders/part_sc002.mp4",
+  "sha256": "955dcb6cdd4ed04b1458ace3b3f0ea648c73ee3b4de28f400b323bf1fdaa2932",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 3.666667,
+  "dur_s": 3.0
+ },
+ {
+  "chapter": "sc003",
+  "scenes": [
+   "sc003"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/hf/renders/part_sc003.mp4",
+  "sha256": "23300e45ae5a59497cf1f59884bf554c47a26e985695da9b21ccf85a6879921f",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 6.666667,
+  "dur_s": 4.433333
+ },
+ {
+  "chapter": "sc004",
+  "scenes": [
+   "sc004"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/hf/renders/part_sc004.mp4",
+  "sha256": "54ea426c32ead416784f95217d533e6a8702f85158bebd299bcd309a082ad56c",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 11.1,
+  "dur_s": 2.833333
+ },
+ {
+  "chapter": "sc005",
+  "scenes": [
+   "sc005"
+  ],
+  "backend": "hyperframes",
+  "output_path": "/tmp/claude-0/demo_guion/_data/projects/20261026-042036-131b/hf/renders/part_sc005.mp4",
+  "sha256": "657ea8da6182ac28406f2196df8e206694e3733886f00e6bb2e6b393a859e6b8",
+  "fps": 30,
+  "dimensions": [
+   1080,
+   1920
+  ],
+  "start_s": 13.933333,
+  "dur_s": 4.7
+ }
+]
