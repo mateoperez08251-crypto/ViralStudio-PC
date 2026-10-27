@@ -38,6 +38,33 @@
   }
   async function act(fn){try{await fn();}catch(e){say(e.message,true);}}
   document.addEventListener('DOMContentLoaded',()=>{
+    const panelStyles=document.createElement('style');
+    panelStyles.textContent=`
+      #pcPanel { color-scheme: dark; }
+      #pcPanel input:not([type="checkbox"]), #pcPanel textarea, #pcPanel select {
+        background: #0b1220; color: #e6edf3; caret-color: #e6edf3;
+        border: 1px solid #64748b; border-radius: 8px; padding: 9px 11px;
+        box-sizing: border-box; max-width: 100%;
+      }
+      #pcPanel input::placeholder, #pcPanel textarea::placeholder { color: #aab8ca; opacity: 1; }
+      #pcPanel select option { background: #0b1220; color: #e6edf3; }
+      #pcPanel button, #pcPanel input::file-selector-button {
+        background: #f0b648; color: #111827; border: 1px solid #f0b648;
+        border-radius: 8px; padding: 9px 12px; font-weight: 700; cursor: pointer;
+      }
+      #pcPanel button:hover, #pcPanel input::file-selector-button:hover { background: #ffcc70; }
+      #pcPanel input::file-selector-button { margin-right: 10px; }
+      #pcPanel input[type="checkbox"] { accent-color: #f0b648; }
+      #pcPanel :is(input, textarea, select, button):focus-visible {
+        outline: 2px solid #7dd3fc; outline-offset: 3px;
+      }
+      #pcPanel input:-webkit-autofill {
+        -webkit-text-fill-color: #e6edf3; caret-color: #e6edf3;
+        box-shadow: 0 0 0 1000px #0b1220 inset;
+      }
+      #pcPanel button:disabled { background: #334155; color: #cbd5e1; border-color: #64748b; cursor: not-allowed; }
+    `;
+    document.head.appendChild(panelStyles);
     const panel=document.createElement('details');panel.id='pcPanel';panel.open=false;
     panel.style.cssText='margin:12px;padding:16px;border:1px solid #455367;border-radius:12px;background:#141c28;color:#e6edf3;font:14px system-ui';
     panel.innerHTML=`<summary style="cursor:pointer;font-weight:700">ViralStudio PC · Colab y guías de animación</summary>
