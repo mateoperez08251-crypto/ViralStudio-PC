@@ -117,7 +117,9 @@ def enforce_choices(choices, units, bible, lib, full_text):
     prev = None
     issues = []
     for i, ch in enumerate(choices):
-        start, end = ch["units"]
+        # Igual que validate_choices y el ensamblador: primera y última unidad.
+        # Qwen puede devolver [0], [0, 2] o [0, 1, 2].
+        start, end = int(ch["units"][0]), int(ch["units"][-1])
         segment = " ".join(u["text"] for u in units[start:end+1])
         t = " ".join(words(segment))
         neg = negative_entities(segment)
