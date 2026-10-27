@@ -85,3 +85,10 @@ Para actualizar Colab, abre la libreta nueva y ejecuta la celda de instalación 
 Cloudflare no puede resolver el destino del túnel. Este estado no confirma que la llave sea incorrecta. Mantén Colab conectado y ejecuta la celda **Enlace y diagnóstico** con **Rehacer túnel (enlace nuevo)**. Copia la nueva URL base y llave a la PC, guarda y comprueba el motor. Si el runtime terminó, primero vuelve a ejecutar la instalación. La cola local permanece guardada; la existencia de los proyectos remotos depende de que se conserve su almacenamiento.
 
 La celda de diagnóstico imprime ahora URL y llave por separado. El cliente distingue el error 530 de las respuestas de autenticación y conserva los trabajos pendientes al recibirlo.
+
+
+## Audio: botón y estado del envío
+
+Al pulsar Subir y analizar se muestra el paso actual: crear proyecto, enviar audio e iniciar análisis. Los fallos quedan visibles debajo del botón y se puede reintentar. Las consultas de creación y arranque esperan hasta dos minutos; la subida admite hasta quince minutos. Se conserva el identificador del intento para reutilizar el proyecto cuando se pierde una respuesta. Una transferencia guardada en la cola local se identifica como pendiente y no como audio ya verificado.
+
+En Colab, si Aplicar guía está activado, primero importa y selecciona una guía o desactiva esa opción. El modo original analiza el audio y prepara el storyboard; después permite Renderizar video. En la PC, la opción Procesar hasta el video final automáticamente continúa las etapas. En ambos casos Colab y el túnel deben estar disponibles.

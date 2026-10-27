@@ -12,7 +12,8 @@
       let key=pending.get(identity);
       if(!key){key=crypto.randomUUID();pending.set(identity,key);}
       const headers=new Headers(opts.headers||{});
-      headers.set('Idempotency-Key',key);headers.set('X-ViralStudio-Guide',profile);headers.set('X-ViralStudio-Auto',automatic?'1':'0');
+      if(!headers.has('Idempotency-Key'))headers.set('Idempotency-Key',key);
+      headers.set('X-ViralStudio-Guide',profile);headers.set('X-ViralStudio-Auto',automatic?'1':'0');
       const response=await nativeFetch(input,{...opts,headers});
       if(response.ok || (response.status>=400 && response.status<500))pending.delete(identity);
       return response;
@@ -26,6 +27,7 @@
   }
   const say=(s,bad=false)=>{el('pcMessage').textContent=s;el('pcMessage').style.color=bad?'#ff8c8c':'#9fdbb0';};
   let state={guides:[],jobs:[]};
+  window.VSActiveGuide=()=>state.guides.find(g=>g.profile===profile)||null;
   async function refresh(){
     state=await api('state');
     if(document.activeElement!==el('pcUrl') && !el('pcUrl').value)el('pcUrl').value=state.url;

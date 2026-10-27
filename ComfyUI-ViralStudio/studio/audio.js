@@ -118,7 +118,7 @@
           <p class="hint">Música y efectos van por debajo de la voz (la música baja sola cuando hablas). Varios hablantes requiere HF_TOKEN y aceptar las condiciones de pyannote; si no, se usa narrador único.</p>
         </div>
         <div class="actions"><button class="btn pri big" id="aGo">🎧 Subir y analizar</button></div>
-        <div class="prog" id="upProg" style="display:none"><i></i></div><div class="msg" id="upMsg"></div>
+        <div class="prog" id="upProg" style="display:none"><i></i></div><div class="msg" id="upMsg" role="status" aria-live="polite"></div>
       </div>
       <div><div class="card sticky"><h2>Cómo funciona</h2>
         <ol class="steps"><li><b>Escucha</b>: faster-whisper transcribe con tiempos por palabra (local, sin enviar tu audio a nadie).</li>
@@ -150,18 +150,81 @@
       d.auto_storyboard = d.storyboard_mode !== "manual";
     }
     $("#aGo").onclick = async () => {
-      read();
-      if (!A.file) return toast("Elige primero tu archivo de audio", true);
-      $("#aGo").disabled = true;
+      if (A.submitting) return;
+      const button = $("#aGo"), message = $("#upMsg");
+      const report = (text) => { message.textContent = text; message.style.color = ""; };
+      button.disabled = true;
+      button.textContent = "Preparando envío…";
       try {
+        read();
         const settings = Object.assign({}, d, { input_mode: "audio", topic: "" });
-        const p = await api("projects", { method: "POST", body: { settings } });
-        await upload(p.id, A.file);
-        await api(`projects/${p.id}/audio/analyze`, { method: "POST", body: {} });
-        location.hash = "#/p/" + p.id;
-      } catch (e) { toast(e.message, true); $("#aGo").disabled = false; }
+        const result = await submitAudio(A.file, settings, { report });
+        if (!result.queued) location.hash = "#/p/" + result.id;
+      } catch (e) {
+        message.textContent = e.message; message.style.color = "#ff8c8c";
+        toast(e.message, true);
+      } finally {
+        button.disabled = false; button.textContent = "🎧 Subir y analizar";
+      }
     };
     if (A.file && A.objUrl) localWave(A.file, $("#aWave"));
+  }
+
+  async function submitAudio(file, settings, { request = api, send = upload, report = () => {}, timeoutMs = 120000 } = {}) {
+    if (!file) throw new Error("Elige primero tu archivo de audio.");
+    if (A.submitting) throw new Error("El audio ya se está enviando. Espera a que termine este intento.");
+    A.submitting = true;
+    try {
+      const identity = JSON.stringify({ settings, guide: window.VSActiveGuide ? window.VSActiveGuide() : null });
+      if (!A.submitAttempt || A.submitAttempt.file !== file || A.submitAttempt.identity !== identity) {
+        A.submitAttempt = { file, identity, key: crypto.randomUUID(), id: null, uploaded: false };
+      }
+      const attempt = A.submitAttempt;
+      async function call(path, options = {}) {
+        const controller = new AbortController();
+        let timer;
+        try {
+          return await Promise.race([
+            request(path, { ...options, signal: controller.signal }),
+            new Promise((_, reject) => { timer = setTimeout(() => {
+              controller.abort();
+              reject(new Error("Colab no respondió a tiempo. Comprueba la conexión y vuelve a pulsar: se reutilizará este proyecto."));
+            }, timeoutMs); }),
+          ]);
+        } finally { clearTimeout(timer); }
+      }
+      if (attempt.id) {
+        report("Comprobando el proyecto del intento anterior…");
+        const existing = await call(`projects/${attempt.id}`);
+        if ((existing.live || {}).running || (existing.urls || {}).video) return { id: attempt.id };
+        const status = existing.status || {};
+        if (status.stage !== "error" && ((existing.live || {}).done || status.done || []).includes("plan")) return { id: attempt.id };
+        // Si se perdió la respuesta de la subida, el servidor puede haber recibido el archivo.
+        if (existing.audio) attempt.uploaded = true;
+      } else {
+        report("Creando el proyecto y comprobando el motor de Colab…");
+        const project = await call("projects", { method: "POST", headers: { "Idempotency-Key": attempt.key }, body: { settings } });
+        if (!project || !project.id) throw new Error("El servidor no confirmó el proyecto. Revisa la conexión.");
+        attempt.id = project.id;
+      }
+      if (!attempt.uploaded) {
+        report("Enviando el audio a Colab…");
+        const uploaded = await send(attempt.id, file);
+        if (uploaded && uploaded.queued) {
+          report("Audio guardado en la PC y pendiente de conexión. Consulta la cola; no necesitas crear otro proyecto.");
+          return { id: attempt.id, queued: true };
+        }
+        attempt.uploaded = true;
+      }
+      report("Audio recibido. Iniciando transcripción y storyboard…");
+      const result = await call(`projects/${attempt.id}/audio/analyze`, { method: "POST", body: {} });
+      if (result && result.queued) {
+        report("La PC tiene pendiente iniciar el procesamiento. Consulta el estado en la cola.");
+        return { id: attempt.id, queued: true };
+      }
+      report("Procesamiento iniciado. Abriendo el proyecto…");
+      return { id: attempt.id };
+    } finally { A.submitting = false; }
   }
 
   function upload(pid, file) {
@@ -170,15 +233,23 @@
       fd.append("file", file, file.name);
       const x = new XMLHttpRequest();
       x.open("POST", `api/projects/${pid}/audio`);
+      x.timeout = 15 * 60 * 1000;
       const bar = $("#upProg"), msg = $("#upMsg");
       if (bar) bar.style.display = "block";
       x.upload.onprogress = (e) => { if (e.lengthComputable && bar) { bar.firstChild.style.width = Math.round((e.loaded / e.total) * 100) + "%"; msg.textContent = `Subiendo… ${Math.round((e.loaded / e.total) * 100)}%`; } };
       x.onload = () => {
         let j = {};
-        try { j = JSON.parse(x.responseText); } catch (e) { /* */ }
-        if (x.status >= 200 && x.status < 300) { if (msg) msg.textContent = "Audio verificado con ffprobe ✓"; res(j); } else rej(new Error(j.error || x.statusText));
+        try { j = JSON.parse(x.responseText); } catch (e) {
+          if (x.status >= 200 && x.status < 300) { rej(new Error("La subida recibió una respuesta inválida. Comprueba la URL de Colab y reintenta en este proyecto.")); return; }
+        }
+        if (x.status >= 200 && x.status < 300) {
+          if (msg) msg.textContent = j.queued ? "Audio guardado en la PC; pendiente de enviar a Colab." : "Audio recibido ✓";
+          res(j);
+        } else rej(new Error(j.error || (x.status === 530 ? "Cloudflare HTTP 530: rehace el túnel en Colab y guarda la nueva URL y llave en la PC." : `Error HTTP ${x.status} al subir el audio.`)));
       };
       x.onerror = () => rej(new Error("Error de red al subir"));
+      x.ontimeout = () => rej(new Error("La subida tardó demasiado. Comprueba la conexión y reintenta; se conservará el proyecto."));
+      x.onabort = () => rej(new Error("Se interrumpió la subida del audio. Puedes reintentar en el mismo proyecto."));
       x.send(fd);
     });
   }
@@ -460,5 +531,5 @@
     A.film = null;
   }
 
-  window.VSAudio = { createView, projectView, stop: () => { stop(); clearInterval(A.poll); } };
+  window.VSAudio = { createView, projectView, submitAudio, stop: () => { stop(); clearInterval(A.poll); } };
 })();

@@ -1,3 +1,7 @@
+# Corrección del envío de audio
+
+`node pc/tests/test_audio_submission.js` comprueba reintento sin crear otro proyecto, tiempo límite con identificador conservado, transferencia en cola, detección de proyecto activo, cambio de guía y rechazo de envío sin archivo. `test_colab_guides.js` sigue comprobando aplicación de guías en los tres modos. Pruebas con respuestas simuladas; no se verificó generación GPU ni la sesión remota del usuario.
+
 # Actualización 1.2.2
 
 23 pruebas Python del cliente y guías superadas. Se comprueba guardado y recuperación de guías en el motor, rechazo de rutas inválidas, tamaño y huellas incorrectas. `node pc/tests/test_colab_guides.js` comprueba que tema, guion y audio reciben la guía, que una selección ausente bloquea la creación y que desactivarla no modifica la solicitud. La libreta contiene el código actualizado. No se ejecutó una sesión real de Colab ni la inferencia GPU.

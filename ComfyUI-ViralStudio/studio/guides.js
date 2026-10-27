@@ -5,6 +5,7 @@
   let guides=[], selected=localStorage.getItem('vs_colab_guide')||'';
   let enabled=localStorage.getItem('vs_colab_guides_enabled')!=='0';
   let loadError='';
+  window.VSActiveGuide=()=>enabled?(guides.find(g=>g.profile===selected)||{missing:true,selected}):null;
   async function api(body) {
     const response=await fetchOriginal('/viralstudio/api/guides', body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
     const result=await response.json();
