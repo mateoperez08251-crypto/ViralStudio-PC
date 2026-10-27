@@ -1,6 +1,8 @@
-# ViralStudio PC + Colab · 1.2.0
+# ViralStudio PC + Colab · 1.2.1
 
 La interfaz original se abre en tu PC. Colab ejecuta Qwen, la voz, la transcripción, la música, el render y la revisión visual. Cloudflare conecta ambos mediante HTTPS y una llave. No necesitas instalar los modelos ni ComfyUI en la PC.
+
+La versión 1.2.1 carga los formularios originales de creación incluso sin conectar Colab: tema/prompts, guion, audio, estilos y ajustes. El panel de conexión comienza plegado para dejar visible la aplicación. Las opciones disponibles localmente no confirman que los modelos estén instalados; generar, consultar proyectos remotos y guardar ajustes del motor requiere conexión.
 
 ## Empezar
 

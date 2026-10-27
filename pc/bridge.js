@@ -38,7 +38,7 @@
   }
   async function act(fn){try{await fn();}catch(e){say(e.message,true);}}
   document.addEventListener('DOMContentLoaded',()=>{
-    const panel=document.createElement('details');panel.id='pcPanel';panel.open=true;
+    const panel=document.createElement('details');panel.id='pcPanel';panel.open=false;
     panel.style.cssText='margin:12px;padding:16px;border:1px solid #455367;border-radius:12px;background:#141c28;color:#e6edf3;font:14px system-ui';
     panel.innerHTML=`<summary style="cursor:pointer;font-weight:700">ViralStudio PC · Colab y guías de animación</summary>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px"><label>URL HTTPS de Cloudflare <input id="pcUrl" type="url" size="44" placeholder="https://….trycloudflare.com"></label><label>Llave de Colab <input id="pcKey" type="password" autocomplete="off" placeholder="Vacío conserva la llave guardada"></label><button id="pcConnect">Guardar conexión</button><button id="pcCheck">Comprobar motor</button></div>
@@ -49,6 +49,7 @@
     <p id="pcMessage" role="status"></p><small>Carpeta de datos y resultados: <span id="pcFolder"></span></small>
     <details><summary>Cola y descargas de esta PC</summary><button id="pcRefresh">Actualizar</button><table style="width:100%;text-align:left"><thead><tr><th>Solicitud</th><th>Estado</th><th>Proyecto</th><th>Detalle</th><th></th></tr></thead><tbody id="pcJobs"></tbody></table></details>`;
     document.querySelector('header').after(panel);el('pcAutomatic').checked=automatic;
+    const notice=document.createElement('p');notice.id='pcConnectionNotice';notice.style.cssText='margin:8px 16px;color:#aab4c4;font:14px system-ui';notice.textContent='Crea tu video abajo con los formularios originales. Abre «Colab y guías de animación» para conectar el motor antes de generar.';panel.after(notice);
     el('pcProfile').onchange=()=>{profile=el('pcProfile').value;sessionStorage.setItem('vs_pc_profile',profile);};
     el('pcAutomatic').onchange=()=>{automatic=el('pcAutomatic').checked;sessionStorage.setItem('vs_pc_auto',automatic?'1':'0');};
     el('pcConnect').onclick=()=>act(async()=>{await api('connection',{url:el('pcUrl').value,token:el('pcKey').value,auto_download:el('pcAutoDownload').checked});el('pcKey').value='';say('Conexión guardada. Comprueba el motor; recarga la página para cargar sus opciones.');await refresh();});

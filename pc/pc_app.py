@@ -278,6 +278,19 @@ def make_app(folder=None, worker=True):
         return web.FileResponse(path)
     @routes.get('/pc/health')
     async def local_health(request):return web.json_response({'ok':True,'service':'viralstudio_pc'})
+    @routes.get('/viralstudio/api/options')
+    async def studio_options(request):
+        # La interfaz completa debe arrancar incluso antes de configurar Colab.
+        if store.config().get('url'):
+            try:
+                remote=await asyncio.wait_for(app['broker'].json('GET','/viralstudio/api/options'),timeout=5)
+                if not isinstance(remote,dict) or not all(k in remote for k in ('presets','settings','models','audio_mode')):
+                    raise ValueError('Catálogo remoto incompleto.')
+                return web.json_response(dict(remote,pc_offline=False))
+            except (aiohttp.ClientError,asyncio.TimeoutError,OSError,ValueError):
+                pass
+        catalog=json.loads(Path(__file__).with_name('options.json').read_text(encoding='utf-8'))
+        return web.json_response(dict(catalog,pc_offline=True))
     @routes.get('/pc/bridge.js')
     async def bridge(request):return web.FileResponse(Path(__file__).with_name('bridge.js'))
     @routes.get('/pc/api/state')

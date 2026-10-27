@@ -1,3 +1,10 @@
+# 1.2.1 · Formularios originales disponibles al abrir la PC
+
+- La pantalla de creación carga el catálogo original localmente cuando Colab no está configurado o no responde.
+- Se mantienen los formularios de tema, guion, audio, estilos y ajustes de la interfaz original.
+- El panel de conexión comienza plegado para dejar visible la aplicación.
+- 21 pruebas del cliente y revisión superadas, incluidas apertura sin conexión y recursos originales.
+
 # 1.2.0 · PC + Colab y revisión visual · 2026-10-27
 
 - Interfaz original servida en localhost, motor remoto protegido con llave Bearer.

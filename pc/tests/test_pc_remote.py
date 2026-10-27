@@ -88,6 +88,24 @@ class PCIntegration(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(r.status,200)
     async def asyncTearDown(self):
         await self.pc.close();await self.remote.close();self.tmp.cleanup()
+    async def test_catalogo_original_disponible_sin_colab(self):
+        self.app['store'].config_path.unlink(missing_ok=True)
+        response=await self.pc.get('/viralstudio/api/options')
+        self.assertEqual(response.status,200)
+        data=await response.json()
+        self.assertTrue(data['pc_offline'])
+        self.assertTrue(data['presets']['styles'])
+        self.assertTrue(data['presets']['video_types'])
+        self.assertTrue(data['audio_mode']['styles'])
+        for path in ['/viralstudio/','/viralstudio/static/app.js','/viralstudio/static/audio.js','/viralstudio/engine.js']:
+            response=await self.pc.get(path)
+            self.assertEqual(response.status,200,path)
+
+    async def test_catalogo_disponible_si_colab_no_entrega_opciones(self):
+        response=await self.pc.get('/viralstudio/api/options')
+        self.assertEqual(response.status,200)
+        self.assertTrue((await response.json())['pc_offline'])
+
     async def test_interfaz_original_sin_modelos_en_pc_y_guia_congelada(self):
         r=await self.pc.get('/viralstudio/');html=await r.text()
         self.assertIn('VIRAL STUDIO',html);self.assertIn('/pc/bridge.js',html)

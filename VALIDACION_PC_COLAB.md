@@ -1,3 +1,7 @@
+# Actualización 1.2.1
+
+21 pruebas de `pc/tests` superadas. Nuevas comprobaciones: carga del catálogo original sin conexión y con respuesta remota inválida, disponibilidad de HTML, motor y JavaScript originales. Sintaxis de bridge.js validada con Node. La interfaz visual no se ha comprobado en un navegador real en este entorno; la inferencia GPU sigue pendiente.
+
 # Validación de la migración PC + Colab
 
 Entrega 1.2.0, 27 de octubre de 2026. Base: ZIP ViralStudio 1.1.2 AntiFreeze suministrado en esta conversación.
