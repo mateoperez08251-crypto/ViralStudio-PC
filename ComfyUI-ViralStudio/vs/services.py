@@ -241,6 +241,10 @@ def healthy(svc):
 
 def tunnel_url(svc_id="tunnel"):
     t = log_tail(svc_id, 400)
+    # El registro se abre en append: las URL de arranques anteriores ya no sirven.
+    marker = "arranque de " + svc_id + " ====="
+    if marker in t:
+        t = t.rsplit(marker, 1)[1]
     m = TUNNEL_RE.findall(t)
     return m[-1] if m else None
 
@@ -251,7 +255,12 @@ def start(svc, st, log=print):
     sid = svc["id"]
     pid = read_pid(sid)
     own = bool(pid and pid_alive(pid))
-    if own and healthy(svc):
+    current_url = tunnel_url(sid) if svc.get("url_from_log") else None
+    if own and healthy(svc) and (not svc.get("url_from_log") or current_url):
+        if current_url:
+            if st.get("public_url") != current_url:
+                st.pop("external", None)
+            st["public_url"] = current_url
         # solo se reutiliza un proceso lanzado por este supervisor (otro podría tener otra llave u otra carpeta de datos)
         st.setdefault("services", {})[sid] = dict(st.get("services", {}).get(sid, {}), status="ok", pid=pid, note="reutilizado")
         log(f"  ✓ {sid}: ya estaba sano, se reutiliza")
@@ -265,6 +274,9 @@ def start(svc, st, log=print):
             log(f"  ✗ {sid}: {msg} (no se mata: podría ser de otra aplicación)")
             return "PORT_BUSY"
     if not own:
+        if svc.get("url_from_log"):
+            st.pop("public_url", None)
+            st.pop("external", None)
         exe = svc["argv"][0]
         if not (os.path.exists(exe) or shutil.which(exe)):
             st.setdefault("services", {})[sid] = {"status": "error", "diagnosis": f"MISSING_BINARY: {exe}"}
@@ -338,6 +350,9 @@ def stop(sid, st=None):
     except OSError:
         pass
     if st is not None:
+        if sid == "tunnel":
+            st.pop("public_url", None)
+            st.pop("external", None)
         event(st, f"{sid} detenido")
 
 

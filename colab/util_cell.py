@@ -1,33 +1,51 @@
-#@title 🔗 Enlace y diagnóstico (opcional: si el enlace dejó de funcionar) { display-mode: "form" }
-ACCION = "Mostrar enlace"  #@param ["Mostrar enlace", "Rehacer túnel (enlace nuevo)", "Estado de servicios", "Informe de diagnóstico (redactado)"]
-#@markdown El túnel solo conecta tu navegador: si se cae, los trabajos siguen y no se pierde nada.
-import json, os, sys
+#@title 🔗 URL y llave verificadas para ViralStudio PC
+ACCION = "Rehacer túnel (enlace nuevo)" #@param ["Mostrar enlace", "Rehacer túnel (enlace nuevo)", "Estado de servicios", "Informe de diagnóstico (redactado)"]
+import json, os, sys, time
+from pathlib import Path
 
 sys.path.insert(0, "/content/ComfyUI/custom_nodes/ComfyUI-ViralStudio")
 os.environ.setdefault("VS_RUN_DIR", "/content/vs_run")
 from vs import services as SV
 
-if ACCION.startswith("Rehacer"):
-    st = SV.load_state()
-    SV.stop("tunnel", st)
-    SV.save_state(st)
-    SV.up(["gateway", "tunnel"])
 if ACCION.startswith("Estado"):
     print(json.dumps(SV.status(), indent=2, ensure_ascii=False))
 elif ACCION.startswith("Informe"):
-    p = SV.report()
-    print("Informe sin llaves ni tokens:", p)
-    print(open(p).read()[:6000])
+    print(Path(SV.report()).read_text()[:6000])
 else:
-    from IPython.display import HTML, display
+    if ACCION.startswith("Rehacer"):
+        # Evita que el vigilante arranque otro túnel mientras se cambia la URL.
+        SV.stop("watch")
+        try:
+            estado = SV.load_state()
+            SV.stop("tunnel", estado)
+            estado.pop("public_url", None)
+            estado.pop("external", None)
+            # También funciona con versiones anteriores del supervisor:
+            # aparta el registro viejo para que no se recupere su URL caducada.
+            registro = Path(SV.RUN_DIR) / "tunnel.log"
+            if registro.exists():
+                registro.rename(registro.with_name(f"tunnel_anterior_{time.time_ns()}.log"))
+            SV.save_state(estado)
+            SV.up(["gateway", "tunnel"])
+        finally:
+            SV.spawn_watch()
 
-    link = SV.link()
-    if link:
-        from urllib.parse import urlsplit
-        destination = urlsplit(link)
-        print("URL para ViralStudio PC:", f"{destination.scheme}://{destination.netloc}")
-        print("Llave para ViralStudio PC:", SV.access_key(False))
-        display(HTML(f'<a href="{link}" target="_blank" style="font:16px system-ui;background:#f0b648;color:#111;padding:10px 16px;'
-                     f'border-radius:9px;font-weight:700;text-decoration:none">ABRIR VIRAL STUDIO ↗</a> &nbsp; 🔑 <code>{SV.access_key(False)}</code>'))
+    estado = SV.load_state()
+    url = (estado.get("public_url") or "").rstrip("/")
+    llave = SV.access_key(False)
+    if not url or not llave:
+        print("No se obtuvo un túnel y una llave válidos. Ejecuta primero la instalación.")
     else:
-        print("Aún no hay túnel. Elige «Rehacer túnel».")
+        codigo, cuerpo, detalle = SV.http_get(url + "/__gw/healthz", timeout=10)
+        try:
+            sano = codigo == 200 and json.loads(cuerpo).get("ok") is True
+        except (ValueError, AttributeError):
+            sano = False
+        if sano:
+            print("CONEXIÓN VERIFICADA — copia cada valor en su campo de la PC.")
+            print("\nURL:\n" + url)
+            print("\nLLAVE:\n" + llave)
+        else:
+            print(f"El túnel todavía no responde correctamente (HTTP {codigo}).")
+            print("No pegues una URL anterior. Mantén Colab conectado y vuelve a ejecutar esta celda.")
+            print("Si persiste, selecciona «Informe de diagnóstico (redactado)» y comparte ese informe.")
