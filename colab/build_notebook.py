@@ -30,6 +30,7 @@ nb = {
             "Se abre con un **enlace privado con llave** (túnel cloudflared → puerta con llave). Si el enlace deja de funcionar, ",
             "ejecuta la 2.ª celda «🔗 Enlace y diagnóstico»: tus trabajos siguen aunque el enlace cambie.\n\n",
             "**PC + Colab:** abre `pc/INICIAR_VIRALSTUDIO_PC.bat` en Windows y pega allí la URL base y la llave que imprime esta celda. Las guías .md, la cola y los resultados quedan en tu PC. Mantén `REVISION_VISUAL` activado para instalar el revisor visual Qwen3.5 4B.\n\n",
+            "**Guías .md activadas:** abre el panel «Guías .md» en el Studio de Colab, importa los archivos y pulsa «Guardar y seleccionar guía». Se aplica también al modo audio.\n\n",
             "**Nuevo · Mi audio → video:** sube tu narración (MP3/WAV/M4A/FLAC/OGG/AAC o MP4/MOV) y se anima al segundo exacto ",
             "de tu voz con marionetas SVG, fondos 2.5D e infografías. La transcripción es local (faster-whisper); tu audio no se envía a nadie.\n\n",
             "**Nuevo · motor ilustrado en «Mi guion → video» y «Tema → video»:** detecta en tu texto los personajes y animales ",

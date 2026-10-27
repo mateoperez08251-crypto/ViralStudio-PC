@@ -1,6 +1,6 @@
 # 🎬 Viral Studio — videos animados virales con IA 100 % abierta
 
-> **Versión 1.2.1 · PC + Colab:** interfaz local, guías `.md` por tipo, cola persistente, revisión visual y correcciones acotadas. Empieza por [LEEME_PC_COLAB.md](LEEME_PC_COLAB.md). Consulta [VALIDACION_PC_COLAB.md](VALIDACION_PC_COLAB.md) para las pruebas y límites de esta entrega.
+> **Versión 1.2.2 · PC + Colab:** interfaz local, guías `.md` por tipo, cola persistente, revisión visual y correcciones acotadas. Empieza por [LEEME_PC_COLAB.md](LEEME_PC_COLAB.md). Consulta [VALIDACION_PC_COLAB.md](VALIDACION_PC_COLAB.md) para las pruebas y límites de esta entrega.
 
 Le das un **tema** y una **duración** y te entrega el **MP4 terminado**: historia, narración, subtítulos sincronizados,
 música, efectos y animación de cada escena. Sirve para Shorts/Reels/TikTok (9:16) y para YouTube (16:9), de 15 s a 30 min.

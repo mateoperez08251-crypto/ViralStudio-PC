@@ -265,6 +265,7 @@ def make_app(folder=None, worker=True):
     @routes.get('/viralstudio/')
     async def studio(request):
         html=(NODE/'studio/index.html').read_text(encoding='utf-8')
+        html=html.replace('<script src="static/guides.js"></script>','')
         html=html.replace('<script src="engine.js">','<script src="/pc/bridge.js"></script><script src="engine.js">')
         html=html.replace('<a href="../" target="_blank">ComfyUI ↗</a>','<a href="#" onclick="document.getElementById(\'pcPanel\').open=true;return false">Conexión PC ↔ Colab</a>')
         return web.Response(text=html,content_type='text/html')

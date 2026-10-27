@@ -1,3 +1,7 @@
+# Actualización 1.2.2
+
+23 pruebas Python del cliente y guías superadas. Se comprueba guardado y recuperación de guías en el motor, rechazo de rutas inválidas, tamaño y huellas incorrectas. `node pc/tests/test_colab_guides.js` comprueba que tema, guion y audio reciben la guía, que una selección ausente bloquea la creación y que desactivarla no modifica la solicitud. La libreta contiene el código actualizado. No se ejecutó una sesión real de Colab ni la inferencia GPU.
+
 # Actualización 1.2.1
 
 21 pruebas de `pc/tests` superadas. Nuevas comprobaciones: carga del catálogo original sin conexión y con respuesta remota inválida, disponibilidad de HTML, motor y JavaScript originales. Sintaxis de bridge.js validada con Node. La interfaz visual no se ha comprobado en un navegador real en este entorno; la inferencia GPU sigue pendiente.

@@ -116,6 +116,8 @@ def readyz():
 
 
 def setup(routes):
+    from .server_guides import install as install_guides
+    install_guides(routes)
     try:
         rec = pipeline.recover()
         if rec:

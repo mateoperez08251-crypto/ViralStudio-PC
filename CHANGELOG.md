@@ -1,3 +1,11 @@
+# 1.2.2 · Guías Markdown directamente en Colab
+
+- Biblioteca de guías del motor con importación múltiple, edición, descarga y selección.
+- Activada por defecto para nuevos proyectos de tema, guion y audio; cada proyecto guarda su copia.
+- Archivos persistentes en la carpeta de proyectos (Drive si está activado).
+- Libreta autocontenida actualizada; el panel local de la PC se mantiene independiente.
+- 23 pruebas Python superadas y comprobación JavaScript de aplicación en los tres modos.
+
 # 1.2.1 · Formularios originales disponibles al abrir la PC
 
 - La pantalla de creación carga el catálogo original localmente cuando Colab no está configurado o no responde.

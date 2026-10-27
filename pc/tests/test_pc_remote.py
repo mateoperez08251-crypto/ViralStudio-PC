@@ -97,6 +97,8 @@ class PCIntegration(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(data['presets']['styles'])
         self.assertTrue(data['presets']['video_types'])
         self.assertTrue(data['audio_mode']['styles'])
+        html=await (await self.pc.get('/viralstudio/')).text()
+        self.assertNotIn('static/guides.js',html)
         for path in ['/viralstudio/','/viralstudio/static/app.js','/viralstudio/static/audio.js','/viralstudio/engine.js']:
             response=await self.pc.get(path)
             self.assertEqual(response.status,200,path)
